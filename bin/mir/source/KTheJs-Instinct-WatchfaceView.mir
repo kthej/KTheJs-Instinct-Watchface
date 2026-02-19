@@ -6,8 +6,8 @@ import Toybox.Lang;
 import Toybox.System;
 [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 6; @symbol_classdef = [KTheJs_Instinct_WatchfaceView,6,6,35]; @symbol_extends<0> = [WatchUi,6,44,51]; @symbol_extends<1> = [WatchFace,6,52,61]; ]
-class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 6; @symbol_classdef = [DataElement,6,6,17]; ]
+class DataElement {
     [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 6; ]
     <init> {
     }
@@ -15,121 +15,284 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     static
     <init> {
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 7; @position = 18; @symbol_vardef = [elementView,7,18,29]; ]
+    protected
+    var elementView;
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 8; @position = 18; @symbol_vardef = [elementString,8,18,31]; ]
+    protected
+    var elementString;
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 9; @position = 18; @symbol_vardef = [layoutId,9,18,26]; ]
+    protected
+    var layoutId;
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 11; @symbol_functiondef = [initialize,11,20,30]; @symbol_param<0> = [vView,11,31,36]; @symbol_param<1> = [vString,11,38,45]; @symbol_param<2> = [vLayoutId,11,47,56]; @symbol_param<2>_type<0> = [String,11,60,66]; ]
+    public
+    function initialize(vView, vString, vLayoutId as String) as Void {
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_11_67_15_4_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 13 8 ]
+        %tmp.1 = lgetv %vString;
+        symbol [ vString %tmp.1 13 24 31 ];
+        symbol [ elementString ? 13 8 21 ];
+        putv self :elementString %tmp.1;
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 14 8 ]
+        %tmp.2 = lgetv %vView;
+        symbol [ vView %tmp.2 14 22 27 ];
+        symbol [ findDrawableById %tmp.3 14 28 44 ];
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = lgetv %vLayoutId;
+        symbol [ vLayoutId %tmp.4 14 45 54 ];
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        symbol [ elementView ? 14 8 19 ];
+        putv self :elementView %tmp.5;
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_11_67_15_4_stop:
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 16; @symbol_functiondef = [render,16,20,26]; ]
+    public
+    function render() {
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_16_28_18_4_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 17 8 ]
+        symbol [ elementView %tmp.2 17 8 19 ];
+        %tmp.2 = getv ? :elementView;
+        symbol [ setText %tmp.3 17 20 27 ];
+        %tmp.3 = getv function %tmp.2 :setText;
+        symbol [ elementString %tmp.5 17 28 41 ];
+        %tmp.5 = getv ? :elementString;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_16_28_18_4_stop:
+    }
+}
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 23; @symbol_classdef = [KTheJs_Instinct_WatchfaceView,23,6,35]; @symbol_extends<0> = [WatchUi,23,44,51]; @symbol_extends<1> = [WatchFace,23,52,61]; ]
+class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 23; ]
+    <init> {
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 23; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 25; @symbol_functiondef = [initialize,25,13,23]; ]
     function initialize() as Void {
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_8_26_10_4_start:
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 9 8 ]
-        symbol [ WatchFace %tmp.2 9 8 17 ];
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_25_26_27_4_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 26 8 ]
+        symbol [ WatchFace %tmp.2 26 8 17 ];
         %tmp.2 = getv ? :WatchFace;
-        symbol [ initialize %tmp.3 9 18 28 ];
+        symbol [ initialize %tmp.3 26 18 28 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_8_26_10_4_stop:
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_25_26_27_4_stop:
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 13; @symbol_functiondef = [onLayout,13,13,21]; @symbol_param<0> = [dc,13,22,24]; @symbol_param<0>_type<0> = [Dc,13,28,30]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 31; @symbol_functiondef = [onLayout,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_13_40_15_4_start:
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 14 8 ]
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_31_40_33_4_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 32 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 14 8 17 ];
+        symbol [ setLayout %tmp.2 32 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 14 18 21 ];
+        symbol [ Rez %tmp.4 32 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 14 22 29 ];
+        symbol [ Layouts %tmp.5 32 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ WatchFace %tmp.6 14 30 39 ];
+        symbol [ WatchFace %tmp.6 32 30 39 ];
         %tmp.6 = getv function %tmp.5 :WatchFace;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 14 40 42 ];
+        symbol [ dc %tmp.7 32 40 42 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_13_40_15_4_stop:
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_31_40_33_4_stop:
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 20; @symbol_functiondef = [onShow,20,13,19]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 38; @symbol_functiondef = [onShow,38,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 24; @symbol_functiondef = [onUpdate,24,13,21]; @symbol_param<0> = [dc,24,22,24]; @symbol_param<0>_type<0> = [Dc,24,28,30]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 42; @symbol_functiondef = [onUpdate,42,13,21]; @symbol_param<0> = [dc,42,22,24]; @symbol_param<0>_type<0> = [Dc,42,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_start:
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 26 8 ]
-        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_stop" ]
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 46 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
         %clockTime.1 = local;
-        symbol [ clockTime %clockTime.1 26 12 21 ];
-        symbol [ System %tmp.1 26 24 30 ];
+        symbol [ clockTime %clockTime.1 46 12 21 ];
+        symbol [ System %tmp.1 46 24 30 ];
         %tmp.1 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.2 26 31 43 ];
+        symbol [ getClockTime %tmp.2 46 31 43 ];
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %clockTime.1 %tmp.3;
-        symbol [ clockTime %clockTime.1 26 12 21 ];
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 27 8 ]
-        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_stop" ]
-        %timeString.2 = local;
-        symbol [ timeString %timeString.2 27 12 22 ];
-        symbol [ Lang %tmp.4 27 25 29 ];
-        %tmp.4 = getm $.Toybox.Lang;
-        symbol [ format %tmp.5 27 30 36 ];
-        %tmp.5 = getv function %tmp.4 :format;
-        %tmp.6 = "$1$:$2$";
-        %tmp.7 = newa 2;
-        %tmp.8 = lgetv %clockTime.1;
-        symbol [ clockTime %tmp.8 27 49 58 ];
-        symbol [ hour %tmp.9 27 59 63 ];
-        %tmp.9 = getv %tmp.8 :hour;
-        %tmp.10 = dup %tmp.7;
-        %tmp.11 = aputv %tmp.10 0 %tmp.9;
-        %tmp.12 = lgetv %clockTime.1;
-        symbol [ clockTime %tmp.12 27 65 74 ];
-        symbol [ min %tmp.13 27 75 78 ];
-        %tmp.13 = getv %tmp.12 :min;
-        symbol [ format %tmp.14 27 79 85 ];
-        %tmp.14 = getv function %tmp.13 :format;
-        %tmp.15 = "%02d";
-        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
-        %tmp.17 = dup %tmp.11;
-        %tmp.18 = aputv %tmp.17 1 %tmp.16;
-        %tmp.19 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.18);
-        lputv %timeString.2 %tmp.19;
-        symbol [ timeString %timeString.2 27 12 22 ];
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 28 8 ]
-        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_stop" ]
-        %view.3 = local;
-        symbol [ view %view.3 28 12 16 ];
-        symbol [ View %tmp.21 28 19 23 ];
-        %tmp.21 = getv ? :View;
-        symbol [ findDrawableById %tmp.22 28 24 40 ];
-        %tmp.22 = getv function %tmp.21 :findDrawableById;
-        %tmp.23 = "TimeLabel";
-        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
-        %tmp.25 = as %tmp.24 Text;
-        symbol [ Text %tmp.25 28 57 61 ];
-        lputv %view.3 %tmp.25;
-        symbol [ view %view.3 28 12 16 ];
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 29 8 ]
-        %tmp.26 = lgetv %view.3;
-        symbol [ view %tmp.26 29 8 12 ];
-        symbol [ setText %tmp.27 29 13 20 ];
-        %tmp.27 = getv function %tmp.26 :setText;
-        %tmp.28 = lgetv %timeString.2;
-        symbol [ timeString %tmp.28 29 21 31 ];
-        invoke %tmp.26 %tmp.27(%tmp.28);
-[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 32 8 ]
-        symbol [ View %tmp.30 32 8 12 ];
-        %tmp.30 = getv ? :View;
-        symbol [ onUpdate %tmp.31 32 13 21 ];
-        %tmp.31 = getv function %tmp.30 :onUpdate;
-        %tmp.32 = lgetv %dc;
-        symbol [ dc %tmp.32 32 22 24 ];
-        invoke %tmp.30 %tmp.31(%tmp.32);
-_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_24_40_33_4_stop:
+        symbol [ clockTime %clockTime.1 46 12 21 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 47 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
+        %clock_element.2 = local;
+        symbol [ clock_element %clock_element.2 47 12 25 ];
+        symbol [ DataElement %tmp.7 47 32 43 ];
+        %tmp.7 = getv ? :DataElement;
+        %tmp.8 = self;
+        symbol [ self %tmp.8 47 44 48 ];
+        symbol [ Lang %tmp.9 48 12 16 ];
+        %tmp.9 = getm $.Toybox.Lang;
+        symbol [ format %tmp.10 48 17 23 ];
+        %tmp.10 = getv function %tmp.9 :format;
+        %tmp.11 = "$1$:$2$";
+        %tmp.12 = newa 2;
+        %tmp.13 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.13 48 36 45 ];
+        symbol [ hour %tmp.14 48 46 50 ];
+        %tmp.14 = getv %tmp.13 :hour;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 0 %tmp.14;
+        %tmp.17 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.17 48 52 61 ];
+        symbol [ min %tmp.18 48 62 65 ];
+        %tmp.18 = getv %tmp.17 :min;
+        symbol [ format %tmp.19 48 66 72 ];
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "%02d";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = dup %tmp.16;
+        %tmp.23 = aputv %tmp.22 1 %tmp.21;
+        %tmp.24 = invoke %tmp.9 %tmp.10(%tmp.11, %tmp.23);
+        %tmp.25 = "TimeLabel";
+        %tmp.4 = newc %tmp.7 (%tmp.8, %tmp.24, %tmp.25);
+        lputv %clock_element.2 %tmp.4;
+        symbol [ clock_element %clock_element.2 47 12 25 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 51 8 ]
+        %tmp.26 = lgetv %clock_element.2;
+        symbol [ clock_element %tmp.26 51 8 21 ];
+        symbol [ render %tmp.27 51 22 28 ];
+        %tmp.27 = getv function %tmp.26 :render;
+        invoke %tmp.26 %tmp.27();
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 55 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
+        %currentHeartRate.3 = local;
+        symbol [ currentHeartRate %currentHeartRate.3 55 12 28 ];
+        symbol [ Activity %tmp.29 55 31 39 ];
+        %tmp.29 = getv ? :Activity;
+        symbol [ getActivityInfo %tmp.30 55 40 55 ];
+        %tmp.30 = getv function %tmp.29 :getActivityInfo;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        symbol [ currentHeartRate %tmp.32 55 58 74 ];
+        %tmp.32 = getv %tmp.31 :currentHeartRate;
+        lputv %currentHeartRate.3 %tmp.32;
+        symbol [ currentHeartRate %currentHeartRate.3 55 12 28 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 56 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
+        %hr_element.4 = local;
+        symbol [ hr_element %hr_element.4 56 12 22 ];
+        symbol [ DataElement %tmp.36 56 29 40 ];
+        %tmp.36 = getv ? :DataElement;
+        %tmp.37 = self;
+        symbol [ self %tmp.37 57 12 16 ];
+        symbol [ Lang %tmp.38 58 12 16 ];
+        %tmp.38 = getm $.Toybox.Lang;
+        symbol [ format %tmp.39 58 17 23 ];
+        %tmp.39 = getv function %tmp.38 :format;
+        %tmp.40 = "$1$";
+        %tmp.41 = newa 1;
+        %tmp.42 = lgetv %currentHeartRate.3;
+        symbol [ currentHeartRate %tmp.42 58 32 48 ];
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 0 %tmp.42;
+        %tmp.45 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.44);
+        %tmp.46 = "HeartRateLabel";
+        %tmp.33 = newc %tmp.36 (%tmp.37, %tmp.45, %tmp.46);
+        lputv %hr_element.4 %tmp.33;
+        symbol [ hr_element %hr_element.4 56 12 22 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 62 7 ]
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_7_64_7_if_stmt:
+        %tmp.47 = lgetv %currentHeartRate.3;
+        symbol [ currentHeartRate %tmp.47 62 11 27 ];
+        %tmp.48 = null;
+        %tmp.49 = ne %tmp.47 %tmp.48;
+        bf %tmp.49 @_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_7_64_7_if_end;
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_7_64_7_if_true:
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_36_64_7_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 63 8 ]
+        %tmp.50 = lgetv %hr_element.4;
+        symbol [ hr_element %tmp.50 63 8 18 ];
+        symbol [ render %tmp.51 63 19 25 ];
+        %tmp.51 = getv function %tmp.50 :render;
+        invoke %tmp.50 %tmp.51();
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_36_64_7_stop:
+        goto @_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_7_64_7_if_end;
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_62_7_64_7_if_end:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 68 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
+        %seconds.5 = local;
+        symbol [ seconds %seconds.5 68 12 19 ];
+        symbol [ System %tmp.52 68 22 28 ];
+        %tmp.52 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.53 68 29 41 ];
+        %tmp.53 = getv function %tmp.52 :getClockTime;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        symbol [ sec %tmp.55 68 44 47 ];
+        %tmp.55 = getv %tmp.54 :sec;
+        lputv %seconds.5 %tmp.55;
+        symbol [ seconds %seconds.5 68 12 19 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 69 8 ]
+        [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop" ]
+        %sec_element.6 = local;
+        symbol [ sec_element %sec_element.6 69 12 23 ];
+        symbol [ DataElement %tmp.59 69 30 41 ];
+        %tmp.59 = getv ? :DataElement;
+        %tmp.60 = self;
+        symbol [ self %tmp.60 70 12 16 ];
+        symbol [ Lang %tmp.61 71 12 16 ];
+        %tmp.61 = getm $.Toybox.Lang;
+        symbol [ format %tmp.62 71 17 23 ];
+        %tmp.62 = getv function %tmp.61 :format;
+        %tmp.63 = "$1$";
+        %tmp.64 = newa 1;
+        %tmp.65 = lgetv %seconds.5;
+        symbol [ seconds %tmp.65 71 31 38 ];
+        %tmp.66 = dup %tmp.64;
+        %tmp.67 = aputv %tmp.66 0 %tmp.65;
+        %tmp.68 = invoke %tmp.61 %tmp.62(%tmp.63, %tmp.67);
+        %tmp.69 = "SecondsLabel";
+        %tmp.56 = newc %tmp.59 (%tmp.60, %tmp.68, %tmp.69);
+        lputv %sec_element.6 %tmp.56;
+        symbol [ sec_element %sec_element.6 69 12 23 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 76 8 ]
+        %tmp.70 = lgetv %sec_element.6;
+        symbol [ sec_element %tmp.70 76 8 19 ];
+        symbol [ render %tmp.71 76 20 26 ];
+        %tmp.71 = getv function %tmp.70 :render;
+        invoke %tmp.70 %tmp.71();
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 79 8 ]
+        %tmp.72 = lgetv %dc;
+        symbol [ dc %tmp.72 79 8 10 ];
+        symbol [ setColor %tmp.73 79 11 19 ];
+        %tmp.73 = getv function %tmp.72 :setColor;
+        symbol [ Graphics %tmp.74 79 20 28 ];
+        %tmp.74 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.75 79 29 40 ];
+        %tmp.75 = getv %tmp.74 :COLOR_WHITE;
+        symbol [ Graphics %tmp.76 79 41 49 ];
+        %tmp.76 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.77 79 50 61 ];
+        %tmp.77 = getv %tmp.76 :COLOR_WHITE;
+        invoke %tmp.72 %tmp.73(%tmp.75, %tmp.77);
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 80 8 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 80 8 10 ];
+        symbol [ drawCircle %tmp.79 80 11 21 ];
+        %tmp.79 = getv function %tmp.78 :drawCircle;
+        %tmp.80 = 145;
+        %tmp.81 = 31;
+        %tmp.82 = 20;
+        invoke %tmp.78 %tmp.79(%tmp.80, %tmp.81, %tmp.82);
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 87 8 ]
+        symbol [ View %tmp.84 87 8 12 ];
+        %tmp.84 = getv ? :View;
+        symbol [ onUpdate %tmp.85 87 13 21 ];
+        %tmp.85 = getv function %tmp.84 :onUpdate;
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 87 22 24 ];
+        invoke %tmp.84 %tmp.85(%tmp.86);
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_42_40_88_4_stop:
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 38; @symbol_functiondef = [onHide,38,13,19]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 93; @symbol_functiondef = [onHide,93,13,19]; ]
     function onHide() as Void {
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 42; @symbol_functiondef = [onExitSleep,42,13,24]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 97; @symbol_functiondef = [onExitSleep,97,13,24]; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 46; @symbol_functiondef = [onEnterSleep,46,13,25]; ]
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 101; @symbol_functiondef = [onEnterSleep,101,13,25]; ]
     function onEnterSleep() as Void {
     }
 }

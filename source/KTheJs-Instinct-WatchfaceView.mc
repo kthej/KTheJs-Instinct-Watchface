@@ -3,11 +3,29 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 
+class DataElement{
+    protected var elementView;
+    protected var elementString;
+    protected var layoutId;
+
+    public function initialize(vView, vString, vLayoutId as String){
+        
+        elementString = vString;
+        elementView = vView.findDrawableById(vLayoutId);
+    }
+    public function render(){
+        elementView.setText(elementString);
+    }
+
+}
+
+
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     function initialize() {
         WatchFace.initialize();
     }
+
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
@@ -19,14 +37,51 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // loading resources into memory.
     function onShow() as Void {
     }
-
+    
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        // Get and show the current time
+        
+        // Current Time
+
         var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var view = View.findDrawableById("TimeLabel") as Text;
-        view.setText(timeString);
+        var clock_element = new DataElement(self,
+            Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]),
+            "TimeLabel"
+             );
+        clock_element.render();
+        
+        //Heart Rate
+
+        var currentHeartRate = Activity.getActivityInfo().currentHeartRate;
+        var hr_element = new DataElement(
+            self,
+            Lang.format("$1$", [currentHeartRate]),
+            "HeartRateLabel"
+        );
+        
+       if (currentHeartRate != null){
+        hr_element.render();
+       }
+
+        // Seconds
+
+        var seconds = System.getClockTime().sec;
+        var sec_element = new DataElement(
+            self,
+            Lang.format("$1$",[seconds]),
+            "SecondsLabel"
+
+        );
+
+        sec_element.render();
+        
+        //Testing Graphics Drawing
+        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_WHITE);
+        dc.drawCircle(145,31,20);
+
+        
+        
+        
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
