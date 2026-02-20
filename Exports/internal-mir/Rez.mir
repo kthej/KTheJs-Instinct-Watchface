@@ -1,0 +1,1750 @@
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    module Layouts {
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 13; @symbol_functiondef = [WatchFace,13,17,26]; @symbol_param<0> = [dc,13,27,29]; @symbol_param<0>_type<0> = [Graphics,13,33,41]; @symbol_param<0>_type<1> = [Dc,13,42,44]; @symbol_return<0> = [Array,13,49,54]; @symbol_return<1> = [WatchUi,13,55,62]; @symbol_return<2> = [Drawable,13,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start:
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 14 12 ]
+            [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_var_dc_getWidth.1 = local;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 14 16 45 ];
+            %tmp.1 = lgetv %dc;
+            symbol [ dc %tmp.1 14 48 50 ];
+            symbol [ getWidth %tmp.2 14 51 59 ];
+            %tmp.2 = getv function %tmp.1 :getWidth;
+            %tmp.3 = invoke %tmp.1 %tmp.2();
+            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
+            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 14 16 45 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 16 12 ]
+            [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
+            symbol [ WatchUi %tmp.6 16 51 58 ];
+            %tmp.6 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.7 16 59 63 ];
+            %tmp.7 = getv function ? %tmp.6 :Text;
+            %tmp.8 = newd 6;
+            %tmp.10 = const :identifier;
+            symbol [ identifier %tmp.10 16 66 76 const ];
+            %tmp.11 = "TimeLabel";
+            %tmp.12 = dup %tmp.8;
+            %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
+            %tmp.15 = const :color;
+            symbol [ color %tmp.15 16 92 97 const ];
+            symbol [ Graphics %tmp.16 16 99 107 ];
+            %tmp.16 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.17 16 108 119 ];
+            %tmp.17 = getv %tmp.16 :COLOR_WHITE;
+            %tmp.18 = dup %tmp.13;
+            %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
+            %tmp.21 = const :locX;
+            symbol [ locX %tmp.21 16 122 126 const ];
+            %tmp.22 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.22 16 129 158 ];
+            %tmp.23 = 0.5;
+            %tmp.24 = mul %tmp.22 %tmp.23;
+            %tmp.25 = dup %tmp.19;
+            %tmp.26 = aputv %tmp.25 %tmp.21 %tmp.24;
+            %tmp.28 = const :locY;
+            symbol [ locY %tmp.28 16 168 172 const ];
+            %tmp.29 = lgetv %dc;
+            symbol [ dc %tmp.29 16 176 178 ];
+            symbol [ getHeight %tmp.30 16 179 188 ];
+            %tmp.30 = getv function %tmp.29 :getHeight;
+            %tmp.31 = invoke %tmp.29 %tmp.30();
+            %tmp.32 = lgetv %dc;
+            symbol [ dc %tmp.32 16 193 195 ];
+            symbol [ getFontHeight %tmp.33 16 196 209 ];
+            %tmp.33 = getv function %tmp.32 :getFontHeight;
+            symbol [ Graphics %tmp.34 16 210 218 ];
+            %tmp.34 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.35 16 219 239 ];
+            %tmp.35 = getv %tmp.34 :FONT_NUMBER_THAI_HOT;
+            %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
+            %tmp.37 = sub %tmp.31 %tmp.36;
+            %tmp.38 = 0.5;
+            %tmp.39 = mul %tmp.37 %tmp.38;
+            %tmp.40 = dup %tmp.26;
+            %tmp.41 = aputv %tmp.40 %tmp.28 %tmp.39;
+            %tmp.43 = const :justification;
+            symbol [ justification %tmp.43 16 251 264 const ];
+            symbol [ Graphics %tmp.44 16 266 274 ];
+            %tmp.44 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.45 16 275 294 ];
+            %tmp.45 = getv %tmp.44 :TEXT_JUSTIFY_CENTER;
+            %tmp.46 = dup %tmp.41;
+            %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
+            %tmp.49 = const :font;
+            symbol [ font %tmp.49 16 297 301 const ];
+            symbol [ Graphics %tmp.50 16 303 311 ];
+            %tmp.50 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.51 16 312 332 ];
+            %tmp.51 = getv %tmp.50 :FONT_NUMBER_THAI_HOT;
+            %tmp.52 = dup %tmp.47;
+            %tmp.53 = aputv %tmp.52 %tmp.49 %tmp.51;
+            %tmp.4 = newc %tmp.7 (%tmp.53);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.4;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 18 12 ]
+            [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_HeartRateLabel.3 = local;
+            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.3 18 16 49 ];
+            symbol [ WatchUi %tmp.56 18 56 63 ];
+            %tmp.56 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.57 18 64 68 ];
+            %tmp.57 = getv function ? %tmp.56 :Text;
+            %tmp.58 = newd 6;
+            %tmp.60 = const :identifier;
+            symbol [ identifier %tmp.60 18 71 81 const ];
+            %tmp.61 = "HeartRateLabel";
+            %tmp.62 = dup %tmp.58;
+            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
+            %tmp.65 = const :color;
+            symbol [ color %tmp.65 18 102 107 const ];
+            symbol [ Graphics %tmp.66 18 109 117 ];
+            %tmp.66 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.67 18 118 129 ];
+            %tmp.67 = getv %tmp.66 :COLOR_WHITE;
+            %tmp.68 = dup %tmp.63;
+            %tmp.69 = aputv %tmp.68 %tmp.65 %tmp.67;
+            %tmp.71 = const :locX;
+            symbol [ locX %tmp.71 18 132 136 const ];
+            %tmp.72 = lgetv %rez_cmp_local_var_dc_getWidth.1;
+            symbol [ rez_cmp_local_var_dc_getWidth %tmp.72 18 139 168 ];
+            %tmp.73 = 0.5;
+            %tmp.74 = mul %tmp.72 %tmp.73;
+            %tmp.75 = dup %tmp.69;
+            %tmp.76 = aputv %tmp.75 %tmp.71 %tmp.74;
+            %tmp.78 = const :locY;
+            symbol [ locY %tmp.78 18 178 182 const ];
+            %tmp.79 = 30;
+            %tmp.80 = dup %tmp.76;
+            %tmp.81 = aputv %tmp.80 %tmp.78 %tmp.79;
+            %tmp.83 = const :justification;
+            symbol [ justification %tmp.83 18 189 202 const ];
+            symbol [ Graphics %tmp.84 18 204 212 ];
+            %tmp.84 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.85 18 213 232 ];
+            %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_CENTER;
+            %tmp.86 = dup %tmp.81;
+            %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
+            %tmp.89 = const :font;
+            symbol [ font %tmp.89 18 235 239 const ];
+            symbol [ Graphics %tmp.90 18 241 249 ];
+            %tmp.90 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.91 18 250 260 ];
+            %tmp.91 = getv %tmp.90 :FONT_SMALL;
+            %tmp.92 = dup %tmp.87;
+            %tmp.93 = aputv %tmp.92 %tmp.89 %tmp.91;
+            %tmp.54 = newc %tmp.57 (%tmp.93);
+            lputv %rez_cmp_local_text_HeartRateLabel.3 %tmp.54;
+            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.3 18 16 49 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 20 12 ]
+            [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
+            %rez_cmp_local_text_SecondsLabel.4 = local;
+            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.4 20 16 47 ];
+            symbol [ WatchUi %tmp.96 20 54 61 ];
+            %tmp.96 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.97 20 62 66 ];
+            %tmp.97 = getv function ? %tmp.96 :Text;
+            %tmp.98 = newd 6;
+            %tmp.100 = const :identifier;
+            symbol [ identifier %tmp.100 20 69 79 const ];
+            %tmp.101 = "SecondsLabel";
+            %tmp.102 = dup %tmp.98;
+            %tmp.103 = aputv %tmp.102 %tmp.100 %tmp.101;
+            %tmp.105 = const :color;
+            symbol [ color %tmp.105 20 98 103 const ];
+            symbol [ Graphics %tmp.106 20 105 113 ];
+            %tmp.106 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLACK %tmp.107 20 114 125 ];
+            %tmp.107 = getv %tmp.106 :COLOR_BLACK;
+            %tmp.108 = dup %tmp.103;
+            %tmp.109 = aputv %tmp.108 %tmp.105 %tmp.107;
+            %tmp.111 = const :locX;
+            symbol [ locX %tmp.111 20 128 132 const ];
+            %tmp.112 = 144;
+            %tmp.113 = dup %tmp.109;
+            %tmp.114 = aputv %tmp.113 %tmp.111 %tmp.112;
+            %tmp.116 = const :locY;
+            symbol [ locY %tmp.116 20 140 144 const ];
+            %tmp.117 = 32;
+            %tmp.118 = dup %tmp.114;
+            %tmp.119 = aputv %tmp.118 %tmp.116 %tmp.117;
+            %tmp.121 = const :justification;
+            symbol [ justification %tmp.121 20 151 164 const ];
+            symbol [ Graphics %tmp.122 20 166 174 ];
+            %tmp.122 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.123 20 175 194 ];
+            %tmp.123 = getv %tmp.122 :TEXT_JUSTIFY_CENTER;
+            symbol [ Graphics %tmp.124 20 195 203 ];
+            %tmp.124 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_VCENTER %tmp.125 20 204 224 ];
+            %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_VCENTER;
+            %tmp.126 = bitor %tmp.123 %tmp.125;
+            %tmp.127 = dup %tmp.119;
+            %tmp.128 = aputv %tmp.127 %tmp.121 %tmp.126;
+            %tmp.130 = const :font;
+            symbol [ font %tmp.130 20 227 231 const ];
+            symbol [ Graphics %tmp.131 20 233 241 ];
+            %tmp.131 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_MEDIUM %tmp.132 20 242 260 ];
+            %tmp.132 = getv %tmp.131 :FONT_NUMBER_MEDIUM;
+            %tmp.133 = dup %tmp.128;
+            %tmp.134 = aputv %tmp.133 %tmp.130 %tmp.132;
+            %tmp.94 = newc %tmp.97 (%tmp.134);
+            lputv %rez_cmp_local_text_SecondsLabel.4 %tmp.94;
+            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.4 20 16 47 ];
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 22 12 ]
+            %tmp.135 = newa 3 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.135 22 121 126 ];
+            symbol [ WatchUi %tmp.135 22 127 134 ];
+            symbol [ Drawable %tmp.135 22 135 143 ];
+            %tmp.136 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.136 22 20 48 ];
+            %tmp.137 = dup %tmp.135;
+            %tmp.138 = aputv %tmp.137 0 %tmp.136;
+            %tmp.139 = lgetv %rez_cmp_local_text_HeartRateLabel.3;
+            symbol [ rez_cmp_local_text_HeartRateLabel %tmp.139 22 50 83 ];
+            %tmp.140 = dup %tmp.138;
+            %tmp.141 = aputv %tmp.140 1 %tmp.139;
+            %tmp.142 = lgetv %rez_cmp_local_text_SecondsLabel.4;
+            symbol [ rez_cmp_local_text_SecondsLabel %tmp.142 22 85 116 ];
+            %tmp.143 = dup %tmp.141;
+            %tmp.144 = aputv %tmp.143 2 %tmp.142;
+            ret %tmp.144;
+_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_Exports_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop:
+        }
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 26; @symbol_moduledef = [Strings,26,11,18]; ]
+    module Strings {
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 26; ]
+        <init> {
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 27; @position = 27; initialized = true; @symbol_vardef = [AppName,27,27,34]; @symbol_type<0> = [ResourceId,27,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 30; @symbol_moduledef = [Styles,30,11,17]; ]
+    module Styles {
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 31; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,31,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 31; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 32; @position = 18; @symbol_constdef = [exclude,32,18,25]; @symbol_type<0> = [Boolean,32,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 35; @symbol_moduledef = [system_size__menu_header,35,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 35; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 36; @position = 18; @symbol_constdef = [width,36,18,23]; @symbol_type<0> = [Number,36,27,33]; ]
+            const width as Number = 175;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 37; @position = 18; @symbol_constdef = [height,37,18,24]; @symbol_type<0> = [Number,37,28,34]; ]
+            const height as Number = 62;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 40; @symbol_moduledef = [system_loc__hint_button_left_bottom,40,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 40; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 41; @position = 18; @symbol_constdef = [exclude,41,18,25]; @symbol_type<0> = [Boolean,41,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 44; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,44,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 44; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 45; @position = 18; @symbol_constdef = [exclude,45,18,25]; @symbol_type<0> = [Boolean,45,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 48; @symbol_moduledef = [prompt_loc__body_no_title,48,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 48; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 49; @position = 18; @symbol_constdef = [x,49,18,19]; @symbol_type<0> = [Number,49,23,29]; ]
+            const x as Number = 5;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 50; @position = 18; @symbol_constdef = [y,50,18,19]; @symbol_type<0> = [Number,50,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 53; @symbol_moduledef = [system_icon_dark__about,53,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 53; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 54; @position = 18; @symbol_constdef = [filename,54,18,26]; @symbol_type<0> = [String,54,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__about.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 55; @position = 18; @symbol_constdef = [disableTransparency,55,18,37]; @symbol_type<0> = [Boolean,55,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 56; @position = 18; @symbol_constdef = [dithering,56,18,27]; @symbol_type<0> = [String,56,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [automaticPalette,57,18,34]; @symbol_type<0> = [Boolean,57,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 60; @symbol_moduledef = [system_icon_light__question,60,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 60; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [filename,61,18,26]; @symbol_type<0> = [String,61,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__question.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [disableTransparency,62,18,37]; @symbol_type<0> = [Boolean,62,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 63; @position = 18; @symbol_constdef = [dithering,63,18,27]; @symbol_type<0> = [String,63,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 64; @position = 18; @symbol_constdef = [automaticPalette,64,18,34]; @symbol_type<0> = [Boolean,64,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 67; @symbol_moduledef = [system_loc__hint_button_left_top,67,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 67; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [exclude,68,18,25]; @symbol_type<0> = [Boolean,68,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 71; @symbol_moduledef = [prompt_font__title,71,15,33]; ]
+        module prompt_font__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 71; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 72 18 ]
+                symbol [ Graphics %tmp.145 72 34 42 ];
+                %tmp.145 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_RIGHT %tmp.146 72 43 61 ];
+                %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_RIGHT;
+                symbol [ Graphics %tmp.147 72 62 70 ];
+                %tmp.147 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.148 72 71 91 ];
+                %tmp.148 = getv %tmp.147 :TEXT_JUSTIFY_VCENTER;
+                %tmp.149 = bitor %tmp.146 %tmp.148;
+                putv self :justification %tmp.149;
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 73 18 ]
+                symbol [ Graphics %tmp.150 73 25 33 ];
+                %tmp.150 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.151 73 34 43 ];
+                %tmp.151 = getv %tmp.150 :FONT_TINY;
+                putv self :font %tmp.151;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [justification,72,18,31]; ]
+            const justification;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [font,73,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 76; @symbol_moduledef = [system_icon_dark__discard,76,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 77; @position = 18; @symbol_constdef = [filename,77,18,26]; @symbol_type<0> = [String,77,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__discard.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 78; @position = 18; @symbol_constdef = [disableTransparency,78,18,37]; @symbol_type<0> = [Boolean,78,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 79; @position = 18; @symbol_constdef = [dithering,79,18,27]; @symbol_type<0> = [String,79,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [automaticPalette,80,18,34]; @symbol_type<0> = [Boolean,80,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 83; @symbol_moduledef = [system_size__menu_item,83,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 83; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [width,84,18,23]; @symbol_type<0> = [Number,84,27,33]; ]
+            const width as Number = 175;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [height,85,18,24]; @symbol_type<0> = [Number,85,28,34]; ]
+            const height as Number = 58;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 88; @symbol_moduledef = [system_color_dark__text,88,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 88; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 90 18 ]
+                symbol [ Graphics %tmp.152 90 31 39 ];
+                %tmp.152 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.153 90 40 57 ];
+                %tmp.153 = getv %tmp.152 :COLOR_TRANSPARENT;
+                putv self :background %tmp.153;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [color,89,18,23]; @symbol_type<0> = [Number,89,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [background,90,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 93; @symbol_moduledef = [system_icon_destructive__discard,93,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 94; @position = 18; @symbol_constdef = [filename,94,18,26]; @symbol_type<0> = [String,94,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__discard.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 95; @position = 18; @symbol_constdef = [disableTransparency,95,18,37]; @symbol_type<0> = [Boolean,95,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [dithering,96,18,27]; @symbol_type<0> = [String,96,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [automaticPalette,97,18,34]; @symbol_type<0> = [Boolean,97,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 100; @symbol_moduledef = [system_icon_dark__hint_action_menu,100,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 100; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [filename,101,18,26]; @symbol_type<0> = [String,101,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [disableTransparency,102,18,37]; @symbol_type<0> = [Boolean,102,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 103; @position = 18; @symbol_constdef = [dithering,103,18,27]; @symbol_type<0> = [String,103,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 104; @position = 18; @symbol_constdef = [automaticPalette,104,18,34]; @symbol_type<0> = [Boolean,104,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 107; @symbol_moduledef = [prompt_size__title,107,15,33]; ]
+        module prompt_size__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 107; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 108; @position = 18; @symbol_constdef = [width,108,18,23]; @symbol_type<0> = [Number,108,27,33]; ]
+            const width as Number = 67;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 109; @position = 18; @symbol_constdef = [height,109,18,24]; @symbol_type<0> = [Number,109,28,34]; ]
+            const height as Number = 60;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 112; @symbol_moduledef = [confirmation_font__body,112,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 112; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 113 18 ]
+                symbol [ Graphics %tmp.154 113 34 42 ];
+                %tmp.154 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.155 113 43 62 ];
+                %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.155;
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 114 18 ]
+                symbol [ Graphics %tmp.156 114 25 33 ];
+                %tmp.156 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.157 114 34 44 ];
+                %tmp.157 = getv %tmp.156 :FONT_XTINY;
+                putv self :font %tmp.157;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [justification,113,18,31]; ]
+            const justification;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 114; @position = 18; @symbol_constdef = [font,114,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 117; @symbol_moduledef = [system_color_dark__background,117,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 117; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 118; @position = 18; @symbol_constdef = [color,118,18,23]; @symbol_type<0> = [Number,118,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 119; @position = 18; @symbol_constdef = [background,119,18,28]; @symbol_type<0> = [Number,119,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 122; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,122,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 122; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 123; @position = 18; @symbol_constdef = [exclude,123,18,25]; @symbol_type<0> = [Boolean,123,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 126; @symbol_moduledef = [system_size__launch_icon,126,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 126; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 127; @position = 18; @symbol_constdef = [scaleX,127,18,24]; @symbol_type<0> = [Number,127,28,34]; ]
+            const scaleX as Number = 62;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 128; @position = 18; @symbol_constdef = [scaleY,128,18,24]; @symbol_type<0> = [Number,128,28,34]; ]
+            const scaleY as Number = 62;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 129; @position = 18; @symbol_constdef = [scaleRelativeTo,129,18,33]; @symbol_type<0> = [String,129,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 132; @symbol_moduledef = [confirmation_input__confirm,132,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 132; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 133 18 ]
+                symbol [ WatchUi %tmp.158 133 27 34 ];
+                %tmp.158 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.159 133 35 44 ];
+                %tmp.159 = getv %tmp.158 :KEY_ENTER;
+                putv self :button %tmp.159;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [button,133,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 136; @symbol_moduledef = [prompt_font__body_with_title,136,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 136; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 137 18 ]
+                symbol [ Graphics %tmp.160 137 34 42 ];
+                %tmp.160 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.161 137 43 62 ];
+                %tmp.161 = getv %tmp.160 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.161;
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 138 18 ]
+                symbol [ Graphics %tmp.162 138 25 33 ];
+                %tmp.162 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.163 138 34 43 ];
+                %tmp.163 = getv %tmp.162 :FONT_TINY;
+                putv self :font %tmp.163;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [justification,137,18,31]; ]
+            const justification;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 138; @position = 18; @symbol_constdef = [font,138,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 141; @symbol_moduledef = [confirmation_loc__body,141,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 141; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 142; @position = 18; @symbol_constdef = [x,142,18,19]; @symbol_type<0> = [Number,142,23,29]; ]
+            const x as Number = 2;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 143; @position = 18; @symbol_constdef = [y,143,18,19]; @symbol_type<0> = [Number,143,23,29]; ]
+            const y as Number = 81;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 146; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,146,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 146; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 147; @position = 18; @symbol_constdef = [exclude,147,18,25]; @symbol_type<0> = [Boolean,147,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 150; @symbol_moduledef = [prompt_color_dark__background,150,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [background,151,18,28]; @symbol_type<0> = [Number,151,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 154; @symbol_moduledef = [system_icon_destructive__hint_action_menu,154,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [filename,155,18,26]; @symbol_type<0> = [String,155,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [disableTransparency,156,18,37]; @symbol_type<0> = [Boolean,156,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 157; @position = 18; @symbol_constdef = [dithering,157,18,27]; @symbol_type<0> = [String,157,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 158; @position = 18; @symbol_constdef = [automaticPalette,158,18,34]; @symbol_type<0> = [Boolean,158,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 161; @symbol_moduledef = [system_loc__hint_action_menu,161,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 161; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 162; @position = 18; @symbol_constdef = [x,162,18,19]; @symbol_type<0> = [Number,162,23,29]; ]
+            const x as Number = 166;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 163; @position = 18; @symbol_constdef = [y,163,18,19]; @symbol_type<0> = [Number,163,23,29]; ]
+            const y as Number = 31;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 164; @position = 18; @symbol_constdef = [horizontalJustification,164,18,41]; @symbol_type<0> = [String,164,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [verticalJustification,165,18,39]; @symbol_type<0> = [String,165,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 168; @symbol_moduledef = [confirmation_icon__hint_confirm,168,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 169; @position = 18; @symbol_constdef = [filename,169,18,26]; @symbol_type<0> = [String,169,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [disableTransparency,170,18,37]; @symbol_type<0> = [Boolean,170,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [dithering,171,18,27]; @symbol_type<0> = [String,171,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 172; @position = 18; @symbol_constdef = [automaticPalette,172,18,34]; @symbol_type<0> = [Boolean,172,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 175; @symbol_moduledef = [system_loc__hint_button_left_middle,175,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 175; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [exclude,176,18,25]; @symbol_type<0> = [Boolean,176,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 179; @symbol_moduledef = [prompt_size__body_no_title,179,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 179; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [width,180,18,23]; @symbol_type<0> = [Number,180,27,33]; ]
+            const width as Number = 166;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [height,181,18,24]; @symbol_type<0> = [Number,181,28,34]; ]
+            const height as Number = 99;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 184; @symbol_moduledef = [system_icon_light__hint_button_left_top,184,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 184; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [exclude,185,18,25]; @symbol_type<0> = [Boolean,185,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 188; @symbol_moduledef = [prompt_color_light__background,188,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 189; @position = 18; @symbol_constdef = [background,189,18,28]; @symbol_type<0> = [Number,189,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 192; @symbol_moduledef = [confirmation_input__delete,192,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 193 18 ]
+                symbol [ WatchUi %tmp.164 193 27 34 ];
+                %tmp.164 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.165 193 35 44 ];
+                %tmp.165 = getv %tmp.164 :KEY_ENTER;
+                putv self :button %tmp.165;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [button,193,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 196; @symbol_moduledef = [system_icon_dark__hint_button_left_top,196,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 196; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 197; @position = 18; @symbol_constdef = [exclude,197,18,25]; @symbol_type<0> = [Boolean,197,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 200; @symbol_moduledef = [system_input__action_menu,200,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 200; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 201 18 ]
+                symbol [ WatchUi %tmp.166 201 27 34 ];
+                %tmp.166 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.167 201 35 44 ];
+                %tmp.167 = getv %tmp.166 :KEY_ENTER;
+                putv self :button %tmp.167;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [button,201,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 204; @symbol_moduledef = [system_icon_light__save,204,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 204; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 205; @position = 18; @symbol_constdef = [filename,205,18,26]; @symbol_type<0> = [String,205,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__save.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 206; @position = 18; @symbol_constdef = [disableTransparency,206,18,37]; @symbol_type<0> = [Boolean,206,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [dithering,207,18,27]; @symbol_type<0> = [String,207,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 208; @position = 18; @symbol_constdef = [automaticPalette,208,18,34]; @symbol_type<0> = [Boolean,208,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 211; @symbol_moduledef = [prompt_color_light__body,211,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 211; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 213 18 ]
+                symbol [ Graphics %tmp.168 213 31 39 ];
+                %tmp.168 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.169 213 40 57 ];
+                %tmp.169 = getv %tmp.168 :COLOR_TRANSPARENT;
+                putv self :background %tmp.169;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [color,212,18,23]; @symbol_type<0> = [Number,212,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [background,213,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 216; @symbol_moduledef = [system_loc__subwindow,216,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 217; @position = 18; @symbol_constdef = [x,217,18,19]; @symbol_type<0> = [Number,217,23,29]; ]
+            const x as Number = 114;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [y,218,18,19]; @symbol_type<0> = [Number,218,23,29]; ]
+            const y as Number = 0;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 221; @symbol_moduledef = [system_icon_light__warning,221,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 221; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 222; @position = 18; @symbol_constdef = [filename,222,18,26]; @symbol_type<0> = [String,222,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__warning.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [disableTransparency,223,18,37]; @symbol_type<0> = [Boolean,223,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 224; @position = 18; @symbol_constdef = [dithering,224,18,27]; @symbol_type<0> = [String,224,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 225; @position = 18; @symbol_constdef = [automaticPalette,225,18,34]; @symbol_type<0> = [Boolean,225,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 228; @symbol_moduledef = [confirmation_color_light__body,228,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 228; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 230 18 ]
+                symbol [ Graphics %tmp.170 230 31 39 ];
+                %tmp.170 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.171 230 40 57 ];
+                %tmp.171 = getv %tmp.170 :COLOR_TRANSPARENT;
+                putv self :background %tmp.171;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [color,229,18,23]; @symbol_type<0> = [Number,229,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [background,230,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 233; @symbol_moduledef = [confirmation_icon_light__hint_keep,233,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [filename,234,18,26]; @symbol_type<0> = [String,234,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [disableTransparency,235,18,37]; @symbol_type<0> = [Boolean,235,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 236; @position = 18; @symbol_constdef = [dithering,236,18,27]; @symbol_type<0> = [String,236,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 237; @position = 18; @symbol_constdef = [automaticPalette,237,18,34]; @symbol_type<0> = [Boolean,237,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 240; @symbol_moduledef = [activity_color_light__background,240,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 241; @position = 18; @symbol_constdef = [color,241,18,23]; @symbol_type<0> = [Number,241,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 242; @position = 18; @symbol_constdef = [background,242,18,28]; @symbol_type<0> = [Number,242,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 245; @symbol_moduledef = [system_icon_positive__hint_button_right_top,245,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 245; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 246; @position = 18; @symbol_constdef = [filename,246,18,26]; @symbol_type<0> = [String,246,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 247; @position = 18; @symbol_constdef = [disableTransparency,247,18,37]; @symbol_type<0> = [Boolean,247,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 248; @position = 18; @symbol_constdef = [dithering,248,18,27]; @symbol_type<0> = [String,248,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [automaticPalette,249,18,34]; @symbol_type<0> = [Boolean,249,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 252; @symbol_moduledef = [system_size__screen,252,15,34]; ]
+        module system_size__screen {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 252; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 253; @position = 18; @symbol_constdef = [width,253,18,23]; @symbol_type<0> = [Number,253,27,33]; ]
+            const width as Number = 176;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [height,254,18,24]; @symbol_type<0> = [Number,254,28,34]; ]
+            const height as Number = 176;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 257; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,257,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 257; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 258; @position = 18; @symbol_constdef = [exclude,258,18,25]; @symbol_type<0> = [Boolean,258,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 261; @symbol_moduledef = [system_color_light__background,261,15,45]; ]
+        module system_color_light__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 261; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 262; @position = 18; @symbol_constdef = [color,262,18,23]; @symbol_type<0> = [Number,262,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 263; @position = 18; @symbol_constdef = [background,263,18,28]; @symbol_type<0> = [Number,263,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 266; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,266,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 266; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 267; @position = 18; @symbol_constdef = [filename,267,18,26]; @symbol_type<0> = [String,267,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 268; @position = 18; @symbol_constdef = [disableTransparency,268,18,37]; @symbol_type<0> = [Boolean,268,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [dithering,269,18,27]; @symbol_type<0> = [String,269,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [automaticPalette,270,18,34]; @symbol_type<0> = [Boolean,270,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 273; @symbol_moduledef = [confirmation_loc__hint_confirm,273,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [x,274,18,19]; @symbol_type<0> = [Number,274,23,29]; ]
+            const x as Number = 113;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [y,275,18,19]; @symbol_type<0> = [Number,275,23,29]; ]
+            const y as Number = 1;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 278; @symbol_moduledef = [activity_color_dark__text,278,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 278; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 280 18 ]
+                symbol [ Graphics %tmp.172 280 31 39 ];
+                %tmp.172 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.173 280 40 57 ];
+                %tmp.173 = getv %tmp.172 :COLOR_TRANSPARENT;
+                putv self :background %tmp.173;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [color,279,18,23]; @symbol_type<0> = [Number,279,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [background,280,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 283; @symbol_moduledef = [confirmation_input__keep,283,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 283; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 284 18 ]
+                symbol [ WatchUi %tmp.174 284 27 34 ];
+                %tmp.174 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.175 284 35 43 ];
+                %tmp.175 = getv %tmp.174 :KEY_DOWN;
+                putv self :button %tmp.175;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [button,284,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 287; @symbol_moduledef = [prompt_loc__body_with_title,287,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 287; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [x,288,18,19]; @symbol_type<0> = [Number,288,23,29]; ]
+            const x as Number = 5;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 289; @position = 18; @symbol_constdef = [y,289,18,19]; @symbol_type<0> = [Number,289,23,29]; ]
+            const y as Number = 77;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 292; @symbol_moduledef = [system_icon_dark__search,292,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 292; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [filename,293,18,26]; @symbol_type<0> = [String,293,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__search.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [disableTransparency,294,18,37]; @symbol_type<0> = [Boolean,294,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [dithering,295,18,27]; @symbol_type<0> = [String,295,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [automaticPalette,296,18,34]; @symbol_type<0> = [Boolean,296,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 299; @symbol_moduledef = [activity_color_light__text,299,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 299; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 301 18 ]
+                symbol [ Graphics %tmp.176 301 31 39 ];
+                %tmp.176 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.177 301 40 57 ];
+                %tmp.177 = getv %tmp.176 :COLOR_TRANSPARENT;
+                putv self :background %tmp.177;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [color,300,18,23]; @symbol_type<0> = [Number,300,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [background,301,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 304; @symbol_moduledef = [confirmation_icon__hint_keep,304,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 304; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [filename,305,18,26]; @symbol_type<0> = [String,305,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [disableTransparency,306,18,37]; @symbol_type<0> = [Boolean,306,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 307; @position = 18; @symbol_constdef = [dithering,307,18,27]; @symbol_type<0> = [String,307,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 308; @position = 18; @symbol_constdef = [automaticPalette,308,18,34]; @symbol_type<0> = [Boolean,308,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 311; @symbol_moduledef = [system_icon_dark__save,311,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 311; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [filename,312,18,26]; @symbol_type<0> = [String,312,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__save.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [disableTransparency,313,18,37]; @symbol_type<0> = [Boolean,313,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 314; @position = 18; @symbol_constdef = [dithering,314,18,27]; @symbol_type<0> = [String,314,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 315; @position = 18; @symbol_constdef = [automaticPalette,315,18,34]; @symbol_type<0> = [Boolean,315,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 318; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,318,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 319; @position = 18; @symbol_constdef = [exclude,319,18,25]; @symbol_type<0> = [Boolean,319,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 322; @symbol_moduledef = [system_icon_light__search,322,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 322; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [filename,323,18,26]; @symbol_type<0> = [String,323,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__search.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [disableTransparency,324,18,37]; @symbol_type<0> = [Boolean,324,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [dithering,325,18,27]; @symbol_type<0> = [String,325,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 326; @position = 18; @symbol_constdef = [automaticPalette,326,18,34]; @symbol_type<0> = [Boolean,326,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 329; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,329,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 329; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [exclude,330,18,25]; @symbol_type<0> = [Boolean,330,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 333; @symbol_moduledef = [system_icon_positive__hint_button_left_top,333,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 333; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [exclude,334,18,25]; @symbol_type<0> = [Boolean,334,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 337; @symbol_moduledef = [system_loc__hint_button_right_bottom,337,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [exclude,338,18,25]; @symbol_type<0> = [Boolean,338,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 341; @symbol_moduledef = [confirmation_icon_dark__hint_reject,341,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 341; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 342; @position = 18; @symbol_constdef = [filename,342,18,26]; @symbol_type<0> = [String,342,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [disableTransparency,343,18,37]; @symbol_type<0> = [Boolean,343,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [dithering,344,18,27]; @symbol_type<0> = [String,344,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 345; @position = 18; @symbol_constdef = [automaticPalette,345,18,34]; @symbol_type<0> = [Boolean,345,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 348; @symbol_moduledef = [confirmation_color_dark__body,348,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 348; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 350 18 ]
+                symbol [ Graphics %tmp.178 350 31 39 ];
+                %tmp.178 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.179 350 40 57 ];
+                %tmp.179 = getv %tmp.178 :COLOR_TRANSPARENT;
+                putv self :background %tmp.179;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [color,349,18,23]; @symbol_type<0> = [Number,349,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 350; @position = 18; @symbol_constdef = [background,350,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 353; @symbol_moduledef = [confirmation_icon_light__hint_confirm,353,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 353; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [filename,354,18,26]; @symbol_type<0> = [String,354,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 355; @position = 18; @symbol_constdef = [disableTransparency,355,18,37]; @symbol_type<0> = [Boolean,355,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 356; @position = 18; @symbol_constdef = [dithering,356,18,27]; @symbol_type<0> = [String,356,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 357; @position = 18; @symbol_constdef = [automaticPalette,357,18,34]; @symbol_type<0> = [Boolean,357,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 360; @symbol_moduledef = [prompt_color_dark__title,360,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 360; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 362 18 ]
+                symbol [ Graphics %tmp.180 362 31 39 ];
+                %tmp.180 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.181 362 40 57 ];
+                %tmp.181 = getv %tmp.180 :COLOR_TRANSPARENT;
+                putv self :background %tmp.181;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [color,361,18,23]; @symbol_type<0> = [Number,361,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 362; @position = 18; @symbol_constdef = [background,362,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 365; @symbol_moduledef = [system_icon_destructive__cancel,365,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 366; @position = 18; @symbol_constdef = [filename,366,18,26]; @symbol_type<0> = [String,366,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__cancel.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 367; @position = 18; @symbol_constdef = [disableTransparency,367,18,37]; @symbol_type<0> = [Boolean,367,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [dithering,368,18,27]; @symbol_type<0> = [String,368,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [automaticPalette,369,18,34]; @symbol_type<0> = [Boolean,369,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 372; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,372,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [exclude,373,18,25]; @symbol_type<0> = [Boolean,373,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 376; @symbol_moduledef = [prompt_loc__title,376,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 377; @position = 18; @symbol_constdef = [x,377,18,19]; @symbol_type<0> = [Number,377,23,29]; ]
+            const x as Number = 25;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [y,378,18,19]; @symbol_type<0> = [Number,378,23,29]; ]
+            const y as Number = 9;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 381; @symbol_moduledef = [confirmation_font_enhanced_readability__body,381,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [exclude,382,18,25]; @symbol_type<0> = [Boolean,382,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 385; @symbol_moduledef = [prompt_color_light__title,385,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 385; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 387 18 ]
+                symbol [ Graphics %tmp.182 387 31 39 ];
+                %tmp.182 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.183 387 40 57 ];
+                %tmp.183 = getv %tmp.182 :COLOR_TRANSPARENT;
+                putv self :background %tmp.183;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [color,386,18,23]; @symbol_type<0> = [Number,386,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [background,387,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 390; @symbol_moduledef = [system_icon_dark__hint_button_right_top,390,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 390; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 391; @position = 18; @symbol_constdef = [filename,391,18,26]; @symbol_type<0> = [String,391,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [disableTransparency,392,18,37]; @symbol_type<0> = [Boolean,392,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [dithering,393,18,27]; @symbol_type<0> = [String,393,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 394; @position = 18; @symbol_constdef = [automaticPalette,394,18,34]; @symbol_type<0> = [Boolean,394,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 397; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,397,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 397; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [exclude,398,18,25]; @symbol_type<0> = [Boolean,398,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 401; @symbol_moduledef = [confirmation_icon_dark__hint_keep,401,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [disableTransparency,403,18,37]; @symbol_type<0> = [Boolean,403,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [dithering,404,18,27]; @symbol_type<0> = [String,404,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [automaticPalette,405,18,34]; @symbol_type<0> = [Boolean,405,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 408; @symbol_moduledef = [system_icon_light__cancel,408,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__cancel.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [disableTransparency,410,18,37]; @symbol_type<0> = [Boolean,410,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 411; @position = 18; @symbol_constdef = [dithering,411,18,27]; @symbol_type<0> = [String,411,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 412; @position = 18; @symbol_constdef = [automaticPalette,412,18,34]; @symbol_type<0> = [Boolean,412,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 415; @symbol_moduledef = [confirmation_icon_light__hint_reject,415,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 415; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [filename,416,18,26]; @symbol_type<0> = [String,416,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [disableTransparency,417,18,37]; @symbol_type<0> = [Boolean,417,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 418; @position = 18; @symbol_constdef = [dithering,418,18,27]; @symbol_type<0> = [String,418,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 419; @position = 18; @symbol_constdef = [automaticPalette,419,18,34]; @symbol_type<0> = [Boolean,419,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 422; @symbol_moduledef = [system_icon_light__about,422,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [filename,423,18,26]; @symbol_type<0> = [String,423,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__about.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 424; @position = 18; @symbol_constdef = [disableTransparency,424,18,37]; @symbol_type<0> = [Boolean,424,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 425; @position = 18; @symbol_constdef = [dithering,425,18,27]; @symbol_type<0> = [String,425,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 426; @position = 18; @symbol_constdef = [automaticPalette,426,18,34]; @symbol_type<0> = [Boolean,426,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 429; @symbol_moduledef = [system_size__toast_icon,429,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 429; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 430; @position = 18; @symbol_constdef = [width,430,18,23]; @symbol_type<0> = [Number,430,27,33]; ]
+            const width as Number = 44;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [scaleRelativeTo,431,18,33]; @symbol_type<0> = [String,431,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 434; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,434,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 434; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 435; @position = 18; @symbol_constdef = [exclude,435,18,25]; @symbol_type<0> = [Boolean,435,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 438; @symbol_moduledef = [confirmation_icon__hint_reject,438,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 438; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 439; @position = 18; @symbol_constdef = [filename,439,18,26]; @symbol_type<0> = [String,439,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 440; @position = 18; @symbol_constdef = [disableTransparency,440,18,37]; @symbol_type<0> = [Boolean,440,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [dithering,441,18,27]; @symbol_type<0> = [String,441,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 442; @position = 18; @symbol_constdef = [automaticPalette,442,18,34]; @symbol_type<0> = [Boolean,442,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 445; @symbol_moduledef = [system_icon_light__hint_action_menu,445,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 445; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 446; @position = 18; @symbol_constdef = [filename,446,18,26]; @symbol_type<0> = [String,446,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 447; @position = 18; @symbol_constdef = [disableTransparency,447,18,37]; @symbol_type<0> = [Boolean,447,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 448; @position = 18; @symbol_constdef = [dithering,448,18,27]; @symbol_type<0> = [String,448,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [automaticPalette,449,18,34]; @symbol_type<0> = [Boolean,449,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 452; @symbol_moduledef = [system_icon_light__hint_button_right_middle,452,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 452; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 453; @position = 18; @symbol_constdef = [exclude,453,18,25]; @symbol_type<0> = [Boolean,453,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 456; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,456,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 457; @position = 18; @symbol_constdef = [exclude,457,18,25]; @symbol_type<0> = [Boolean,457,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 460; @symbol_moduledef = [confirmation_loc__hint_reject,460,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 461; @position = 18; @symbol_constdef = [x,461,18,19]; @symbol_type<0> = [Number,461,23,29]; ]
+            const x as Number = 0;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 462; @position = 18; @symbol_constdef = [y,462,18,19]; @symbol_type<0> = [Number,462,23,29]; ]
+            const y as Number = 138;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 465; @symbol_moduledef = [confirmation_icon_dark__hint_delete,465,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 465; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 466; @position = 18; @symbol_constdef = [filename,466,18,26]; @symbol_type<0> = [String,466,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 467; @position = 18; @symbol_constdef = [disableTransparency,467,18,37]; @symbol_type<0> = [Boolean,467,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 468; @position = 18; @symbol_constdef = [dithering,468,18,27]; @symbol_type<0> = [String,468,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [automaticPalette,469,18,34]; @symbol_type<0> = [Boolean,469,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 472; @symbol_moduledef = [activity_color_dark__background,472,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 472; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 473; @position = 18; @symbol_constdef = [color,473,18,23]; @symbol_type<0> = [Number,473,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [background,474,18,28]; @symbol_type<0> = [Number,474,32,38]; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 477; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,477,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 477; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 478; @position = 18; @symbol_constdef = [exclude,478,18,25]; @symbol_type<0> = [Boolean,478,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 481; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,481,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 481; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 482; @position = 18; @symbol_constdef = [exclude,482,18,25]; @symbol_type<0> = [Boolean,482,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 485; @symbol_moduledef = [system_size__menu_icon,485,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 486; @position = 18; @symbol_constdef = [scaleX,486,18,24]; @symbol_type<0> = [Number,486,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 487; @position = 18; @symbol_constdef = [scaleY,487,18,24]; @symbol_type<0> = [Number,487,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 488; @position = 18; @symbol_constdef = [scaleRelativeTo,488,18,33]; @symbol_type<0> = [String,488,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 491; @symbol_moduledef = [system_icon_destructive__warning,491,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 491; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [filename,492,18,26]; @symbol_type<0> = [String,492,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__warning.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 493; @position = 18; @symbol_constdef = [disableTransparency,493,18,37]; @symbol_type<0> = [Boolean,493,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 494; @position = 18; @symbol_constdef = [dithering,494,18,27]; @symbol_type<0> = [String,494,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 495; @position = 18; @symbol_constdef = [automaticPalette,495,18,34]; @symbol_type<0> = [Boolean,495,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 498; @symbol_moduledef = [system_loc__hint_button_right_middle,498,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 498; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 499; @position = 18; @symbol_constdef = [exclude,499,18,25]; @symbol_type<0> = [Boolean,499,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 502; @symbol_moduledef = [system_icon_dark__cancel,502,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 502; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 503; @position = 18; @symbol_constdef = [filename,503,18,26]; @symbol_type<0> = [String,503,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__cancel.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 504; @position = 18; @symbol_constdef = [disableTransparency,504,18,37]; @symbol_type<0> = [Boolean,504,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 505; @position = 18; @symbol_constdef = [dithering,505,18,27]; @symbol_type<0> = [String,505,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [automaticPalette,506,18,34]; @symbol_type<0> = [Boolean,506,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 509; @symbol_moduledef = [prompt_size__body_with_title,509,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 509; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 510; @position = 18; @symbol_constdef = [width,510,18,23]; @symbol_type<0> = [Number,510,27,33]; ]
+            const width as Number = 166;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [height,511,18,24]; @symbol_type<0> = [Number,511,28,34]; ]
+            const height as Number = 99;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 514; @symbol_moduledef = [system_loc__hint_button_right_top,514,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 514; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 515; @position = 18; @symbol_constdef = [x,515,18,19]; @symbol_type<0> = [Number,515,23,29]; ]
+            const x as Number = 166;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 516; @position = 18; @symbol_constdef = [y,516,18,19]; @symbol_type<0> = [Number,516,23,29]; ]
+            const y as Number = 31;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 517; @position = 18; @symbol_constdef = [horizontalJustification,517,18,41]; @symbol_type<0> = [String,517,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [verticalJustification,518,18,39]; @symbol_type<0> = [String,518,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 521; @symbol_moduledef = [system_color_light__text,521,15,39]; ]
+        module system_color_light__text {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 521; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 523 18 ]
+                symbol [ Graphics %tmp.184 523 31 39 ];
+                %tmp.184 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.185 523 40 57 ];
+                %tmp.185 = getv %tmp.184 :COLOR_TRANSPARENT;
+                putv self :background %tmp.185;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [color,522,18,23]; @symbol_type<0> = [Number,522,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [background,523,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 526; @symbol_moduledef = [system_icon_light__check,526,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 526; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 527; @position = 18; @symbol_constdef = [filename,527,18,26]; @symbol_type<0> = [String,527,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__check.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 528; @position = 18; @symbol_constdef = [disableTransparency,528,18,37]; @symbol_type<0> = [Boolean,528,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [dithering,529,18,27]; @symbol_type<0> = [String,529,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 530; @position = 18; @symbol_constdef = [automaticPalette,530,18,34]; @symbol_type<0> = [Boolean,530,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 533; @symbol_moduledef = [confirmation_input__reject,533,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 533; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 534 18 ]
+                symbol [ WatchUi %tmp.186 534 27 34 ];
+                %tmp.186 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.187 534 35 43 ];
+                %tmp.187 = getv %tmp.186 :KEY_DOWN;
+                putv self :button %tmp.187;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [button,534,18,24]; ]
+            const button;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 537; @symbol_moduledef = [system_icon_light__revert,537,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [filename,538,18,26]; @symbol_type<0> = [String,538,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__revert.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [disableTransparency,539,18,37]; @symbol_type<0> = [Boolean,539,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [dithering,540,18,27]; @symbol_type<0> = [String,540,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [automaticPalette,541,18,34]; @symbol_type<0> = [Boolean,541,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 544; @symbol_moduledef = [system_size__subwindow,544,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [width,545,18,23]; @symbol_type<0> = [Number,545,27,33]; ]
+            const width as Number = 62;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [height,546,18,24]; @symbol_type<0> = [Number,546,28,34]; ]
+            const height as Number = 62;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 549; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,549,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 549; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [exclude,550,18,25]; @symbol_type<0> = [Boolean,550,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 553; @symbol_moduledef = [system_icon_dark__check,553,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 554; @position = 18; @symbol_constdef = [filename,554,18,26]; @symbol_type<0> = [String,554,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__check.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [disableTransparency,555,18,37]; @symbol_type<0> = [Boolean,555,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [dithering,556,18,27]; @symbol_type<0> = [String,556,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 557; @position = 18; @symbol_constdef = [automaticPalette,557,18,34]; @symbol_type<0> = [Boolean,557,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 560; @symbol_moduledef = [confirmation_loc__hint_keep,560,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 560; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 561; @position = 18; @symbol_constdef = [x,561,18,19]; @symbol_type<0> = [Number,561,23,29]; ]
+            const x as Number = 0;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 562; @position = 18; @symbol_constdef = [y,562,18,19]; @symbol_type<0> = [Number,562,23,29]; ]
+            const y as Number = 138;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 565; @symbol_moduledef = [confirmation_loc__hint_delete,565,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 566; @position = 18; @symbol_constdef = [verticallJustification,566,18,40]; @symbol_type<0> = [String,566,44,50]; ]
+            const verticallJustification as String = "center";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 567; @position = 18; @symbol_constdef = [x,567,18,19]; @symbol_type<0> = [Number,567,23,29]; ]
+            const x as Number = 146;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 568; @position = 18; @symbol_constdef = [y,568,18,19]; @symbol_type<0> = [Number,568,23,29]; ]
+            const y as Number = 15;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [horizontalJustification,569,18,41]; @symbol_type<0> = [String,569,45,51]; ]
+            const horizontalJustification as String = "center";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 572; @symbol_moduledef = [system_icon_positive__hint_action_menu,572,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 572; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 573; @position = 18; @symbol_constdef = [filename,573,18,26]; @symbol_type<0> = [String,573,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [disableTransparency,574,18,37]; @symbol_type<0> = [Boolean,574,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [dithering,575,18,27]; @symbol_type<0> = [String,575,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 576; @position = 18; @symbol_constdef = [automaticPalette,576,18,34]; @symbol_type<0> = [Boolean,576,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 579; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,579,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 579; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [exclude,580,18,25]; @symbol_type<0> = [Boolean,580,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 583; @symbol_moduledef = [system_icon_light__hint_button_left_middle,583,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 583; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 584; @position = 18; @symbol_constdef = [exclude,584,18,25]; @symbol_type<0> = [Boolean,584,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 587; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,587,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 587; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 588; @position = 18; @symbol_constdef = [exclude,588,18,25]; @symbol_type<0> = [Boolean,588,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 591; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,591,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 591; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [exclude,592,18,25]; @symbol_type<0> = [Boolean,592,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 595; @symbol_moduledef = [system_icon_dark__revert,595,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 595; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 596; @position = 18; @symbol_constdef = [filename,596,18,26]; @symbol_type<0> = [String,596,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__revert.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 597; @position = 18; @symbol_constdef = [disableTransparency,597,18,37]; @symbol_type<0> = [Boolean,597,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [dithering,598,18,27]; @symbol_type<0> = [String,598,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [automaticPalette,599,18,34]; @symbol_type<0> = [Boolean,599,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 602; @symbol_moduledef = [confirmation_icon_light__hint_delete,602,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 603; @position = 18; @symbol_constdef = [filename,603,18,26]; @symbol_type<0> = [String,603,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 604; @position = 18; @symbol_constdef = [disableTransparency,604,18,37]; @symbol_type<0> = [Boolean,604,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [dithering,605,18,27]; @symbol_type<0> = [String,605,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [automaticPalette,606,18,34]; @symbol_type<0> = [Boolean,606,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 609; @symbol_moduledef = [system_icon_dark__question,609,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 609; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [filename,610,18,26]; @symbol_type<0> = [String,610,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__question.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [disableTransparency,611,18,37]; @symbol_type<0> = [Boolean,611,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 612; @position = 18; @symbol_constdef = [dithering,612,18,27]; @symbol_type<0> = [String,612,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 613; @position = 18; @symbol_constdef = [automaticPalette,613,18,34]; @symbol_type<0> = [Boolean,613,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 616; @symbol_moduledef = [system_icon_light__discard,616,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 617; @position = 18; @symbol_constdef = [filename,617,18,26]; @symbol_type<0> = [String,617,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__discard.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 618; @position = 18; @symbol_constdef = [disableTransparency,618,18,37]; @symbol_type<0> = [Boolean,618,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 619; @position = 18; @symbol_constdef = [dithering,619,18,27]; @symbol_type<0> = [String,619,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [automaticPalette,620,18,34]; @symbol_type<0> = [Boolean,620,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 623; @symbol_moduledef = [device_info,623,15,26]; ]
+        module device_info {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 623; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 625 18 ]
+                symbol [ Toybox %tmp.189 625 32 38 ];
+                %tmp.189 = getv ? :Toybox;
+                symbol [ System %tmp.190 625 39 45 ];
+                %tmp.190 = getv %tmp.189 :System;
+                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.191 625 46 71 ];
+                %tmp.191 = getv %tmp.190 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.191;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [screenWidth,624,18,29]; @symbol_type<0> = [Number,624,33,39]; ]
+            const screenWidth as Number = 176;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [screenShape,625,18,29]; ]
+            const screenShape;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [hasNightMode,626,18,30]; @symbol_type<0> = [Boolean,626,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 627; @position = 18; @symbol_constdef = [hasGpu,627,18,24]; @symbol_type<0> = [Boolean,627,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 628; @position = 18; @symbol_constdef = [screenHeight,628,18,30]; @symbol_type<0> = [Number,628,34,40]; ]
+            const screenHeight as Number = 176;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 629; @position = 18; @symbol_constdef = [hasTouchScreen,629,18,32]; @symbol_type<0> = [Boolean,629,36,43]; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,630,18,44]; @symbol_type<0> = [Boolean,630,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 633; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,633,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 633; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 634; @position = 18; @symbol_constdef = [filename,634,18,26]; @symbol_type<0> = [String,634,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 635; @position = 18; @symbol_constdef = [disableTransparency,635,18,37]; @symbol_type<0> = [Boolean,635,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 636; @position = 18; @symbol_constdef = [dithering,636,18,27]; @symbol_type<0> = [String,636,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [automaticPalette,637,18,34]; @symbol_type<0> = [Boolean,637,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 640; @symbol_moduledef = [prompt_font__body_no_title,640,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 640; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 641 18 ]
+                symbol [ Graphics %tmp.192 641 34 42 ];
+                %tmp.192 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.193 641 43 62 ];
+                %tmp.193 = getv %tmp.192 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.193;
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 642 18 ]
+                symbol [ Graphics %tmp.194 642 25 33 ];
+                %tmp.194 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.195 642 34 43 ];
+                %tmp.195 = getv %tmp.194 :FONT_TINY;
+                putv self :font %tmp.195;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [justification,641,18,31]; ]
+            const justification;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 642; @position = 18; @symbol_constdef = [font,642,18,22]; ]
+            const font;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 645; @symbol_moduledef = [prompt_size__title_icon,645,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 646; @position = 18; @symbol_constdef = [scaleX,646,18,24]; @symbol_type<0> = [Number,646,28,34]; ]
+            const scaleX as Number = 38;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 647; @position = 18; @symbol_constdef = [scaleY,647,18,24]; @symbol_type<0> = [Number,647,28,34]; ]
+            const scaleY as Number = 38;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [scaleRelativeTo,648,18,33]; @symbol_type<0> = [String,648,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 651; @symbol_moduledef = [system_icon_dark__warning,651,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 651; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 652; @position = 18; @symbol_constdef = [filename,652,18,26]; @symbol_type<0> = [String,652,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__warning.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [disableTransparency,653,18,37]; @symbol_type<0> = [Boolean,653,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [dithering,654,18,27]; @symbol_type<0> = [String,654,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 655; @position = 18; @symbol_constdef = [automaticPalette,655,18,34]; @symbol_type<0> = [Boolean,655,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 658; @symbol_moduledef = [prompt_loc__title_icon,658,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 658; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [x,659,18,19]; @symbol_type<0> = [Number,659,23,29]; ]
+            const x as Number = 145;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 660; @position = 18; @symbol_constdef = [y,660,18,19]; @symbol_type<0> = [Number,660,23,29]; ]
+            const y as Number = 31;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 661; @position = 18; @symbol_constdef = [horizontalJustification,661,18,41]; @symbol_type<0> = [String,661,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 662; @position = 18; @symbol_constdef = [verticalJustification,662,18,39]; @symbol_type<0> = [String,662,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 665; @symbol_moduledef = [prompt_font_enhanced_readability__title,665,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 665; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 666; @position = 18; @symbol_constdef = [exclude,666,18,25]; @symbol_type<0> = [Boolean,666,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 669; @symbol_moduledef = [prompt_color_dark__body,669,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 669; ]
+            <init> {
+[ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen" 671 18 ]
+                symbol [ Graphics %tmp.196 671 31 39 ];
+                %tmp.196 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.197 671 40 57 ];
+                %tmp.197 = getv %tmp.196 :COLOR_TRANSPARENT;
+                putv self :background %tmp.197;
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [color,670,18,23]; @symbol_type<0> = [Number,670,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 671; @position = 18; @symbol_constdef = [background,671,18,28]; ]
+            const background;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 674; @symbol_moduledef = [confirmation_icon__hint_delete,674,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 674; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 675; @position = 18; @symbol_constdef = [filename,675,18,26]; @symbol_type<0> = [String,675,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 676; @position = 18; @symbol_constdef = [disableTransparency,676,18,37]; @symbol_type<0> = [Boolean,676,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 677; @position = 18; @symbol_constdef = [dithering,677,18,27]; @symbol_type<0> = [String,677,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 678; @position = 18; @symbol_constdef = [automaticPalette,678,18,34]; @symbol_type<0> = [Boolean,678,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 681; @symbol_moduledef = [system_icon_light__hint_button_right_top,681,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 681; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 682; @position = 18; @symbol_constdef = [filename,682,18,26]; @symbol_type<0> = [String,682,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 683; @position = 18; @symbol_constdef = [disableTransparency,683,18,37]; @symbol_type<0> = [Boolean,683,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 684; @position = 18; @symbol_constdef = [dithering,684,18,27]; @symbol_type<0> = [String,684,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 685; @position = 18; @symbol_constdef = [automaticPalette,685,18,34]; @symbol_type<0> = [Boolean,685,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 688; @symbol_moduledef = [confirmation_size__body,688,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 688; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 689; @position = 18; @symbol_constdef = [width,689,18,23]; @symbol_type<0> = [Number,689,27,33]; ]
+            const width as Number = 173;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 690; @position = 18; @symbol_constdef = [height,690,18,24]; @symbol_type<0> = [Number,690,28,34]; ]
+            const height as Number = 63;
+        }
+        [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 693; @symbol_moduledef = [system_icon_positive__check,693,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 693; ]
+            <init> {
+            }
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 694; @position = 18; @symbol_constdef = [filename,694,18,26]; @symbol_type<0> = [String,694,30,36]; ]
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__check.svg";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 695; @position = 18; @symbol_constdef = [disableTransparency,695,18,37]; @symbol_type<0> = [Boolean,695,41,48]; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 696; @position = 18; @symbol_constdef = [dithering,696,18,27]; @symbol_type<0> = [String,696,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 697; @position = 18; @symbol_constdef = [automaticPalette,697,18,34]; @symbol_type<0> = [Boolean,697,38,45]; ]
+            const automaticPalette as Boolean = true;
+        }
+    }
+}
+[ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/Exports/gen/006-B4585-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
