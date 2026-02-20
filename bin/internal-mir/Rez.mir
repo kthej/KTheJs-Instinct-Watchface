@@ -31,213 +31,241 @@ module Rez {
 _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start:
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 14 12 ]
             [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
-            %rez_cmp_local_var_dc_getWidth.1 = local;
-            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 14 16 45 ];
-            %tmp.1 = lgetv %dc;
-            symbol [ dc %tmp.1 14 48 50 ];
-            symbol [ getWidth %tmp.2 14 51 59 ];
-            %tmp.2 = getv function %tmp.1 :getWidth;
-            %tmp.3 = invoke %tmp.1 %tmp.2();
-            lputv %rez_cmp_local_var_dc_getWidth.1 %tmp.3;
-            symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.1 14 16 45 ];
+            %rez_cmp_local_text_HoursLabel.1 = local;
+            symbol [ rez_cmp_local_text_HoursLabel %rez_cmp_local_text_HoursLabel.1 14 16 45 ];
+            symbol [ WatchUi %tmp.3 14 52 59 ];
+            %tmp.3 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.4 14 60 64 ];
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            symbol [ identifier %tmp.7 14 67 77 const ];
+            %tmp.8 = "HoursLabel";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :color;
+            symbol [ color %tmp.12 14 94 99 const ];
+            symbol [ Graphics %tmp.13 14 101 109 ];
+            %tmp.13 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.14 14 110 121 ];
+            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+            %tmp.15 = dup %tmp.10;
+            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+            %tmp.18 = const :locX;
+            symbol [ locX %tmp.18 14 124 128 const ];
+            %tmp.19 = 50;
+            %tmp.20 = dup %tmp.16;
+            %tmp.21 = aputv %tmp.20 %tmp.18 %tmp.19;
+            %tmp.23 = const :locY;
+            symbol [ locY %tmp.23 14 135 139 const ];
+            %tmp.24 = 50;
+            %tmp.25 = dup %tmp.21;
+            %tmp.26 = aputv %tmp.25 %tmp.23 %tmp.24;
+            %tmp.28 = const :justification;
+            symbol [ justification %tmp.28 14 146 159 const ];
+            symbol [ Graphics %tmp.29 14 161 169 ];
+            %tmp.29 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.30 14 170 189 ];
+            %tmp.30 = getv %tmp.29 :TEXT_JUSTIFY_CENTER;
+            %tmp.31 = dup %tmp.26;
+            %tmp.32 = aputv %tmp.31 %tmp.28 %tmp.30;
+            %tmp.34 = const :font;
+            symbol [ font %tmp.34 14 192 196 const ];
+            symbol [ Graphics %tmp.35 14 198 206 ];
+            %tmp.35 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.36 14 207 227 ];
+            %tmp.36 = getv %tmp.35 :FONT_NUMBER_THAI_HOT;
+            %tmp.37 = dup %tmp.32;
+            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
+            %tmp.1 = newc %tmp.4 (%tmp.38);
+            lputv %rez_cmp_local_text_HoursLabel.1 %tmp.1;
+            symbol [ rez_cmp_local_text_HoursLabel %rez_cmp_local_text_HoursLabel.1 14 16 45 ];
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 16 12 ]
             [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
-            %rez_cmp_local_text_TimeLabel.2 = local;
-            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
-            symbol [ WatchUi %tmp.6 16 51 58 ];
-            %tmp.6 = getm $.Toybox.WatchUi;
-            symbol [ Text %tmp.7 16 59 63 ];
-            %tmp.7 = getv function ? %tmp.6 :Text;
-            %tmp.8 = newd 6;
-            %tmp.10 = const :identifier;
-            symbol [ identifier %tmp.10 16 66 76 const ];
-            %tmp.11 = "TimeLabel";
-            %tmp.12 = dup %tmp.8;
-            %tmp.13 = aputv %tmp.12 %tmp.10 %tmp.11;
-            %tmp.15 = const :color;
-            symbol [ color %tmp.15 16 92 97 const ];
-            symbol [ Graphics %tmp.16 16 99 107 ];
-            %tmp.16 = getm $.Toybox.Graphics;
-            symbol [ COLOR_WHITE %tmp.17 16 108 119 ];
-            %tmp.17 = getv %tmp.16 :COLOR_WHITE;
-            %tmp.18 = dup %tmp.13;
-            %tmp.19 = aputv %tmp.18 %tmp.15 %tmp.17;
-            %tmp.21 = const :locX;
-            symbol [ locX %tmp.21 16 122 126 const ];
-            %tmp.22 = lgetv %rez_cmp_local_var_dc_getWidth.1;
-            symbol [ rez_cmp_local_var_dc_getWidth %tmp.22 16 129 158 ];
-            %tmp.23 = 0.5;
-            %tmp.24 = mul %tmp.22 %tmp.23;
-            %tmp.25 = dup %tmp.19;
-            %tmp.26 = aputv %tmp.25 %tmp.21 %tmp.24;
-            %tmp.28 = const :locY;
-            symbol [ locY %tmp.28 16 168 172 const ];
-            %tmp.29 = lgetv %dc;
-            symbol [ dc %tmp.29 16 176 178 ];
-            symbol [ getHeight %tmp.30 16 179 188 ];
-            %tmp.30 = getv function %tmp.29 :getHeight;
-            %tmp.31 = invoke %tmp.29 %tmp.30();
-            %tmp.32 = lgetv %dc;
-            symbol [ dc %tmp.32 16 193 195 ];
-            symbol [ getFontHeight %tmp.33 16 196 209 ];
-            %tmp.33 = getv function %tmp.32 :getFontHeight;
-            symbol [ Graphics %tmp.34 16 210 218 ];
-            %tmp.34 = getm $.Toybox.Graphics;
-            symbol [ FONT_NUMBER_THAI_HOT %tmp.35 16 219 239 ];
-            %tmp.35 = getv %tmp.34 :FONT_NUMBER_THAI_HOT;
-            %tmp.36 = invoke %tmp.32 %tmp.33(%tmp.35);
-            %tmp.37 = sub %tmp.31 %tmp.36;
-            %tmp.38 = 0.5;
-            %tmp.39 = mul %tmp.37 %tmp.38;
-            %tmp.40 = dup %tmp.26;
-            %tmp.41 = aputv %tmp.40 %tmp.28 %tmp.39;
-            %tmp.43 = const :justification;
-            symbol [ justification %tmp.43 16 251 264 const ];
-            symbol [ Graphics %tmp.44 16 266 274 ];
-            %tmp.44 = getm $.Toybox.Graphics;
-            symbol [ TEXT_JUSTIFY_CENTER %tmp.45 16 275 294 ];
-            %tmp.45 = getv %tmp.44 :TEXT_JUSTIFY_CENTER;
-            %tmp.46 = dup %tmp.41;
-            %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
-            %tmp.49 = const :font;
-            symbol [ font %tmp.49 16 297 301 const ];
-            symbol [ Graphics %tmp.50 16 303 311 ];
-            %tmp.50 = getm $.Toybox.Graphics;
-            symbol [ FONT_NUMBER_THAI_HOT %tmp.51 16 312 332 ];
-            %tmp.51 = getv %tmp.50 :FONT_NUMBER_THAI_HOT;
-            %tmp.52 = dup %tmp.47;
-            %tmp.53 = aputv %tmp.52 %tmp.49 %tmp.51;
-            %tmp.4 = newc %tmp.7 (%tmp.53);
-            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.4;
-            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 16 16 44 ];
+            %rez_cmp_local_text_MinutesLabel.2 = local;
+            symbol [ rez_cmp_local_text_MinutesLabel %rez_cmp_local_text_MinutesLabel.2 16 16 47 ];
+            symbol [ WatchUi %tmp.41 16 54 61 ];
+            %tmp.41 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.42 16 62 66 ];
+            %tmp.42 = getv function ? %tmp.41 :Text;
+            %tmp.43 = newd 6;
+            %tmp.45 = const :identifier;
+            symbol [ identifier %tmp.45 16 69 79 const ];
+            %tmp.46 = "MinutesLabel";
+            %tmp.47 = dup %tmp.43;
+            %tmp.48 = aputv %tmp.47 %tmp.45 %tmp.46;
+            %tmp.50 = const :color;
+            symbol [ color %tmp.50 16 98 103 const ];
+            symbol [ Graphics %tmp.51 16 105 113 ];
+            %tmp.51 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.52 16 114 125 ];
+            %tmp.52 = getv %tmp.51 :COLOR_WHITE;
+            %tmp.53 = dup %tmp.48;
+            %tmp.54 = aputv %tmp.53 %tmp.50 %tmp.52;
+            %tmp.56 = const :locX;
+            symbol [ locX %tmp.56 16 128 132 const ];
+            %tmp.57 = 50;
+            %tmp.58 = dup %tmp.54;
+            %tmp.59 = aputv %tmp.58 %tmp.56 %tmp.57;
+            %tmp.61 = const :locY;
+            symbol [ locY %tmp.61 16 139 143 const ];
+            %tmp.62 = 100;
+            %tmp.63 = dup %tmp.59;
+            %tmp.64 = aputv %tmp.63 %tmp.61 %tmp.62;
+            %tmp.66 = const :justification;
+            symbol [ justification %tmp.66 16 151 164 const ];
+            symbol [ Graphics %tmp.67 16 166 174 ];
+            %tmp.67 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.68 16 175 194 ];
+            %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_CENTER;
+            %tmp.69 = dup %tmp.64;
+            %tmp.70 = aputv %tmp.69 %tmp.66 %tmp.68;
+            %tmp.72 = const :font;
+            symbol [ font %tmp.72 16 197 201 const ];
+            symbol [ Graphics %tmp.73 16 203 211 ];
+            %tmp.73 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_THAI_HOT %tmp.74 16 212 232 ];
+            %tmp.74 = getv %tmp.73 :FONT_NUMBER_THAI_HOT;
+            %tmp.75 = dup %tmp.70;
+            %tmp.76 = aputv %tmp.75 %tmp.72 %tmp.74;
+            %tmp.39 = newc %tmp.42 (%tmp.76);
+            lputv %rez_cmp_local_text_MinutesLabel.2 %tmp.39;
+            symbol [ rez_cmp_local_text_MinutesLabel %rez_cmp_local_text_MinutesLabel.2 16 16 47 ];
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 18 12 ]
             [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
-            %rez_cmp_local_text_HeartRateLabel.3 = local;
-            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.3 18 16 49 ];
-            symbol [ WatchUi %tmp.56 18 56 63 ];
-            %tmp.56 = getm $.Toybox.WatchUi;
-            symbol [ Text %tmp.57 18 64 68 ];
-            %tmp.57 = getv function ? %tmp.56 :Text;
-            %tmp.58 = newd 6;
-            %tmp.60 = const :identifier;
-            symbol [ identifier %tmp.60 18 71 81 const ];
-            %tmp.61 = "HeartRateLabel";
-            %tmp.62 = dup %tmp.58;
-            %tmp.63 = aputv %tmp.62 %tmp.60 %tmp.61;
-            %tmp.65 = const :color;
-            symbol [ color %tmp.65 18 102 107 const ];
-            symbol [ Graphics %tmp.66 18 109 117 ];
-            %tmp.66 = getm $.Toybox.Graphics;
-            symbol [ COLOR_WHITE %tmp.67 18 118 129 ];
-            %tmp.67 = getv %tmp.66 :COLOR_WHITE;
-            %tmp.68 = dup %tmp.63;
-            %tmp.69 = aputv %tmp.68 %tmp.65 %tmp.67;
-            %tmp.71 = const :locX;
-            symbol [ locX %tmp.71 18 132 136 const ];
-            %tmp.72 = lgetv %rez_cmp_local_var_dc_getWidth.1;
-            symbol [ rez_cmp_local_var_dc_getWidth %tmp.72 18 139 168 ];
-            %tmp.73 = 0.5;
-            %tmp.74 = mul %tmp.72 %tmp.73;
-            %tmp.75 = dup %tmp.69;
-            %tmp.76 = aputv %tmp.75 %tmp.71 %tmp.74;
-            %tmp.78 = const :locY;
-            symbol [ locY %tmp.78 18 178 182 const ];
-            %tmp.79 = 30;
-            %tmp.80 = dup %tmp.76;
-            %tmp.81 = aputv %tmp.80 %tmp.78 %tmp.79;
-            %tmp.83 = const :justification;
-            symbol [ justification %tmp.83 18 189 202 const ];
-            symbol [ Graphics %tmp.84 18 204 212 ];
-            %tmp.84 = getm $.Toybox.Graphics;
-            symbol [ TEXT_JUSTIFY_CENTER %tmp.85 18 213 232 ];
-            %tmp.85 = getv %tmp.84 :TEXT_JUSTIFY_CENTER;
-            %tmp.86 = dup %tmp.81;
-            %tmp.87 = aputv %tmp.86 %tmp.83 %tmp.85;
-            %tmp.89 = const :font;
-            symbol [ font %tmp.89 18 235 239 const ];
-            symbol [ Graphics %tmp.90 18 241 249 ];
-            %tmp.90 = getm $.Toybox.Graphics;
-            symbol [ FONT_SMALL %tmp.91 18 250 260 ];
-            %tmp.91 = getv %tmp.90 :FONT_SMALL;
-            %tmp.92 = dup %tmp.87;
-            %tmp.93 = aputv %tmp.92 %tmp.89 %tmp.91;
-            %tmp.54 = newc %tmp.57 (%tmp.93);
-            lputv %rez_cmp_local_text_HeartRateLabel.3 %tmp.54;
-            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.3 18 16 49 ];
+            %rez_cmp_local_text_SecondsLabel.3 = local;
+            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.3 18 16 47 ];
+            symbol [ WatchUi %tmp.79 18 54 61 ];
+            %tmp.79 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.80 18 62 66 ];
+            %tmp.80 = getv function ? %tmp.79 :Text;
+            %tmp.81 = newd 6;
+            %tmp.83 = const :identifier;
+            symbol [ identifier %tmp.83 18 69 79 const ];
+            %tmp.84 = "SecondsLabel";
+            %tmp.85 = dup %tmp.81;
+            %tmp.86 = aputv %tmp.85 %tmp.83 %tmp.84;
+            %tmp.88 = const :color;
+            symbol [ color %tmp.88 18 98 103 const ];
+            symbol [ Graphics %tmp.89 18 105 113 ];
+            %tmp.89 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLACK %tmp.90 18 114 125 ];
+            %tmp.90 = getv %tmp.89 :COLOR_BLACK;
+            %tmp.91 = dup %tmp.86;
+            %tmp.92 = aputv %tmp.91 %tmp.88 %tmp.90;
+            %tmp.94 = const :locX;
+            symbol [ locX %tmp.94 18 128 132 const ];
+            %tmp.95 = 144;
+            %tmp.96 = dup %tmp.92;
+            %tmp.97 = aputv %tmp.96 %tmp.94 %tmp.95;
+            %tmp.99 = const :locY;
+            symbol [ locY %tmp.99 18 140 144 const ];
+            %tmp.100 = 32;
+            %tmp.101 = dup %tmp.97;
+            %tmp.102 = aputv %tmp.101 %tmp.99 %tmp.100;
+            %tmp.104 = const :justification;
+            symbol [ justification %tmp.104 18 151 164 const ];
+            symbol [ Graphics %tmp.105 18 166 174 ];
+            %tmp.105 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.106 18 175 194 ];
+            %tmp.106 = getv %tmp.105 :TEXT_JUSTIFY_CENTER;
+            symbol [ Graphics %tmp.107 18 195 203 ];
+            %tmp.107 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_VCENTER %tmp.108 18 204 224 ];
+            %tmp.108 = getv %tmp.107 :TEXT_JUSTIFY_VCENTER;
+            %tmp.109 = bitor %tmp.106 %tmp.108;
+            %tmp.110 = dup %tmp.102;
+            %tmp.111 = aputv %tmp.110 %tmp.104 %tmp.109;
+            %tmp.113 = const :font;
+            symbol [ font %tmp.113 18 227 231 const ];
+            symbol [ Graphics %tmp.114 18 233 241 ];
+            %tmp.114 = getm $.Toybox.Graphics;
+            symbol [ FONT_NUMBER_MEDIUM %tmp.115 18 242 260 ];
+            %tmp.115 = getv %tmp.114 :FONT_NUMBER_MEDIUM;
+            %tmp.116 = dup %tmp.111;
+            %tmp.117 = aputv %tmp.116 %tmp.113 %tmp.115;
+            %tmp.77 = newc %tmp.80 (%tmp.117);
+            lputv %rez_cmp_local_text_SecondsLabel.3 %tmp.77;
+            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.3 18 16 47 ];
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 20 12 ]
             [ "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_start" "_home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop" ]
-            %rez_cmp_local_text_SecondsLabel.4 = local;
-            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.4 20 16 47 ];
-            symbol [ WatchUi %tmp.96 20 54 61 ];
-            %tmp.96 = getm $.Toybox.WatchUi;
-            symbol [ Text %tmp.97 20 62 66 ];
-            %tmp.97 = getv function ? %tmp.96 :Text;
-            %tmp.98 = newd 6;
-            %tmp.100 = const :identifier;
-            symbol [ identifier %tmp.100 20 69 79 const ];
-            %tmp.101 = "SecondsLabel";
-            %tmp.102 = dup %tmp.98;
-            %tmp.103 = aputv %tmp.102 %tmp.100 %tmp.101;
-            %tmp.105 = const :color;
-            symbol [ color %tmp.105 20 98 103 const ];
-            symbol [ Graphics %tmp.106 20 105 113 ];
-            %tmp.106 = getm $.Toybox.Graphics;
-            symbol [ COLOR_BLACK %tmp.107 20 114 125 ];
-            %tmp.107 = getv %tmp.106 :COLOR_BLACK;
-            %tmp.108 = dup %tmp.103;
-            %tmp.109 = aputv %tmp.108 %tmp.105 %tmp.107;
-            %tmp.111 = const :locX;
-            symbol [ locX %tmp.111 20 128 132 const ];
-            %tmp.112 = 144;
-            %tmp.113 = dup %tmp.109;
-            %tmp.114 = aputv %tmp.113 %tmp.111 %tmp.112;
-            %tmp.116 = const :locY;
-            symbol [ locY %tmp.116 20 140 144 const ];
-            %tmp.117 = 32;
-            %tmp.118 = dup %tmp.114;
-            %tmp.119 = aputv %tmp.118 %tmp.116 %tmp.117;
-            %tmp.121 = const :justification;
-            symbol [ justification %tmp.121 20 151 164 const ];
-            symbol [ Graphics %tmp.122 20 166 174 ];
-            %tmp.122 = getm $.Toybox.Graphics;
-            symbol [ TEXT_JUSTIFY_CENTER %tmp.123 20 175 194 ];
-            %tmp.123 = getv %tmp.122 :TEXT_JUSTIFY_CENTER;
-            symbol [ Graphics %tmp.124 20 195 203 ];
-            %tmp.124 = getm $.Toybox.Graphics;
-            symbol [ TEXT_JUSTIFY_VCENTER %tmp.125 20 204 224 ];
-            %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_VCENTER;
-            %tmp.126 = bitor %tmp.123 %tmp.125;
-            %tmp.127 = dup %tmp.119;
-            %tmp.128 = aputv %tmp.127 %tmp.121 %tmp.126;
-            %tmp.130 = const :font;
-            symbol [ font %tmp.130 20 227 231 const ];
-            symbol [ Graphics %tmp.131 20 233 241 ];
-            %tmp.131 = getm $.Toybox.Graphics;
-            symbol [ FONT_NUMBER_MEDIUM %tmp.132 20 242 260 ];
-            %tmp.132 = getv %tmp.131 :FONT_NUMBER_MEDIUM;
-            %tmp.133 = dup %tmp.128;
-            %tmp.134 = aputv %tmp.133 %tmp.130 %tmp.132;
-            %tmp.94 = newc %tmp.97 (%tmp.134);
-            lputv %rez_cmp_local_text_SecondsLabel.4 %tmp.94;
-            symbol [ rez_cmp_local_text_SecondsLabel %rez_cmp_local_text_SecondsLabel.4 20 16 47 ];
+            %rez_cmp_local_text_HeartRateLabel.4 = local;
+            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.4 20 16 49 ];
+            symbol [ WatchUi %tmp.120 20 56 63 ];
+            %tmp.120 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.121 20 64 68 ];
+            %tmp.121 = getv function ? %tmp.120 :Text;
+            %tmp.122 = newd 6;
+            %tmp.124 = const :identifier;
+            symbol [ identifier %tmp.124 20 71 81 const ];
+            %tmp.125 = "HeartRateLabel";
+            %tmp.126 = dup %tmp.122;
+            %tmp.127 = aputv %tmp.126 %tmp.124 %tmp.125;
+            %tmp.129 = const :color;
+            symbol [ color %tmp.129 20 102 107 const ];
+            symbol [ Graphics %tmp.130 20 109 117 ];
+            %tmp.130 = getm $.Toybox.Graphics;
+            symbol [ COLOR_WHITE %tmp.131 20 118 129 ];
+            %tmp.131 = getv %tmp.130 :COLOR_WHITE;
+            %tmp.132 = dup %tmp.127;
+            %tmp.133 = aputv %tmp.132 %tmp.129 %tmp.131;
+            %tmp.135 = const :locX;
+            symbol [ locX %tmp.135 20 132 136 const ];
+            %tmp.136 = lgetv %dc;
+            symbol [ dc %tmp.136 20 139 141 ];
+            symbol [ getWidth %tmp.137 20 142 150 ];
+            %tmp.137 = getv function %tmp.136 :getWidth;
+            %tmp.138 = invoke %tmp.136 %tmp.137();
+            %tmp.139 = 0.5;
+            %tmp.140 = mul %tmp.138 %tmp.139;
+            %tmp.141 = dup %tmp.133;
+            %tmp.142 = aputv %tmp.141 %tmp.135 %tmp.140;
+            %tmp.144 = const :locY;
+            symbol [ locY %tmp.144 20 162 166 const ];
+            %tmp.145 = 30;
+            %tmp.146 = dup %tmp.142;
+            %tmp.147 = aputv %tmp.146 %tmp.144 %tmp.145;
+            %tmp.149 = const :justification;
+            symbol [ justification %tmp.149 20 173 186 const ];
+            symbol [ Graphics %tmp.150 20 188 196 ];
+            %tmp.150 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.151 20 197 216 ];
+            %tmp.151 = getv %tmp.150 :TEXT_JUSTIFY_CENTER;
+            %tmp.152 = dup %tmp.147;
+            %tmp.153 = aputv %tmp.152 %tmp.149 %tmp.151;
+            %tmp.155 = const :font;
+            symbol [ font %tmp.155 20 219 223 const ];
+            symbol [ Graphics %tmp.156 20 225 233 ];
+            %tmp.156 = getm $.Toybox.Graphics;
+            symbol [ FONT_SMALL %tmp.157 20 234 244 ];
+            %tmp.157 = getv %tmp.156 :FONT_SMALL;
+            %tmp.158 = dup %tmp.153;
+            %tmp.159 = aputv %tmp.158 %tmp.155 %tmp.157;
+            %tmp.118 = newc %tmp.121 (%tmp.159);
+            lputv %rez_cmp_local_text_HeartRateLabel.4 %tmp.118;
+            symbol [ rez_cmp_local_text_HeartRateLabel %rez_cmp_local_text_HeartRateLabel.4 20 16 49 ];
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 22 12 ]
-            %tmp.135 = newa 3 Array<WatchUi.Drawable>;
-            symbol [ Array %tmp.135 22 121 126 ];
-            symbol [ WatchUi %tmp.135 22 127 134 ];
-            symbol [ Drawable %tmp.135 22 135 143 ];
-            %tmp.136 = lgetv %rez_cmp_local_text_TimeLabel.2;
-            symbol [ rez_cmp_local_text_TimeLabel %tmp.136 22 20 48 ];
-            %tmp.137 = dup %tmp.135;
-            %tmp.138 = aputv %tmp.137 0 %tmp.136;
-            %tmp.139 = lgetv %rez_cmp_local_text_HeartRateLabel.3;
-            symbol [ rez_cmp_local_text_HeartRateLabel %tmp.139 22 50 83 ];
-            %tmp.140 = dup %tmp.138;
-            %tmp.141 = aputv %tmp.140 1 %tmp.139;
-            %tmp.142 = lgetv %rez_cmp_local_text_SecondsLabel.4;
-            symbol [ rez_cmp_local_text_SecondsLabel %tmp.142 22 85 116 ];
-            %tmp.143 = dup %tmp.141;
-            %tmp.144 = aputv %tmp.143 2 %tmp.142;
-            ret %tmp.144;
+            %tmp.160 = newa 4 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.160 22 155 160 ];
+            symbol [ WatchUi %tmp.160 22 161 168 ];
+            symbol [ Drawable %tmp.160 22 169 177 ];
+            %tmp.161 = lgetv %rez_cmp_local_text_HoursLabel.1;
+            symbol [ rez_cmp_local_text_HoursLabel %tmp.161 22 20 49 ];
+            %tmp.162 = dup %tmp.160;
+            %tmp.163 = aputv %tmp.162 0 %tmp.161;
+            %tmp.164 = lgetv %rez_cmp_local_text_MinutesLabel.2;
+            symbol [ rez_cmp_local_text_MinutesLabel %tmp.164 22 51 82 ];
+            %tmp.165 = dup %tmp.163;
+            %tmp.166 = aputv %tmp.165 1 %tmp.164;
+            %tmp.167 = lgetv %rez_cmp_local_text_SecondsLabel.3;
+            symbol [ rez_cmp_local_text_SecondsLabel %tmp.167 22 84 115 ];
+            %tmp.168 = dup %tmp.166;
+            %tmp.169 = aputv %tmp.168 2 %tmp.167;
+            %tmp.170 = lgetv %rez_cmp_local_text_HeartRateLabel.4;
+            symbol [ rez_cmp_local_text_HeartRateLabel %tmp.170 22 117 150 ];
+            %tmp.171 = dup %tmp.169;
+            %tmp.172 = aputv %tmp.171 3 %tmp.170;
+            ret %tmp.172;
 _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00_source_Rez_mcgen_13_73_23_8_stop:
         }
     }
@@ -339,22 +367,22 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 71; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 72 18 ]
-                symbol [ Graphics %tmp.145 72 34 42 ];
-                %tmp.145 = getm $.Toybox.Graphics;
-                symbol [ TEXT_JUSTIFY_RIGHT %tmp.146 72 43 61 ];
-                %tmp.146 = getv %tmp.145 :TEXT_JUSTIFY_RIGHT;
-                symbol [ Graphics %tmp.147 72 62 70 ];
-                %tmp.147 = getm $.Toybox.Graphics;
-                symbol [ TEXT_JUSTIFY_VCENTER %tmp.148 72 71 91 ];
-                %tmp.148 = getv %tmp.147 :TEXT_JUSTIFY_VCENTER;
-                %tmp.149 = bitor %tmp.146 %tmp.148;
-                putv self :justification %tmp.149;
+                symbol [ Graphics %tmp.173 72 34 42 ];
+                %tmp.173 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_RIGHT %tmp.174 72 43 61 ];
+                %tmp.174 = getv %tmp.173 :TEXT_JUSTIFY_RIGHT;
+                symbol [ Graphics %tmp.175 72 62 70 ];
+                %tmp.175 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.176 72 71 91 ];
+                %tmp.176 = getv %tmp.175 :TEXT_JUSTIFY_VCENTER;
+                %tmp.177 = bitor %tmp.174 %tmp.176;
+                putv self :justification %tmp.177;
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 73 18 ]
-                symbol [ Graphics %tmp.150 73 25 33 ];
-                %tmp.150 = getm $.Toybox.Graphics;
-                symbol [ FONT_TINY %tmp.151 73 34 43 ];
-                %tmp.151 = getv %tmp.150 :FONT_TINY;
-                putv self :font %tmp.151;
+                symbol [ Graphics %tmp.178 73 25 33 ];
+                %tmp.178 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.179 73 34 43 ];
+                %tmp.179 = getv %tmp.178 :FONT_TINY;
+                putv self :font %tmp.179;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 72; @position = 18; @symbol_constdef = [justification,72,18,31]; ]
             const justification;
@@ -390,11 +418,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 88; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 90 18 ]
-                symbol [ Graphics %tmp.152 90 31 39 ];
-                %tmp.152 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.153 90 40 57 ];
-                %tmp.153 = getv %tmp.152 :COLOR_TRANSPARENT;
-                putv self :background %tmp.153;
+                symbol [ Graphics %tmp.180 90 31 39 ];
+                %tmp.180 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.181 90 40 57 ];
+                %tmp.181 = getv %tmp.180 :COLOR_TRANSPARENT;
+                putv self :background %tmp.181;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [color,89,18,23]; @symbol_type<0> = [Number,89,27,33]; ]
             const color as Number = 0xFFFFFF;
@@ -444,17 +472,17 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 112; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 113 18 ]
-                symbol [ Graphics %tmp.154 113 34 42 ];
-                %tmp.154 = getm $.Toybox.Graphics;
-                symbol [ TEXT_JUSTIFY_CENTER %tmp.155 113 43 62 ];
-                %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_CENTER;
-                putv self :justification %tmp.155;
+                symbol [ Graphics %tmp.182 113 34 42 ];
+                %tmp.182 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.183 113 43 62 ];
+                %tmp.183 = getv %tmp.182 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.183;
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 114 18 ]
-                symbol [ Graphics %tmp.156 114 25 33 ];
-                %tmp.156 = getm $.Toybox.Graphics;
-                symbol [ FONT_XTINY %tmp.157 114 34 44 ];
-                %tmp.157 = getv %tmp.156 :FONT_XTINY;
-                putv self :font %tmp.157;
+                symbol [ Graphics %tmp.184 114 25 33 ];
+                %tmp.184 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.185 114 34 44 ];
+                %tmp.185 = getv %tmp.184 :FONT_XTINY;
+                putv self :font %tmp.185;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 113; @position = 18; @symbol_constdef = [justification,113,18,31]; ]
             const justification;
@@ -496,11 +524,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 132; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 133 18 ]
-                symbol [ WatchUi %tmp.158 133 27 34 ];
-                %tmp.158 = getm $.Toybox.WatchUi;
-                symbol [ KEY_ENTER %tmp.159 133 35 44 ];
-                %tmp.159 = getv %tmp.158 :KEY_ENTER;
-                putv self :button %tmp.159;
+                symbol [ WatchUi %tmp.186 133 27 34 ];
+                %tmp.186 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.187 133 35 44 ];
+                %tmp.187 = getv %tmp.186 :KEY_ENTER;
+                putv self :button %tmp.187;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 133; @position = 18; @symbol_constdef = [button,133,18,24]; ]
             const button;
@@ -510,17 +538,17 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 136; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 137 18 ]
-                symbol [ Graphics %tmp.160 137 34 42 ];
-                %tmp.160 = getm $.Toybox.Graphics;
-                symbol [ TEXT_JUSTIFY_CENTER %tmp.161 137 43 62 ];
-                %tmp.161 = getv %tmp.160 :TEXT_JUSTIFY_CENTER;
-                putv self :justification %tmp.161;
+                symbol [ Graphics %tmp.188 137 34 42 ];
+                %tmp.188 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.189 137 43 62 ];
+                %tmp.189 = getv %tmp.188 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.189;
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 138 18 ]
-                symbol [ Graphics %tmp.162 138 25 33 ];
-                %tmp.162 = getm $.Toybox.Graphics;
-                symbol [ FONT_TINY %tmp.163 138 34 43 ];
-                %tmp.163 = getv %tmp.162 :FONT_TINY;
-                putv self :font %tmp.163;
+                symbol [ Graphics %tmp.190 138 25 33 ];
+                %tmp.190 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.191 138 34 43 ];
+                %tmp.191 = getv %tmp.190 :FONT_TINY;
+                putv self :font %tmp.191;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [justification,137,18,31]; ]
             const justification;
@@ -634,11 +662,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 192; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 193 18 ]
-                symbol [ WatchUi %tmp.164 193 27 34 ];
-                %tmp.164 = getm $.Toybox.WatchUi;
-                symbol [ KEY_ENTER %tmp.165 193 35 44 ];
-                %tmp.165 = getv %tmp.164 :KEY_ENTER;
-                putv self :button %tmp.165;
+                symbol [ WatchUi %tmp.192 193 27 34 ];
+                %tmp.192 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.193 193 35 44 ];
+                %tmp.193 = getv %tmp.192 :KEY_ENTER;
+                putv self :button %tmp.193;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 193; @position = 18; @symbol_constdef = [button,193,18,24]; ]
             const button;
@@ -656,11 +684,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 200; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 201 18 ]
-                symbol [ WatchUi %tmp.166 201 27 34 ];
-                %tmp.166 = getm $.Toybox.WatchUi;
-                symbol [ KEY_ENTER %tmp.167 201 35 44 ];
-                %tmp.167 = getv %tmp.166 :KEY_ENTER;
-                putv self :button %tmp.167;
+                symbol [ WatchUi %tmp.194 201 27 34 ];
+                %tmp.194 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.195 201 35 44 ];
+                %tmp.195 = getv %tmp.194 :KEY_ENTER;
+                putv self :button %tmp.195;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 201; @position = 18; @symbol_constdef = [button,201,18,24]; ]
             const button;
@@ -684,11 +712,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 211; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 213 18 ]
-                symbol [ Graphics %tmp.168 213 31 39 ];
-                %tmp.168 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.169 213 40 57 ];
-                %tmp.169 = getv %tmp.168 :COLOR_TRANSPARENT;
-                putv self :background %tmp.169;
+                symbol [ Graphics %tmp.196 213 31 39 ];
+                %tmp.196 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.197 213 40 57 ];
+                %tmp.197 = getv %tmp.196 :COLOR_TRANSPARENT;
+                putv self :background %tmp.197;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [color,212,18,23]; @symbol_type<0> = [Number,212,27,33]; ]
             const color as Number = 0x000000;
@@ -724,11 +752,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 228; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 230 18 ]
-                symbol [ Graphics %tmp.170 230 31 39 ];
-                %tmp.170 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.171 230 40 57 ];
-                %tmp.171 = getv %tmp.170 :COLOR_TRANSPARENT;
-                putv self :background %tmp.171;
+                symbol [ Graphics %tmp.198 230 31 39 ];
+                %tmp.198 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.199 230 40 57 ];
+                %tmp.199 = getv %tmp.198 :COLOR_TRANSPARENT;
+                putv self :background %tmp.199;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [color,229,18,23]; @symbol_type<0> = [Number,229,27,33]; ]
             const color as Number = 0x000000;
@@ -830,11 +858,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 278; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 280 18 ]
-                symbol [ Graphics %tmp.172 280 31 39 ];
-                %tmp.172 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.173 280 40 57 ];
-                %tmp.173 = getv %tmp.172 :COLOR_TRANSPARENT;
-                putv self :background %tmp.173;
+                symbol [ Graphics %tmp.200 280 31 39 ];
+                %tmp.200 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.201 280 40 57 ];
+                %tmp.201 = getv %tmp.200 :COLOR_TRANSPARENT;
+                putv self :background %tmp.201;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [color,279,18,23]; @symbol_type<0> = [Number,279,27,33]; ]
             const color as Number = 0x000000;
@@ -846,11 +874,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 283; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 284 18 ]
-                symbol [ WatchUi %tmp.174 284 27 34 ];
-                %tmp.174 = getm $.Toybox.WatchUi;
-                symbol [ KEY_DOWN %tmp.175 284 35 43 ];
-                %tmp.175 = getv %tmp.174 :KEY_DOWN;
-                putv self :button %tmp.175;
+                symbol [ WatchUi %tmp.202 284 27 34 ];
+                %tmp.202 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.203 284 35 43 ];
+                %tmp.203 = getv %tmp.202 :KEY_DOWN;
+                putv self :button %tmp.203;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [button,284,18,24]; ]
             const button;
@@ -884,11 +912,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 299; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 301 18 ]
-                symbol [ Graphics %tmp.176 301 31 39 ];
-                %tmp.176 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.177 301 40 57 ];
-                %tmp.177 = getv %tmp.176 :COLOR_TRANSPARENT;
-                putv self :background %tmp.177;
+                symbol [ Graphics %tmp.204 301 31 39 ];
+                %tmp.204 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.205 301 40 57 ];
+                %tmp.205 = getv %tmp.204 :COLOR_TRANSPARENT;
+                putv self :background %tmp.205;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [color,300,18,23]; @symbol_type<0> = [Number,300,27,33]; ]
             const color as Number = 0x000000;
@@ -988,11 +1016,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 348; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 350 18 ]
-                symbol [ Graphics %tmp.178 350 31 39 ];
-                %tmp.178 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.179 350 40 57 ];
-                %tmp.179 = getv %tmp.178 :COLOR_TRANSPARENT;
-                putv self :background %tmp.179;
+                symbol [ Graphics %tmp.206 350 31 39 ];
+                %tmp.206 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.207 350 40 57 ];
+                %tmp.207 = getv %tmp.206 :COLOR_TRANSPARENT;
+                putv self :background %tmp.207;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [color,349,18,23]; @symbol_type<0> = [Number,349,27,33]; ]
             const color as Number = 0xFFFFFF;
@@ -1018,11 +1046,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 360; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 362 18 ]
-                symbol [ Graphics %tmp.180 362 31 39 ];
-                %tmp.180 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.181 362 40 57 ];
-                %tmp.181 = getv %tmp.180 :COLOR_TRANSPARENT;
-                putv self :background %tmp.181;
+                symbol [ Graphics %tmp.208 362 31 39 ];
+                %tmp.208 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.209 362 40 57 ];
+                %tmp.209 = getv %tmp.208 :COLOR_TRANSPARENT;
+                putv self :background %tmp.209;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 361; @position = 18; @symbol_constdef = [color,361,18,23]; @symbol_type<0> = [Number,361,27,33]; ]
             const color as Number = 0xFFFFFF;
@@ -1074,11 +1102,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 385; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 387 18 ]
-                symbol [ Graphics %tmp.182 387 31 39 ];
-                %tmp.182 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.183 387 40 57 ];
-                %tmp.183 = getv %tmp.182 :COLOR_TRANSPARENT;
-                putv self :background %tmp.183;
+                symbol [ Graphics %tmp.210 387 31 39 ];
+                %tmp.210 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.211 387 40 57 ];
+                %tmp.211 = getv %tmp.210 :COLOR_TRANSPARENT;
+                putv self :background %tmp.211;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 386; @position = 18; @symbol_constdef = [color,386,18,23]; @symbol_type<0> = [Number,386,27,33]; ]
             const color as Number = 0x000000;
@@ -1352,11 +1380,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 521; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 523 18 ]
-                symbol [ Graphics %tmp.184 523 31 39 ];
-                %tmp.184 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.185 523 40 57 ];
-                %tmp.185 = getv %tmp.184 :COLOR_TRANSPARENT;
-                putv self :background %tmp.185;
+                symbol [ Graphics %tmp.212 523 31 39 ];
+                %tmp.212 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.213 523 40 57 ];
+                %tmp.213 = getv %tmp.212 :COLOR_TRANSPARENT;
+                putv self :background %tmp.213;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [color,522,18,23]; @symbol_type<0> = [Number,522,27,33]; ]
             const color as Number = 0x000000;
@@ -1382,11 +1410,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 533; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 534 18 ]
-                symbol [ WatchUi %tmp.186 534 27 34 ];
-                %tmp.186 = getm $.Toybox.WatchUi;
-                symbol [ KEY_DOWN %tmp.187 534 35 43 ];
-                %tmp.187 = getv %tmp.186 :KEY_DOWN;
-                putv self :button %tmp.187;
+                symbol [ WatchUi %tmp.214 534 27 34 ];
+                %tmp.214 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.215 534 35 43 ];
+                %tmp.215 = getv %tmp.214 :KEY_DOWN;
+                putv self :button %tmp.215;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [button,534,18,24]; ]
             const button;
@@ -1568,13 +1596,13 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 623; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 625 18 ]
-                symbol [ Toybox %tmp.189 625 32 38 ];
-                %tmp.189 = getv ? :Toybox;
-                symbol [ System %tmp.190 625 39 45 ];
-                %tmp.190 = getv %tmp.189 :System;
-                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.191 625 46 71 ];
-                %tmp.191 = getv %tmp.190 :SCREEN_SHAPE_SEMI_OCTAGON;
-                putv self :screenShape %tmp.191;
+                symbol [ Toybox %tmp.217 625 32 38 ];
+                %tmp.217 = getv ? :Toybox;
+                symbol [ System %tmp.218 625 39 45 ];
+                %tmp.218 = getv %tmp.217 :System;
+                symbol [ SCREEN_SHAPE_SEMI_OCTAGON %tmp.219 625 46 71 ];
+                %tmp.219 = getv %tmp.218 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.219;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 624; @position = 18; @symbol_constdef = [screenWidth,624,18,29]; @symbol_type<0> = [Number,624,33,39]; ]
             const screenWidth as Number = 176;
@@ -1610,17 +1638,17 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 640; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 641 18 ]
-                symbol [ Graphics %tmp.192 641 34 42 ];
-                %tmp.192 = getm $.Toybox.Graphics;
-                symbol [ TEXT_JUSTIFY_CENTER %tmp.193 641 43 62 ];
-                %tmp.193 = getv %tmp.192 :TEXT_JUSTIFY_CENTER;
-                putv self :justification %tmp.193;
+                symbol [ Graphics %tmp.220 641 34 42 ];
+                %tmp.220 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.221 641 43 62 ];
+                %tmp.221 = getv %tmp.220 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.221;
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 642 18 ]
-                symbol [ Graphics %tmp.194 642 25 33 ];
-                %tmp.194 = getm $.Toybox.Graphics;
-                symbol [ FONT_TINY %tmp.195 642 34 43 ];
-                %tmp.195 = getv %tmp.194 :FONT_TINY;
-                putv self :font %tmp.195;
+                symbol [ Graphics %tmp.222 642 25 33 ];
+                %tmp.222 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.223 642 34 43 ];
+                %tmp.223 = getv %tmp.222 :FONT_TINY;
+                putv self :font %tmp.223;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 641; @position = 18; @symbol_constdef = [justification,641,18,31]; ]
             const justification;
@@ -1680,11 +1708,11 @@ _home_kaden_Documents_Code_GitHub_KTheJs_Instinct_Watchface_bin_gen_006_B4585_00
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 669; ]
             <init> {
 [ "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" 671 18 ]
-                symbol [ Graphics %tmp.196 671 31 39 ];
-                %tmp.196 = getm $.Toybox.Graphics;
-                symbol [ COLOR_TRANSPARENT %tmp.197 671 40 57 ];
-                %tmp.197 = getv %tmp.196 :COLOR_TRANSPARENT;
-                putv self :background %tmp.197;
+                symbol [ Graphics %tmp.224 671 31 39 ];
+                %tmp.224 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.225 671 40 57 ];
+                %tmp.225 = getv %tmp.224 :COLOR_TRANSPARENT;
+                putv self :background %tmp.225;
             }
             [ @file = "/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen"; @line = 670; @position = 18; @symbol_constdef = [color,670,18,23]; @symbol_type<0> = [Number,670,27,33]; ]
             const color as Number = 0xFFFFFF;

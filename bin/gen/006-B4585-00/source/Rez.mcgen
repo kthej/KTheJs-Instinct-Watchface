@@ -11,15 +11,15 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_var_dc_getWidth = dc.getWidth();
+            var rez_cmp_local_text_HoursLabel = new WatchUi.Text({:identifier=>"HoursLabel", :color=>Graphics.COLOR_WHITE, :locX=>50, :locY=>50, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
 
-            var rez_cmp_local_text_TimeLabel = new WatchUi.Text({:identifier=>"TimeLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>((dc.getHeight() - dc.getFontHeight(Graphics.FONT_NUMBER_THAI_HOT)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
-
-            var rez_cmp_local_text_HeartRateLabel = new WatchUi.Text({:identifier=>"HeartRateLabel", :color=>Graphics.COLOR_WHITE, :locX=>(rez_cmp_local_var_dc_getWidth * 0.5), :locY=>30, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+            var rez_cmp_local_text_MinutesLabel = new WatchUi.Text({:identifier=>"MinutesLabel", :color=>Graphics.COLOR_WHITE, :locX=>50, :locY=>100, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});
 
             var rez_cmp_local_text_SecondsLabel = new WatchUi.Text({:identifier=>"SecondsLabel", :color=>Graphics.COLOR_BLACK, :locX=>144, :locY=>32, :justification=>Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER, :font=>Graphics.FONT_NUMBER_MEDIUM});
 
-            return [rez_cmp_local_text_TimeLabel, rez_cmp_local_text_HeartRateLabel, rez_cmp_local_text_SecondsLabel] as Array<WatchUi.Drawable>;
+            var rez_cmp_local_text_HeartRateLabel = new WatchUi.Text({:identifier=>"HeartRateLabel", :color=>Graphics.COLOR_WHITE, :locX=>(dc.getWidth() * 0.5), :locY=>30, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            return [rez_cmp_local_text_HoursLabel, rez_cmp_local_text_MinutesLabel, rez_cmp_local_text_SecondsLabel, rez_cmp_local_text_HeartRateLabel] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

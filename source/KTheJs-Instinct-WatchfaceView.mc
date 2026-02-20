@@ -33,7 +33,8 @@ class DataElement{
 
 
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
-    public var clock_element;
+    public var hours_element;
+    public var minutes_element;
     public var clockTime;
     public var seconds;
     public var hr_element;
@@ -56,9 +57,13 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // loading resources into memory.
     function onShow() as Void {
         clockTime = System.getClockTime();
-        clock_element = new DataElement(self,
-            Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]),
-            "TimeLabel"
+        hours_element = new DataElement(self,
+            Lang.format("$1$", [clockTime.hour.format("%02d")]),
+            "HoursLabel"
+             );
+        minutes_element = new DataElement(self,
+            Lang.format("$1$", [clockTime.min.format("%02d")]),
+            "MinutesLabel"
              );
         
 
@@ -72,6 +77,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         
         // Current Time
         clockTime = System.getClockTime();
+
         //Check for 12/24hr time
         if (!is24Hour){
             hours = clockTime.hour % 12;
@@ -80,8 +86,9 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             }
         }
 
-        
-        clock_element.updateString(Lang.format("$1$:$2$", [hours, clockTime.min.format("%02d")]),dc);
+        hours_element.updateString(Lang.format("$1$", [hours.format("%02d")]),dc);
+        minutes_element.updateString(Lang.format("$1$", [clockTime.min.format("%02d")]),dc);
+
         
         dc.clear();
         View.onUpdate(dc);
@@ -105,7 +112,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         //SubScreen graphics
         if (glance == true){
         var seconds = System.getClockTime().sec;
-        dc.drawText(sub_screen_middle_x, sub_screen_middle_y,Graphics.FONT_NUMBER_HOT,seconds,Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+        dc.drawText(sub_screen_middle_x, sub_screen_middle_y,Graphics.FONT_NUMBER_HOT,seconds.format("%02d"),Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
         }
         
 
