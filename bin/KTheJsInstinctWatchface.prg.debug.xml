@@ -5,43 +5,45 @@
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="1" lineNum="5" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435460" symbol="&lt;init&gt;"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="26" parent="globals" pc="268435472" symbol="getApp"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="27" parent="globals" pc="268435482" symbol="getApp"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="3" lineNum="23" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="3" lineNum="24" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435493" symbol="&lt;init&gt;"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="5" lineNum="11" parent="globals/DataElement" pc="268435525" symbol="initialize"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="5" lineNum="13" parent="globals/DataElement" pc="268435527" symbol="initialize"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="5" lineNum="14" parent="globals/DataElement" pc="268435536" symbol="initialize"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="6" lineNum="16" parent="globals/DataElement" pc="268435555" symbol="render"/>
         <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="6" lineNum="17" parent="globals/DataElement" pc="268435557" symbol="render"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="12" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435577" symbol="onStart"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="20" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435580" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="21" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435582" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="9" lineNum="7" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435608" symbol="initialize"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="9" lineNum="8" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435610" symbol="initialize"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="10" lineNum="16" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435623" symbol="onStop"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="31" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435626" symbol="onLayout"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="32" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435628" symbol="onLayout"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="25" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435662" symbol="initialize"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="26" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435664" symbol="initialize"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="42" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435677" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="46" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435680" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="47" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435692" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="51" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435770" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="55" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435778" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="56" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435795" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="62" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435847" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="63" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435853" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="68" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435864" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="69" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435881" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="76" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435933" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="79" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435941" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="80" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435961" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="87" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435978" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="13" parent="globals/Rez/Layouts" pc="268435999" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="14" parent="globals/Rez/Layouts" pc="268436010" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="16" parent="globals/Rez/Layouts" pc="268436019" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="18" parent="globals/Rez/Layouts" pc="268436131" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="20" parent="globals/Rez/Layouts" pc="268436220" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="22" parent="globals/Rez/Layouts" pc="268436304" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="6" lineNum="18" parent="globals/DataElement" pc="268435576" symbol="render"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="12" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435593" symbol="onStart"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="20" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435596" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="21" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435598" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="9" lineNum="7" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435624" symbol="initialize"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="9" lineNum="8" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435626" symbol="initialize"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="10" lineNum="16" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435639" symbol="onStop"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="32" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435642" symbol="onLayout"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="33" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435644" symbol="onLayout"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="26" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435678" symbol="initialize"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="27" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435680" symbol="initialize"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="45" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435693" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="46" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435696" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="49" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435716" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="50" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435728" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="54" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435806" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="58" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435818" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="59" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435835" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="65" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435887" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="66" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435893" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="69" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435908" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="70" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435925" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="71" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435942" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="74" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435955" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="75" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435972" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="17" lineNum="82" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436024" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="13" parent="globals/Rez/Layouts" pc="268436037" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="14" parent="globals/Rez/Layouts" pc="268436048" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="16" parent="globals/Rez/Layouts" pc="268436057" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="18" parent="globals/Rez/Layouts" pc="268436169" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="20" parent="globals/Rez/Layouts" pc="268436258" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Documents/Code/GitHub/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="18" lineNum="22" parent="globals/Rez/Layouts" pc="268436338" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -93,19 +95,20 @@
         <entry arg="true" endPc="268435554" name="vView" stackId="1" startPc="268435525"/>
         <entry arg="true" endPc="268435554" name="vString" stackId="2" startPc="268435525"/>
         <entry arg="true" endPc="268435554" name="vLayoutId" stackId="3" startPc="268435525"/>
-        <entry arg="true" endPc="268435661" name="dc" stackId="1" startPc="268435626"/>
-        <entry arg="true" endPc="268435998" name="dc" stackId="1" startPc="268435677"/>
-        <entry endPc="268435997" name="clockTime" stackId="2" startPc="268435680"/>
-        <entry endPc="268435997" name="clock_element" stackId="3" startPc="268435680"/>
-        <entry endPc="268435997" name="currentHeartRate" stackId="4" startPc="268435680"/>
-        <entry endPc="268435997" name="hr_element" stackId="5" startPc="268435680"/>
-        <entry endPc="268435997" name="seconds" stackId="6" startPc="268435680"/>
-        <entry endPc="268435997" name="sec_element" stackId="7" startPc="268435680"/>
-        <entry arg="true" endPc="268436323" name="dc" stackId="1" startPc="268435999"/>
-        <entry endPc="268436323" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436010"/>
-        <entry endPc="268436323" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436010"/>
-        <entry endPc="268436323" name="rez_cmp_local_text_HeartRateLabel" stackId="4" startPc="268436010"/>
-        <entry endPc="268436323" name="rez_cmp_local_text_SecondsLabel" stackId="5" startPc="268436010"/>
+        <entry arg="true" endPc="268435592" name="vDc" stackId="1" startPc="268435555"/>
+        <entry arg="true" endPc="268435677" name="dc" stackId="1" startPc="268435642"/>
+        <entry arg="true" endPc="268436036" name="dc" stackId="1" startPc="268435693"/>
+        <entry endPc="268436035" name="clockTime" stackId="2" startPc="268435696"/>
+        <entry endPc="268436035" name="clock_element" stackId="3" startPc="268435696"/>
+        <entry endPc="268436035" name="currentHeartRate" stackId="4" startPc="268435696"/>
+        <entry endPc="268436035" name="hr_element" stackId="5" startPc="268435696"/>
+        <entry endPc="268436035" name="seconds" stackId="6" startPc="268435696"/>
+        <entry endPc="268436035" name="sec_element" stackId="7" startPc="268435696"/>
+        <entry arg="true" endPc="268436357" name="dc" stackId="1" startPc="268436037"/>
+        <entry endPc="268436357" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268436048"/>
+        <entry endPc="268436357" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268436048"/>
+        <entry endPc="268436357" name="rez_cmp_local_text_HeartRateLabel" stackId="4" startPc="268436048"/>
+        <entry endPc="268436357" name="rez_cmp_local_text_SecondsLabel" stackId="5" startPc="268436048"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B4585-00"/>
     <annotations>
@@ -144,20 +147,21 @@
             <param id="vLayoutId"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435576" name="render" parent="DataElement" startPc="268435555">
+        <functionEntry accessMode="public" endPc="268435592" name="render" parent="DataElement" startPc="268435555">
+            <param id="vDc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435579" name="onStart" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435577">
+        <functionEntry accessMode="public" endPc="268435595" name="onStart" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435593">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435607" name="getInitialView" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435580">
+        <functionEntry accessMode="public" endPc="268435623" name="getInitialView" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435596">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435622" name="initialize" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435608">
+        <functionEntry accessMode="public" endPc="268435638" name="initialize" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435624">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435625" name="onStop" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435623">
+        <functionEntry accessMode="public" endPc="268435641" name="onStop" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435639">
             <param id="state"/>
             <documentation/>
         </functionEntry>
@@ -167,20 +171,20 @@
         <functionEntry accessMode="public" name="onShow" parent="KTheJs_Instinct_WatchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435661" name="onLayout" parent="KTheJs_Instinct_WatchfaceView" startPc="268435626">
+        <functionEntry accessMode="public" endPc="268435677" name="onLayout" parent="KTheJs_Instinct_WatchfaceView" startPc="268435642">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="KTheJs_Instinct_WatchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435676" name="initialize" parent="KTheJs_Instinct_WatchfaceView" startPc="268435662">
+        <functionEntry accessMode="public" endPc="268435692" name="initialize" parent="KTheJs_Instinct_WatchfaceView" startPc="268435678">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="KTheJs_Instinct_WatchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435998" name="onUpdate" parent="KTheJs_Instinct_WatchfaceView" startPc="268435677">
+        <functionEntry accessMode="public" endPc="268436036" name="onUpdate" parent="KTheJs_Instinct_WatchfaceView" startPc="268435693">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
@@ -193,7 +197,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436323" name="WatchFace" parent="Layouts" startPc="268435999">
+        <functionEntry accessMode="public" endPc="268436357" name="WatchFace" parent="Layouts" startPc="268436037">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

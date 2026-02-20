@@ -13,8 +13,9 @@ class DataElement{
         elementString = vString;
         elementView = vView.findDrawableById(vLayoutId);
     }
-    public function render(){
+    public function render(vDc){
         elementView.setText(elementString);
+        elementView.draw(vDc);
     }
 
 }
@@ -30,17 +31,19 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
+        
     }
     
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        
+        View.onUpdate(dc);
         // Current Time
 
         var clockTime = System.getClockTime();
@@ -48,7 +51,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]),
             "TimeLabel"
              );
-        clock_element.render();
+        clock_element.render(dc);
         
         //Heart Rate
 
@@ -60,10 +63,13 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         );
         
        if (currentHeartRate != null){
-        hr_element.render();
+        hr_element.render(dc);
        }
 
-        // Seconds
+        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(144,32,30);
+        dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+        
 
         var seconds = System.getClockTime().sec;
         var sec_element = new DataElement(
@@ -73,18 +79,18 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
         );
 
-        sec_element.render();
+        sec_element.render(dc);
         
         //Testing Graphics Drawing
-        dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_WHITE);
-        dc.drawCircle(145,31,20);
+        
 
         
         
         
 
         // Call the parent onUpdate function to redraw the layout
-        View.onUpdate(dc);
+        
+        
     }
 
     // Called when this View is removed from the screen. Save the
