@@ -9,6 +9,16 @@ module Rez {
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
 
+    module Fonts {
+        (:initialized) var Font0 as ResourceId;
+        (:initialized) var Font1 as ResourceId;
+        (:initialized) var Font2 as ResourceId;
+        (:initialized) var Font3 as ResourceId;
+        (:initialized) var Font4 as ResourceId;
+        (:initialized) var Font5 as ResourceId;
+        (:initialized) var Font6 as ResourceId;
+    } // Fonts
+
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
             var rez_cmp_local_text_HoursLabel = new WatchUi.Text({:identifier=>"HoursLabel", :color=>Graphics.COLOR_WHITE, :locX=>50, :locY=>50, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_NUMBER_THAI_HOT});

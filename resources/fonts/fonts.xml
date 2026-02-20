@@ -1,0 +1,11 @@
+<resources>
+    <fonts>
+    <font id="Font0" filename="f0.fnt"/>
+    <font id="Font1" filename="f1.fnt"/>
+    <font id="Font2" filename="f2.fnt"/>
+    <font id="Font3" filename="f3.fnt"/>
+    <font id="Font4" filename="f4.fnt"/>
+    <font id="Font5" filename="f5.fnt"/>
+    <font id="Font6" filename="f6.fnt"/>
+    </fonts>
+</resources>
