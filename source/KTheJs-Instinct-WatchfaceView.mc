@@ -29,6 +29,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var dataField1Value;
     public var dataField2Value;
     public var dataField3Value;
+    public var dataField4Value;
 
     function initialize() {
         WatchFace.initialize();
@@ -127,8 +128,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
         //Draw Clock
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(60, 25, vFontHours, hours, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(60, 90, vFontMinutes, minutes, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(65, 25, vFontHours, hours, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(65, 90, vFontMinutes, minutes, Graphics.TEXT_JUSTIFY_CENTER);
 
         //SubScreen Circle variables
         var sub_screen_x = WatchUi.getSubscreen().x;
@@ -180,7 +181,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     //Battery
     dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
-    var batteryPercentage = System.getSystemStats().battery.format("%.1f");
+    var batteryPercentage = System.getSystemStats().battery.format("%.0f");
     // var batteryInDays = System.getSystemStats().batteryInDays.format("%.0f");
     
         
@@ -238,17 +239,31 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     
     dc.drawText(110,80,Icons,72.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
     dc.drawText(110,100,Icons,83.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
-    dc.drawText(110,120,Icons,85.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,120,Icons,70.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
 
     // dc.drawText(135,79,SmallFont,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
     dataField1Value = Activity.getActivityInfo().currentHeartRate;
     dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
-    dataField3Value = System.getSystemStats().solarIntensity;
-
+    dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
+    dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+    if (dataField4Value >100){dataField4Value = 100;}
     if(dataField1Value != null){dc.drawText(135,81,DataFont,dataField1Value,Graphics.TEXT_JUSTIFY_LEFT);}
     dc.drawText(135,101,DataFont,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
     if(dataField3Value != null){dc.drawText(135,121,DataFont,dataField3Value,Graphics.TEXT_JUSTIFY_LEFT);}
-    
+    // dc.setPenWidth(12);
+    // dc.drawLine(11,50+(75-(dataField4Value*0.75)),11,125);
+    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    dc.fillRectangle(5,45,12,85);
+    dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+    dc.fillRectangle(5,45,12,(85-(dataField4Value*0.85)));
+    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    dc.setPenWidth(1);
+    dc.drawRectangle(0,135,20,40);
+    dc.drawRectangle(0,10,20,30);
+    // dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+    // dc.fillRectangle(4,75,10,20);
+    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_BLACK);
+    dc.drawText(11,87,Icons,85.toChar(),Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
 
     
         
