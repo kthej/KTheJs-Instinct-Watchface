@@ -8,5 +8,8 @@
     <font id="Font5" filename="f5.fnt"/>
     <font id="Font6" filename="f6.fnt"/>
     <font id="SmallFont" filename="SmallFont.fnt"/>
+    <font id="MediumFontFilled" filename="MediumFontFilled.fnt"/>
+    <font id="MediumFontHollow" filename="MediumFontHollow.fnt" antialias="false"/>
+    <font id="Icons" filename="Icons.fnt"/>
     </fonts>
 </resources>

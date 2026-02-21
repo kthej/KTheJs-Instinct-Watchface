@@ -2,8 +2,10 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
-import Toybox.Math;
+// import Toybox.Math;
 import Toybox.Time;
+import Toybox.Activity;
+import Toybox.ActivityMonitor;
 
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var hours_element;
@@ -19,17 +21,30 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var vFontMinutes;
     public var lastHourCheckVar = -1;
     public var SmallFont;
+    public var MediumFontHollow;
+    public var MediumFontFilled;
+    public var Icons;
+
+    public var dataField1Value;
+    public var dataField2Value;
+    public var dataField3Value;
 
     function initialize() {
         WatchFace.initialize();
-        vFontHours = WatchUi.loadResource(Rez.Fonts.Font0);
-        vFontMinutes = WatchUi.loadResource(Rez.Fonts.Font0);
+        
+        
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        vFontHours = WatchUi.loadResource(Rez.Fonts.Font0);
+        vFontMinutes = WatchUi.loadResource(Rez.Fonts.Font0);
         SmallFont = WatchUi.loadResource(Rez.Fonts.SmallFont);
+        MediumFontFilled = WatchUi.loadResource(Rez.Fonts.MediumFontFilled);
+        MediumFontHollow = WatchUi.loadResource(Rez.Fonts.MediumFontHollow);
+        Icons = WatchUi.loadResource(Rez.Fonts.Icons);
+        // var MediumFontFilled;
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -53,8 +68,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         //Check for 12/24hr time
         if (!is24Hour) {
             hours = (clockTime.hour % 12).format("%02d");
-            if (hours == 0) {
-                hours = (12).format("%02d");
+            if (hours.toFloat() == 0) {
+                hours = 12;
             }
         }
         minutes = clockTime.min.format("%02d");
@@ -97,8 +112,12 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             } else if (clockTime.hour == 20 || clockTime.hour == 21) {
                 vFontHours = WatchUi.loadResource(Rez.Fonts.Font4);
                 vFontMinutes = WatchUi.loadResource(Rez.Fonts.Font6);
-            } else if (clockTime.hour == 22 || clockTime.hour == 23) {
+            } else if (clockTime.hour == 22) {
                 vFontHours = WatchUi.loadResource(Rez.Fonts.Font5);
+                vFontMinutes = WatchUi.loadResource(Rez.Fonts.Font6);
+            }
+             else if (clockTime.hour == 23) {
+                vFontHours = WatchUi.loadResource(Rez.Fonts.Font6);
                 vFontMinutes = WatchUi.loadResource(Rez.Fonts.Font6);
             }
             lastHourCheckVar = clockTime.hour;
@@ -149,14 +168,14 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         if (glance == true) {
             var seconds = clockTime.sec;
             dc.drawText(
-                sub_screen_middle_x,
+                sub_screen_middle_x+1,
                 sub_screen_middle_y,
-                Graphics.FONT_LARGE,
-                seconds.format("%02d"),
+                MediumFontFilled,
+                seconds,
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
             );
         }
-        
+
     //Battery
     dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
     var batteryPercentage = System.getSystemStats().battery.format("%.1f");
@@ -179,12 +198,56 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     else{
         dc.drawText(70,8,SmallFont,"100%",Graphics.TEXT_JUSTIFY_LEFT);
     }
-    // dc.drawText(117,100,SmallFont,"1234567890%",Graphics.TEXT_JUSTIFY_CENTER);
-    // dc.drawText(140,150,Graphics.FONT_SMALL,batteryInDays+"d",Graphics.TEXT_JUSTIFY_RIGHT);
+    
+
     //Day of Week
     var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
     var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
     dc.drawText(88,150, Graphics.FONT_XTINY,dateString,Graphics.TEXT_JUSTIFY_CENTER);
+    
+
+
+
+    //Data Fields
+
+    /*
+    72  H  Heart Rate
+    67  C  Calories
+    83  S  Steps
+    70  F  Floors Climbed
+    85  U  Solar Intensity
+    
+    
+    
+    */
+
+    //DATA FIELD 1
+
+    // dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+
+    var settingDataField1 = Application.Properties.getValue("DataField1");
+    
+    var settingDataField2 = Application.Properties.getValue("DataField2");
+    var settingDataField3 = Application.Properties.getValue("DataField3");
+    // var settingDataField4 = Application.Properties.getValue("DataField4");
+    // dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    // dc.drawLine(102,70,102,155);
+    
+    
+    dc.drawText(110,75,Icons,settingDataField1.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,100,Icons,settingDataField2.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,125,Icons,settingDataField3.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+
+    // dc.drawText(135,79,SmallFont,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
+
+    // dc.drawText(135,79,SmallFont,Activity.getActivityInfo().currentHeartRate,Graphics.TEXT_JUSTIFY_LEFT);
+    
+
+    
+        
+    // dc.drawText(100,140,Icons,settingDataField4.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    
+
     }
 
 
@@ -203,5 +266,11 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     function onEnterSleep() as Void {
         glance = false;
         WatchUi.requestUpdate();
+    }
+
+    function onSettingsChange() as Void {
+        
+        WatchUi.requestUpdate();
+
     }
 }
