@@ -62,7 +62,7 @@
   }, {
     "key" : "DataField3",
     "valueType" : "number",
-    "defaultValue" : 70,
+    "defaultValue" : 85,
     "configTitle" : "$literal7$",
     "configPrompt" : null,
     "configType" : "list",

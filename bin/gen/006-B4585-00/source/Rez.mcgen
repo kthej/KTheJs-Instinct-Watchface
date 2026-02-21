@@ -21,6 +21,7 @@ module Rez {
         (:initialized) var MediumFontFilled as ResourceId;
         (:initialized) var MediumFontHollow as ResourceId;
         (:initialized) var Icons as ResourceId;
+        (:initialized) var DataFont as ResourceId;
     } // Fonts
 
     module Layouts {

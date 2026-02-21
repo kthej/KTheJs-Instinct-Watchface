@@ -24,6 +24,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var MediumFontHollow;
     public var MediumFontFilled;
     public var Icons;
+    public var DataFont;
 
     public var dataField1Value;
     public var dataField2Value;
@@ -43,6 +44,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         SmallFont = WatchUi.loadResource(Rez.Fonts.SmallFont);
         MediumFontFilled = WatchUi.loadResource(Rez.Fonts.MediumFontFilled);
         MediumFontHollow = WatchUi.loadResource(Rez.Fonts.MediumFontHollow);
+        DataFont = WatchUi.loadResource(Rez.Fonts.DataFont);
         Icons = WatchUi.loadResource(Rez.Fonts.Icons);
         // var MediumFontFilled;
     }
@@ -225,22 +227,27 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     // dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
 
-    var settingDataField1 = Application.Properties.getValue("DataField1");
+    // var settingDataField1 = Application.Properties.getValue("DataField1");
     
-    var settingDataField2 = Application.Properties.getValue("DataField2");
-    var settingDataField3 = Application.Properties.getValue("DataField3");
+    // var settingDataField2 = Application.Properties.getValue("DataField2");
+    // var settingDataField3 = Application.Properties.getValue("DataField3");
     // var settingDataField4 = Application.Properties.getValue("DataField4");
     // dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
     // dc.drawLine(102,70,102,155);
     
     
-    dc.drawText(110,75,Icons,settingDataField1.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
-    dc.drawText(110,100,Icons,settingDataField2.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
-    dc.drawText(110,125,Icons,settingDataField3.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,80,Icons,72.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,100,Icons,83.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,120,Icons,85.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
 
     // dc.drawText(135,79,SmallFont,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
+    dataField1Value = Activity.getActivityInfo().currentHeartRate;
+    dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
+    dataField3Value = System.getSystemStats().solarIntensity;
 
-    // dc.drawText(135,79,SmallFont,Activity.getActivityInfo().currentHeartRate,Graphics.TEXT_JUSTIFY_LEFT);
+    if(dataField1Value != null){dc.drawText(135,81,DataFont,dataField1Value,Graphics.TEXT_JUSTIFY_LEFT);}
+    dc.drawText(135,101,DataFont,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
+    if(dataField3Value != null){dc.drawText(135,121,DataFont,dataField3Value,Graphics.TEXT_JUSTIFY_LEFT);}
     
 
     

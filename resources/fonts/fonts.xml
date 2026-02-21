@@ -11,5 +11,6 @@
     <font id="MediumFontFilled" filename="MediumFontFilled.fnt"/>
     <font id="MediumFontHollow" filename="MediumFontHollow.fnt" antialias="false"/>
     <font id="Icons" filename="Icons.fnt"/>
+    <font id="DataFont" filename="DataFont.fnt"/>
     </fonts>
 </resources>
