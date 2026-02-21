@@ -3,12 +3,12 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.Math;
+import Toybox.Time;
 
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var hours_element;
     public var minutes_element;
     public var clockTime;
-
     public var hr_element;
     public var currentHeartRate;
     public var glance = true;
@@ -18,6 +18,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var vFontHours;
     public var vFontMinutes;
     public var lastHourCheckVar = -1;
+    public var SmallFont;
+
     function initialize() {
         WatchFace.initialize();
         vFontHours = WatchUi.loadResource(Rez.Fonts.Font0);
@@ -27,24 +29,26 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
+        SmallFont = WatchUi.loadResource(Rez.Fonts.SmallFont);
     }
 
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() as Void {
-        clockTime = System.getClockTime();
+        
     }
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
-        dc.clear();
+        
         View.onUpdate(dc);
         var is24Hour = System.getDeviceSettings().is24Hour;
 
         // Current Time
 
         clockTime = System.getClockTime();
+
 
         //Check for 12/24hr time
         if (!is24Hour) {
@@ -99,57 +103,92 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             }
             lastHourCheckVar = clockTime.hour;
         }
-        //Draw Clock
-        
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        
-        dc.drawText(50, 27, vFontHours, hours, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(50, 89, vFontMinutes, minutes, Graphics.TEXT_JUSTIFY_CENTER);
 
+        //Draw Clock
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(60, 25, vFontHours, hours, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(60, 90, vFontMinutes, minutes, Graphics.TEXT_JUSTIFY_CENTER);
+
+        //SubScreen Circle variables
         var sub_screen_x = WatchUi.getSubscreen().x;
         var sub_screen_y = WatchUi.getSubscreen().y;
         var sub_screen_width = WatchUi.getSubscreen().width;
         var sub_screen_height = WatchUi.getSubscreen().height;
         var sub_screen_middle_x = sub_screen_x + sub_screen_width / 2;
         var sub_screen_middle_y = sub_screen_y + sub_screen_height / 2;
-        var integer_seconds = System.getClockTime().sec as Integer;
+        var integer_seconds = clockTime.sec as Integer;
 
+        //White Circle
+        var arcThickness = 12;
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.fillCircle(
             sub_screen_middle_x,
             sub_screen_middle_y,
-            sub_screen_width / 2
+            sub_screen_width / 2 - arcThickness - 2
         );
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
-        for (var i = 0; i < 7; i++) {
-            dc.drawArc(
+
+        //Seconds Arc
+        
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(arcThickness);
+        if (integer_seconds != 0){
+        dc.drawArc(
                 sub_screen_middle_x,
-                sub_screen_middle_y + 1,
-                sub_screen_height / 2 - i + 1,
-                Graphics.ARC_COUNTER_CLOCKWISE,
+                sub_screen_middle_y,
+                sub_screen_height / 2 - arcThickness/2,
+                Graphics.ARC_CLOCKWISE,
                 90,
                 -integer_seconds * 6 + 90
             );
         }
+        
+        dc.setPenWidth(1);
 
-        //SubScreen graphics
+        //Seconds Text
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         if (glance == true) {
-            var seconds = System.getClockTime().sec;
+            var seconds = clockTime.sec;
             dc.drawText(
                 sub_screen_middle_x,
                 sub_screen_middle_y,
-                Graphics.FONT_NUMBER_HOT,
+                Graphics.FONT_LARGE,
                 seconds.format("%02d"),
                 Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
             );
         }
-
-        // Call the parent onUpdate function to redraw the layout
+        
+    //Battery
+    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    var batteryPercentage = System.getSystemStats().battery.format("%.1f");
+    // var batteryInDays = System.getSystemStats().batteryInDays.format("%.0f");
+    
+        
+    var recX = 40;
+    var recY = 9;
+    var recW = 22;
+    var recH = 9;
+    
+    dc.drawRectangle(recX,recY,recW,recH);
+    
+    for (var i = 0; i < recH; i++){dc.drawLine(recX,recY+i,recX+((recW)*batteryPercentage.toFloat()*0.01),recY+i);}
+    dc.setPenWidth(1);
+    dc.drawLine(recX+recW+1,recY+2,recX+recW+1,recY+recH-2);
+    if(batteryPercentage.toFloat() != 100){
+    dc.drawText(70,8,SmallFont,Lang.format("$1$%",[batteryPercentage]),Graphics.TEXT_JUSTIFY_LEFT);
+    }
+    else{
+        dc.drawText(70,8,SmallFont,"100%",Graphics.TEXT_JUSTIFY_LEFT);
+    }
+    // dc.drawText(117,100,SmallFont,"1234567890%",Graphics.TEXT_JUSTIFY_CENTER);
+    // dc.drawText(140,150,Graphics.FONT_SMALL,batteryInDays+"d",Graphics.TEXT_JUSTIFY_RIGHT);
+    //Day of Week
+    var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
+    var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
+    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,Graphics.TEXT_JUSTIFY_CENTER);
     }
 
-    // Called when this View is removed from the screen. Save the
-    // state of this View here. This includes freeing resources from
-    // memory.
+
+
     function onHide() as Void {
         WatchUi.requestUpdate();
     }

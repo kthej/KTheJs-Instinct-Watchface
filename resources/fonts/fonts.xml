@@ -7,5 +7,6 @@
     <font id="Font4" filename="f4.fnt"/>
     <font id="Font5" filename="f5.fnt"/>
     <font id="Font6" filename="f6.fnt"/>
+    <font id="SmallFont" filename="SmallFont.fnt"/>
     </fonts>
 </resources>

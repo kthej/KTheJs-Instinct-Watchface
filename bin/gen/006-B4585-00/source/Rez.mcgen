@@ -17,6 +17,7 @@ module Rez {
         (:initialized) var Font4 as ResourceId;
         (:initialized) var Font5 as ResourceId;
         (:initialized) var Font6 as ResourceId;
+        (:initialized) var SmallFont as ResourceId;
     } // Fonts
 
     module Layouts {

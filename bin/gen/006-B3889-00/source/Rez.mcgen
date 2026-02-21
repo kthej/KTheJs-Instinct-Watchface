@@ -17,7 +17,6 @@ module Rez {
         (:initialized) var Font4 as ResourceId;
         (:initialized) var Font5 as ResourceId;
         (:initialized) var Font6 as ResourceId;
-        (:initialized) var SmallFont as ResourceId;
     } // Fonts
 
     module Layouts {
@@ -44,8 +43,8 @@ module Rez {
         } // prompt_font_enhanced_readability__body_with_title
 
         module system_size__menu_header {
-            const width as Number = 175;
-            const height as Number = 62;
+            const width as Number = 151;
+            const height as Number = 53;
         } // system_size__menu_header
 
         module system_loc__hint_button_left_bottom {
@@ -57,19 +56,19 @@ module Rez {
         } // prompt_font_enhanced_readability__body_no_title
 
         module prompt_loc__body_no_title {
-            const x as Number = 5;
-            const y as Number = 77;
+            const x as Number = 4;
+            const y as Number = 66;
         } // prompt_loc__body_no_title
 
         module system_icon_dark__about {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__about.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__about.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__about
 
         module system_icon_light__question {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__question.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__question.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -85,15 +84,15 @@ module Rez {
         } // prompt_font__title
 
         module system_icon_dark__discard {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__discard.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__discard.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__discard
 
         module system_size__menu_item {
-            const width as Number = 175;
-            const height as Number = 58;
+            const width as Number = 151;
+            const height as Number = 54;
         } // system_size__menu_item
 
         module system_color_dark__text {
@@ -102,22 +101,22 @@ module Rez {
         } // system_color_dark__text
 
         module system_icon_destructive__discard {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__discard.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__discard.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_destructive__discard
 
         module system_icon_dark__hint_action_menu {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__hint_action_menu
 
         module prompt_size__title {
-            const width as Number = 67;
-            const height as Number = 60;
+            const width as Number = 57;
+            const height as Number = 51;
         } // prompt_size__title
 
         module confirmation_font__body {
@@ -135,8 +134,8 @@ module Rez {
         } // system_icon_destructive__hint_button_left_top
 
         module system_size__launch_icon {
-            const scaleX as Number = 62;
-            const scaleY as Number = 62;
+            const scaleX as Number = 54;
+            const scaleY as Number = 54;
             const scaleRelativeTo as String = "screen";
         } // system_size__launch_icon
 
@@ -151,7 +150,7 @@ module Rez {
 
         module confirmation_loc__body {
             const x as Number = 2;
-            const y as Number = 81;
+            const y as Number = 69;
         } // confirmation_loc__body
 
         module system_icon_destructive__hint_button_left_bottom {
@@ -163,21 +162,21 @@ module Rez {
         } // prompt_color_dark__background
 
         module system_icon_destructive__hint_action_menu {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_destructive__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_destructive__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_destructive__hint_action_menu
 
         module system_loc__hint_action_menu {
-            const x as Number = 166;
-            const y as Number = 31;
+            const x as Number = 151;
+            const y as Number = 24;
             const horizontalJustification as String = "center";
             const verticalJustification as String = "center";
         } // system_loc__hint_action_menu
 
         module confirmation_icon__hint_confirm {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -188,8 +187,8 @@ module Rez {
         } // system_loc__hint_button_left_middle
 
         module prompt_size__body_no_title {
-            const width as Number = 166;
-            const height as Number = 99;
+            const width as Number = 142;
+            const height as Number = 85;
         } // prompt_size__body_no_title
 
         module system_icon_light__hint_button_left_top {
@@ -213,7 +212,7 @@ module Rez {
         } // system_input__action_menu
 
         module system_icon_light__save {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__save.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__save.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -225,12 +224,12 @@ module Rez {
         } // prompt_color_light__body
 
         module system_loc__subwindow {
-            const x as Number = 114;
+            const x as Number = 109;
             const y as Number = 0;
         } // system_loc__subwindow
 
         module system_icon_light__warning {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__warning.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__warning.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -242,7 +241,7 @@ module Rez {
         } // confirmation_color_light__body
 
         module confirmation_icon_light__hint_keep {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -254,15 +253,15 @@ module Rez {
         } // activity_color_light__background
 
         module system_icon_positive__hint_button_right_top {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_positive__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_positive__hint_button_right_top
 
         module system_size__screen {
-            const width as Number = 176;
-            const height as Number = 176;
+            const width as Number = 163;
+            const height as Number = 156;
         } // system_size__screen
 
         module system_icon_destructive__hint_button_right_bottom {
@@ -275,14 +274,14 @@ module Rez {
         } // system_color_light__background
 
         module system_icon_destructive__hint_button_right_top {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_destructive__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_destructive__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_destructive__hint_button_right_top
 
         module confirmation_loc__hint_confirm {
-            const x as Number = 113;
+            const x as Number = 110;
             const y as Number = 1;
         } // confirmation_loc__hint_confirm
 
@@ -296,12 +295,12 @@ module Rez {
         } // confirmation_input__keep
 
         module prompt_loc__body_with_title {
-            const x as Number = 5;
-            const y as Number = 77;
+            const x as Number = 4;
+            const y as Number = 66;
         } // prompt_loc__body_with_title
 
         module system_icon_dark__search {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__search.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__search.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -313,14 +312,14 @@ module Rez {
         } // activity_color_light__text
 
         module confirmation_icon__hint_keep {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon__hint_keep
 
         module system_icon_dark__save {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__save.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__save.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -331,7 +330,7 @@ module Rez {
         } // system_icon_destructive__hint_button_left_middle
 
         module system_icon_light__search {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__search.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__search.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -350,7 +349,7 @@ module Rez {
         } // system_loc__hint_button_right_bottom
 
         module confirmation_icon_dark__hint_reject {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -362,7 +361,7 @@ module Rez {
         } // confirmation_color_dark__body
 
         module confirmation_icon_light__hint_confirm {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -374,7 +373,7 @@ module Rez {
         } // prompt_color_dark__title
 
         module system_icon_destructive__cancel {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__cancel.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__cancel.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -385,8 +384,8 @@ module Rez {
         } // system_icon_light__hint_button_right_bottom
 
         module prompt_loc__title {
-            const x as Number = 25;
-            const y as Number = 9;
+            const x as Number = 21;
+            const y as Number = 8;
         } // prompt_loc__title
 
         module confirmation_font_enhanced_readability__body {
@@ -399,7 +398,7 @@ module Rez {
         } // prompt_color_light__title
 
         module system_icon_dark__hint_button_right_top {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -410,35 +409,36 @@ module Rez {
         } // system_icon_dark__hint_button_left_middle
 
         module confirmation_icon_dark__hint_keep {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_keep.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_keep.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon_dark__hint_keep
 
         module system_icon_light__cancel {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__cancel.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__cancel.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_light__cancel
 
         module confirmation_icon_light__hint_reject {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon_light__hint_reject
 
         module system_icon_light__about {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__about.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__about.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_light__about
 
         module system_size__toast_icon {
-            const width as Number = 44;
+            const scaleX as Number = 35;
+            const scaleY as Number = 35;
             const scaleRelativeTo as String = "screen";
         } // system_size__toast_icon
 
@@ -447,14 +447,14 @@ module Rez {
         } // system_icon_dark__hint_button_right_middle
 
         module confirmation_icon__hint_reject {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_reject.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_reject.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon__hint_reject
 
         module system_icon_light__hint_action_menu {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -470,11 +470,11 @@ module Rez {
 
         module confirmation_loc__hint_reject {
             const x as Number = 0;
-            const y as Number = 138;
+            const y as Number = 128;
         } // confirmation_loc__hint_reject
 
         module confirmation_icon_dark__hint_delete {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -494,13 +494,13 @@ module Rez {
         } // system_icon_positive__hint_button_left_middle
 
         module system_size__menu_icon {
-            const scaleX as Number = 38;
-            const scaleY as Number = 38;
+            const scaleX as Number = 32;
+            const scaleY as Number = 32;
             const scaleRelativeTo as String = "screen";
         } // system_size__menu_icon
 
         module system_icon_destructive__warning {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__warning.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__warning.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -511,20 +511,20 @@ module Rez {
         } // system_loc__hint_button_right_middle
 
         module system_icon_dark__cancel {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__cancel.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__cancel.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__cancel
 
         module prompt_size__body_with_title {
-            const width as Number = 166;
-            const height as Number = 99;
+            const width as Number = 142;
+            const height as Number = 85;
         } // prompt_size__body_with_title
 
         module system_loc__hint_button_right_top {
-            const x as Number = 166;
-            const y as Number = 31;
+            const x as Number = 151;
+            const y as Number = 24;
             const horizontalJustification as String = "center";
             const verticalJustification as String = "center";
         } // system_loc__hint_button_right_top
@@ -535,7 +535,7 @@ module Rez {
         } // system_color_light__text
 
         module system_icon_light__check {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__check.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__check.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -546,15 +546,15 @@ module Rez {
         } // confirmation_input__reject
 
         module system_icon_light__revert {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__revert.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__revert.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_light__revert
 
         module system_size__subwindow {
-            const width as Number = 62;
-            const height as Number = 62;
+            const width as Number = 54;
+            const height as Number = 54;
         } // system_size__subwindow
 
         module system_icon_positive__hint_button_left_bottom {
@@ -562,7 +562,7 @@ module Rez {
         } // system_icon_positive__hint_button_left_bottom
 
         module system_icon_dark__check {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__check.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__check.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -570,18 +570,19 @@ module Rez {
 
         module confirmation_loc__hint_keep {
             const x as Number = 0;
-            const y as Number = 138;
+            const y as Number = 128;
+            const horizontalJustification as String = "left";
         } // confirmation_loc__hint_keep
 
         module confirmation_loc__hint_delete {
-            const verticallJustification as String = "center";
-            const x as Number = 146;
-            const y as Number = 15;
+            const x as Number = 136;
+            const y as Number = 26;
             const horizontalJustification as String = "center";
+            const verticalJustification as String = "center";
         } // confirmation_loc__hint_delete
 
         module system_icon_positive__hint_action_menu {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_positive__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_positive__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -604,45 +605,45 @@ module Rez {
         } // system_icon_positive__hint_button_right_bottom
 
         module system_icon_dark__revert {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__revert.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__revert.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__revert
 
         module confirmation_icon_light__hint_delete {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon_light__hint_delete
 
         module system_icon_dark__question {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__question.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__question.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__question
 
         module system_icon_light__discard {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__discard.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__discard.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_light__discard
 
         module device_info {
-            const screenWidth as Number = 176;
+            const screenWidth as Number = 163;
             const screenShape = Toybox.System.SCREEN_SHAPE_SEMI_OCTAGON;
             const hasNightMode as Boolean = false;
             const hasGpu as Boolean = false;
-            const screenHeight as Number = 176;
+            const screenHeight as Number = 156;
             const hasTouchScreen as Boolean = false;
             const hasEnhancedReadabilityMode as Boolean = false;
         } // device_info
 
         module confirmation_icon_dark__hint_confirm {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_completion.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_completion.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
@@ -654,21 +655,21 @@ module Rez {
         } // prompt_font__body_no_title
 
         module prompt_size__title_icon {
-            const scaleX as Number = 38;
-            const scaleY as Number = 38;
+            const scaleX as Number = 32;
+            const scaleY as Number = 32;
             const scaleRelativeTo as String = "screen";
         } // prompt_size__title_icon
 
         module system_icon_dark__warning {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__warning.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__warning.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_dark__warning
 
         module prompt_loc__title_icon {
-            const x as Number = 145;
-            const y as Number = 31;
+            const x as Number = 136;
+            const y as Number = 27;
             const horizontalJustification as String = "center";
             const verticalJustification as String = "center";
         } // prompt_loc__title_icon
@@ -683,26 +684,26 @@ module Rez {
         } // prompt_color_dark__body
 
         module confirmation_icon__hint_delete {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/confirmation_icon__hint_delete.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/confirmation_icon__hint_delete.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // confirmation_icon__hint_delete
 
         module system_icon_light__hint_button_right_top {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_light__hint_button_right_top.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_light__hint_button_right_top.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
         } // system_icon_light__hint_button_right_top
 
         module confirmation_size__body {
-            const width as Number = 173;
-            const height as Number = 63;
+            const width as Number = 148;
+            const height as Number = 54;
         } // confirmation_size__body
 
         module system_icon_positive__check {
-            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct3solar45mm/system_icon_dark__check.svg";
+            const filename as String = "/home/kaden/.Garmin/ConnectIQ/Devices/instinct2s/system_icon_dark__check.svg";
             const disableTransparency as Boolean = true;
             const dithering as String = "none";
             const automaticPalette as Boolean = true;
