@@ -51,13 +51,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     85  U  Solar Intensity
     */
     
-    
-    // Custom Data Fields
 
-    public var dataField1Value;
-    public var dataField2Value;
-    public var dataField3Value;
-    public var dataField4Value;
+
 
     // Other
 
@@ -204,7 +199,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         var integer_seconds = clockTime.sec as Integer;
 
         var arcThickness = 12;
-        var circleRadius = sub_screen_width / 2;
+        var circleRadius = sub_screen_width / 2 - arcThickness - 2;
 
         // Background for Seconds text (just a white circle)
 
@@ -252,9 +247,9 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Variables
 
     var batteryPercentage = System.getSystemStats().battery.format("%.0f");
-    var recX = 45;
+    var recX = 70;
     var recY = 9;
-    var recW = 22;
+    var recW = 20;
     var recH = 9;
     
     dc.setColor(COLOR_WHITE,COLOR_CLEAR);
@@ -262,7 +257,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     // Battery Text
 
-    dc.drawText(75,8,FONT_SMALL,Lang.format("$1$%",[batteryPercentage]),ALIGN_LEFT);
+    dc.drawText(66,8,FONT_SMALL,Lang.format("$1$%",[batteryPercentage]),ALIGN_RIGHT);
     
     // Battery Icon
 
@@ -279,7 +274,15 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
     var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
 
-    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER); // Bottom date text, will create custom font later
+    var dataField1Value = Activity.getActivityInfo().currentHeartRate;
+    var dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
+    var dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
+    var dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+    if (dataField4Value >100) { dataField4Value = 100; }
+
+    // Bottom date text, will create custom font later
+
+    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER); 
 
     // Data Field Icons
 
@@ -287,30 +290,21 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     dc.drawText(110,100,Icons,83.toChar(),ALIGN_LEFT);
     dc.drawText(110,120,Icons,70.toChar(),ALIGN_LEFT);
 
-    dataField1Value = Activity.getActivityInfo().currentHeartRate;
-    dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
-    dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
-    dataField4Value = System.getSystemStats().solarIntensity.toFloat();
-    if (dataField4Value >100){dataField4Value = 100;}
-    if(dataField1Value != null){dc.drawText(135,81,FONT_DATA,dataField1Value,ALIGN_LEFT);}
-    dc.drawText(135,101,FONT_DATA,dataField2Value,ALIGN_LEFT);
-    if(dataField3Value != null){dc.drawText(135,121,FONT_DATA,dataField3Value,ALIGN_LEFT);}
+    if(dataField1Value != null){ dc.drawText(135,81,FONT_DATA,dataField1Value,ALIGN_LEFT);  }
+    if(dataField3Value != null){ dc.drawText(135,101,FONT_DATA,dataField2Value,ALIGN_LEFT); }
+    if(dataField3Value != null){ dc.drawText(135,121,FONT_DATA,dataField3Value,ALIGN_LEFT); }
 
 // Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
     
     // Variables
-    
+
     var barHeight = 150;
     var barY = 15;
     var barX = 10;
-
-    // Icon
-
-    dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
+    
 
 
-
-    // Draw main bar
+    // Draw progress bar
 
     dc.setColor(COLOR_WHITE,COLOR_CLEAR);
     dc.fillRectangle(barX,barY,10,barHeight);
@@ -318,9 +312,15 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     dc.setColor(COLOR_BLACK,COLOR_CLEAR);
     dc.fillRectangle(barX,barY,10,(barHeight-(dataField4Value*barHeight/100)));
 
+    // Icon
+    // dc.setPenWidth(1);
+    dc.setColor(COLOR_WHITE,COLOR_BLACK);
+    dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
+
     }
 
     // reverse peekaboo
+
     function onHide() as Void {
         WatchUi.requestUpdate();
     }
