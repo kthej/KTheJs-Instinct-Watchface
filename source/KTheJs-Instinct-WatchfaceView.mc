@@ -11,7 +11,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 // Main Variable Assignments //////////////////////////////////////////////////////////////////////
     
     // Main Clock variables
-
+    
     public var hours_element;
     public var minutes_element;
     public var lastHourCheckVar = -1;
@@ -26,8 +26,17 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var FONT_MEDIUM_FILLED;
     public var FONT_DATA;
 
-    //Colors
-    public var WHITE = Graphics.COLOR_WHITE;
+    // Colors
+
+    public var COLOR_WHITE = Graphics.COLOR_WHITE;
+    public var COLOR_BLACK = Graphics.COLOR_BLACK;
+    public var COLOR_CLEAR = Graphics.COLOR_TRANSPARENT;
+
+    // Text Alignment
+    public var ALIGN_LEFT = Graphics.TEXT_JUSTIFY_LEFT;
+    public var ALIGN_RIGHT = Graphics.TEXT_JUSTIFY_RIGHT;
+    public var ALIGN_CENTER = Graphics.TEXT_JUSTIFY_CENTER;
+    public var ALIGN_VCENTER = Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER;
 
     // Icons
 
@@ -67,6 +76,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     function onLayout(dc as Dc) as Void { 
 
         setLayout(Rez.Layouts.WatchFace(dc));
+
         FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
         FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font0);
         FONT_SMALL = WatchUi.loadResource(Rez.Fonts.SmallFont);
@@ -104,7 +114,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         }
         
 
-        // Hour font loop, checks for how much of day has passed and selects fill font accordingly
+// Hour font loop /////////////////////////////////////////////////////////////////////////////////
+// Checks for how much of day has passed and selects fill font accordingly
 
         if (clockTime.hour != lastHourCheckVar) {
             
@@ -172,35 +183,44 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             lastHourCheckVar = clockTime.hour;
         }
 
-        //Draw Clock
+        // Draw Clock
 
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(65, 25, FONT_HOURS, hours, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(65, 90, FONT_MINUTES, minutes, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
+        dc.drawText(65, 25, FONT_HOURS, hours, ALIGN_CENTER);
+        dc.drawText(65, 90, FONT_MINUTES, minutes, ALIGN_CENTER);
 
-        //SubScreen Circle variables
+// SubScreen Circle ///////////////////////////////////////////////////////////////////////////////
 
-        var sub_screen_x = WatchUi.getSubscreen().x;
-        var sub_screen_y = WatchUi.getSubscreen().y;
-        var sub_screen_width = WatchUi.getSubscreen().width;
-        var sub_screen_height = WatchUi.getSubscreen().height;
+        // Variables
+
+        var sub_screen = WatchUi.getSubscreen();
+        var sub_screen_x = sub_screen.x;
+        var sub_screen_y = sub_screen.y;
+        var sub_screen_width = sub_screen.width;
+        var sub_screen_height = sub_screen.height;
         var sub_screen_middle_x = sub_screen_x + sub_screen_width / 2;
         var sub_screen_middle_y = sub_screen_y + sub_screen_height / 2;
+
         var integer_seconds = clockTime.sec as Integer;
 
-        //White Circle
         var arcThickness = 12;
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        var circleRadius = sub_screen_width / 2;
+
+        // Background for Seconds text (just a white circle)
+
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
+
         dc.fillCircle(
             sub_screen_middle_x,
             sub_screen_middle_y,
-            sub_screen_width / 2 - arcThickness - 2
+            circleRadius
         );
 
-        //Seconds Arc
+        // Seconds Arc
         
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.setPenWidth(arcThickness);
+
         if (integer_seconds != 0){
         dc.drawArc(
                 sub_screen_middle_x,
@@ -212,11 +232,10 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             );
         }
         
-        dc.setPenWidth(1);
+        // Seconds Text
 
-        //Seconds Text
-
-        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        dc.setColor(COLOR_BLACK, COLOR_CLEAR);
+    
         if (glance == true) {
             var seconds = clockTime.sec;
             dc.drawText(
@@ -224,10 +243,9 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
                 sub_screen_middle_y,
                 FONT_MEDIUM_FILLED,
                 seconds,
-                Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
+                ALIGN_VCENTER
             );
         }
-
 
 // Battery and battery icon ///////////////////////////////////////////////////////////////////////
 
@@ -239,12 +257,12 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     var recW = 22;
     var recH = 9;
     
-    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
     dc.setPenWidth(1);
 
     // Battery Text
 
-    dc.drawText(75,8,FONT_SMALL,Lang.format("$1$%",[batteryPercentage]),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(75,8,FONT_SMALL,Lang.format("$1$%",[batteryPercentage]),ALIGN_LEFT);
     
     // Battery Icon
 
@@ -261,38 +279,39 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
     var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
 
-    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,Graphics.TEXT_JUSTIFY_CENTER);
+    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER);
     
     
 
 
-    dc.drawText(110,80,Icons,72.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
-    dc.drawText(110,100,Icons,83.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
-    dc.drawText(110,120,Icons,70.toChar(),Graphics.TEXT_JUSTIFY_LEFT);
+    dc.drawText(110,80,Icons,72.toChar(),ALIGN_LEFT);
+    dc.drawText(110,100,Icons,83.toChar(),ALIGN_LEFT);
+    dc.drawText(110,120,Icons,70.toChar(),ALIGN_LEFT);
 
     dataField1Value = Activity.getActivityInfo().currentHeartRate;
     dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
     dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
     dataField4Value = System.getSystemStats().solarIntensity.toFloat();
     if (dataField4Value >100){dataField4Value = 100;}
-    if(dataField1Value != null){dc.drawText(135,81,FONT_DATA,dataField1Value,Graphics.TEXT_JUSTIFY_LEFT);}
-    dc.drawText(135,101,FONT_DATA,dataField2Value,Graphics.TEXT_JUSTIFY_LEFT);
-    if(dataField3Value != null){dc.drawText(135,121,FONT_DATA,dataField3Value,Graphics.TEXT_JUSTIFY_LEFT);}
+    if(dataField1Value != null){dc.drawText(135,81,FONT_DATA,dataField1Value,ALIGN_LEFT);}
+    dc.drawText(135,101,FONT_DATA,dataField2Value,ALIGN_LEFT);
+    if(dataField3Value != null){dc.drawText(135,121,FONT_DATA,dataField3Value,ALIGN_LEFT);}
 
 
     var barHeight = 150;
     var barY = 15;
     var barX = 10;
-    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+
+    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
     dc.fillRectangle(barX,barY,10,barHeight);
-    dc.setColor(Graphics.COLOR_BLACK,Graphics.COLOR_TRANSPARENT);
+    dc.setColor(COLOR_BLACK,COLOR_CLEAR);
 
     dc.fillRectangle(barX,barY,10,(barHeight-(dataField4Value*barHeight/100)));
-    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_TRANSPARENT);
+    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
     dc.setPenWidth(1);
 
-    dc.setColor(Graphics.COLOR_WHITE,Graphics.COLOR_BLACK);
-    dc.drawText(barX+5,87,Icons,85.toChar(),Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER);
+    dc.setColor(COLOR_WHITE,COLOR_BLACK);
+    dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
 
     
         
