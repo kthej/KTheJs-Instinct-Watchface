@@ -272,17 +272,16 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     
     
-// Day of Week ////////////////////////////////////////////////////////////////////////////////////
+// Data Fields ////////////////////////////////////////////////////////////////////////////////////
 
-    // Variables
+    // Date
 
     var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
     var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
 
-    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER);
-    
-    
+    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER); // Bottom date text, will create custom font later
 
+    // Data Field Icons
 
     dc.drawText(110,80,Icons,72.toChar(),ALIGN_LEFT);
     dc.drawText(110,100,Icons,83.toChar(),ALIGN_LEFT);
@@ -297,46 +296,52 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     dc.drawText(135,101,FONT_DATA,dataField2Value,ALIGN_LEFT);
     if(dataField3Value != null){dc.drawText(135,121,FONT_DATA,dataField3Value,ALIGN_LEFT);}
 
-
+// Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
+    
+    // Variables
+    
     var barHeight = 150;
     var barY = 15;
     var barX = 10;
 
-    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
-    dc.fillRectangle(barX,barY,10,barHeight);
-    dc.setColor(COLOR_BLACK,COLOR_CLEAR);
+    // Icon
 
-    dc.fillRectangle(barX,barY,10,(barHeight-(dataField4Value*barHeight/100)));
-    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
-    dc.setPenWidth(1);
-
-    dc.setColor(COLOR_WHITE,COLOR_BLACK);
     dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
 
-    
-        
+
+
+    // Draw main bar
+
+    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
+    dc.fillRectangle(barX,barY,10,barHeight);
+
+    dc.setColor(COLOR_BLACK,COLOR_CLEAR);
+    dc.fillRectangle(barX,barY,10,(barHeight-(dataField4Value*barHeight/100)));
 
     }
 
-
+    // reverse peekaboo
     function onHide() as Void {
         WatchUi.requestUpdate();
     }
 
-    
-    function onExitSleep() as Void { //User looks at watch
+    // User looks at watch
+
+    function onExitSleep() as Void {
         glance = true;
         WatchUi.requestUpdate();
     }
 
+    // User looks away from watch
 
-    function onEnterSleep() as Void { //User looks away from watch
+    function onEnterSleep() as Void { 
+
         glance = false;
         WatchUi.requestUpdate();
     }
 
     function onSettingsChange() as Void {
-        
+
         WatchUi.requestUpdate();
 
     }
