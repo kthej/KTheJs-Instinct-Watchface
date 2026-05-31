@@ -19,8 +19,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     // Fonts, all custom made :)
 
-    public var FONT_HOURS;
-    public var FONT_MINUTES;
+    public var FONT_BLACK;
+    public var FONT_WHITE;
     public var FONT_SMALL;
     public var FONT_MEDIUM_HOLLOW;
     public var FONT_MEDIUM_FILLED;
@@ -72,8 +72,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
         setLayout(Rez.Layouts.WatchFace(dc));
 
-        FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-        FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font0);
+        FONT_BLACK = WatchUi.loadResource(Rez.Fonts.Time_Black);
+        FONT_WHITE = WatchUi.loadResource(Rez.Fonts.Time_White);
         FONT_SMALL = WatchUi.loadResource(Rez.Fonts.SmallFont);
         FONT_MEDIUM_FILLED = WatchUi.loadResource(Rez.Fonts.MediumFontFilled);
         FONT_MEDIUM_HOLLOW = WatchUi.loadResource(Rez.Fonts.MediumFontHollow);
@@ -100,7 +100,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         var clockTime = System.getClockTime();
         var hours = clockTime.hour.format("%02d");
         var minutes = clockTime.min.format("%02d");
-
+        var dayPercentage;
         if (!is24Hour) { //Check for 12/24hr time.
             hours = (clockTime.hour % 12).format("%02d");
             if (hours.toFloat() == 0) {
@@ -109,80 +109,54 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         }
         
 
-// Hour font loop /////////////////////////////////////////////////////////////////////////////////
-// Checks for how much of day has passed and selects fill font accordingly
 
-        if (clockTime.hour != lastHourCheckVar) {
-            
-            //Free resource from memory to be reassigned later
+//Font Fill Drawing ///////////////////////////////////////////////////////////////////////////////
 
-            FONT_HOURS = null; 
-            FONT_MINUTES = null;
 
-            if (clockTime.hour == 0 or clockTime.hour == 1) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font0);
-            }
-            else if (clockTime.hour == 2 or clockTime.hour == 3) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font1);
-            }
-            else if (clockTime.hour == 4 or clockTime.hour == 5) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font2);
-            }
-            else if (clockTime.hour == 6 or clockTime.hour == 7) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font3);
-            }
-            else if (clockTime.hour == 8 or clockTime.hour == 9) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font4);
-            }
-            else if (clockTime.hour == 10 or clockTime.hour == 11) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font5);
-            }
-            else if (clockTime.hour == 12 or clockTime.hour == 13) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font0);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
-            else if (clockTime.hour == 14 or clockTime.hour == 15) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font1);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
-            else if (clockTime.hour == 16 or clockTime.hour == 17) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font2);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
-            else if (clockTime.hour == 18 or clockTime.hour == 19) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font3);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
-            else if (clockTime.hour == 20 or clockTime.hour == 21) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font4);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            } 
-            else if (clockTime.hour == 22) {
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font5);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
-            
-            // I wanted to have the font be fully filled at somepoint, so the last hour is filled fully
 
-             else if (clockTime.hour == 23) { 
-                FONT_HOURS = WatchUi.loadResource(Rez.Fonts.Font6);
-                FONT_MINUTES = WatchUi.loadResource(Rez.Fonts.Font6);
-            }
 
-            lastHourCheckVar = clockTime.hour;
-        }
 
         // Draw Clock
 
+
+
+        dayPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat())/1440;
+        dc.setColor(COLOR_WHITE,COLOR_CLEAR);
+        dc.fillRectangle(
+            30,
+            26,
+            65,
+            124
+        );
+        dc.setColor(COLOR_BLACK,COLOR_CLEAR);
+        dc.fillRectangle(
+            30,26,
+            65,
+            124*(1-dayPercentage)
+        );
+        System.print(dayPercentage*100+"\n");
+
+        dc.setColor(COLOR_BLACK, COLOR_CLEAR);
+        dc.drawText(65, 25, FONT_BLACK, hours, ALIGN_CENTER);
+        dc.drawText(65, 90, FONT_BLACK, minutes, ALIGN_CENTER);
+
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
-        dc.drawText(65, 25, FONT_HOURS, hours, ALIGN_CENTER);
-        dc.drawText(65, 90, FONT_MINUTES, minutes, ALIGN_CENTER);
+        dc.drawText(65, 25, FONT_WHITE, hours, ALIGN_CENTER);
+        dc.drawText(65, 90, FONT_WHITE, minutes, ALIGN_CENTER);
+        dc.setColor(COLOR_BLACK,COLOR_CLEAR);
+
+        dc.fillRectangle(60,26,5,125); //Vertical black bar
+        dc.fillRectangle(30,86,65,5);//Horizontal black bar
+
+
+
+
+
+
+
+
+
+
 
 // SubScreen Circle ///////////////////////////////////////////////////////////////////////////////
 
@@ -262,7 +236,9 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Battery Icon
 
     dc.drawRectangle(recX,recY,recW,recH);
-    for (var i = 0; i < recH; i++){dc.drawLine(recX,recY+i,recX+((recW)*batteryPercentage.toFloat()*0.01),recY+i);}
+    for (var i = 0; i < recH; i++){
+        dc.drawLine(recX,recY+i,recX+((recW)*batteryPercentage.toFloat()*0.01),recY+i);
+        }
     dc.drawLine(recX+recW+1,recY+2,recX+recW+1,recY+recH-2);
 
     
@@ -316,6 +292,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // dc.setPenWidth(1);
     dc.setColor(COLOR_WHITE,COLOR_BLACK);
     dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
+
+
 
     }
 
