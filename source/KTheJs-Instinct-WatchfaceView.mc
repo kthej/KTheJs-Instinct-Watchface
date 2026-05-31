@@ -8,14 +8,13 @@ import Toybox.ActivityMonitor;
 
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
-// Main Variable Assignments //////////////////////////////////////////////////////////////////////
-    
+    // Main Variable Assignments //////////////////////////////////////////////////////////////////////
+
     // Main Clock variables
-    
+
     public var hours_element;
     public var minutes_element;
     public var lastHourCheckVar = -1;
-    
 
     // Fonts, all custom made :)
 
@@ -50,9 +49,6 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     70  F  Floors Climbed
     85  U  Solar Intensity
     */
-    
-
-
 
     // Other
 
@@ -60,15 +56,15 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     public var currentHeartRate;
     public var glance = true;
 
-// Functions and stuff ////////////////////////////////////////////////////////////////////////////
+    // Functions and stuff ////////////////////////////////////////////////////////////////////////////
 
     // Initialization
 
     function initialize() { WatchFace.initialize(); }
-    
+
     // Resource Loading
 
-    function onLayout(dc as Dc) as Void { 
+    function onLayout(dc as Dc) as Void {
 
         setLayout(Rez.Layouts.WatchFace(dc));
 
@@ -79,9 +75,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         FONT_MEDIUM_HOLLOW = WatchUi.loadResource(Rez.Fonts.MediumFontHollow);
         FONT_DATA = WatchUi.loadResource(Rez.Fonts.DataFont);
         Icons = WatchUi.loadResource(Rez.Fonts.Icons);
-
     }
-    
+
     // Called when this View is brought to the foreground
 
     function onShow() as Void {}
@@ -89,7 +84,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Main Loop
 
     function onUpdate(dc as Dc) as Void {
-        
+
         // Main loop callback thingy
 
         View.onUpdate(dc);
@@ -101,40 +96,23 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         var hours = clockTime.hour.format("%02d");
         var minutes = clockTime.min.format("%02d");
         var dayPercentage;
-        if (!is24Hour) { //Check for 12/24hr time.
+        if (!is24Hour) { // Check for 12/24hr time.
             hours = (clockTime.hour % 12).format("%02d");
             if (hours.toFloat() == 0) {
                 hours = 12;
             }
         }
-        
 
-
-//Font Fill Drawing ///////////////////////////////////////////////////////////////////////////////
-
-
-
-
+        // Font Fill Drawing ///////////////////////////////////////////////////////////////////////////////
 
         // Draw Clock
 
-
-
-        dayPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat())/1440;
-        dc.setColor(COLOR_WHITE,COLOR_CLEAR);
-        dc.fillRectangle(
-            30,
-            26,
-            65,
-            124
-        );
-        dc.setColor(COLOR_BLACK,COLOR_CLEAR);
-        dc.fillRectangle(
-            30,26,
-            65,
-            124*(1-dayPercentage)
-        );
-        System.print(dayPercentage*100+"\n");
+        dayPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat()) / 1440;
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
+        dc.fillRectangle(30, 26, 65, 124);
+        dc.setColor(COLOR_BLACK, COLOR_CLEAR);
+        dc.fillRectangle(30, 26, 65, 124 * (1 - dayPercentage));
+        System.print(dayPercentage * 100 + "\n");
 
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
         dc.drawText(65, 25, FONT_BLACK, hours, ALIGN_CENTER);
@@ -143,22 +121,12 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.drawText(65, 25, FONT_WHITE, hours, ALIGN_CENTER);
         dc.drawText(65, 90, FONT_WHITE, minutes, ALIGN_CENTER);
-        dc.setColor(COLOR_BLACK,COLOR_CLEAR);
+        dc.setColor(COLOR_BLACK, COLOR_CLEAR);
 
-        dc.fillRectangle(60,26,5,125); //Vertical black bar
-        dc.fillRectangle(30,86,65,5);//Horizontal black bar
+        dc.fillRectangle(60, 26, 5, 125); // Vertical black bar
+        dc.fillRectangle(30, 86, 65, 5); // Horizontal black bar
 
-
-
-
-
-
-
-
-
-
-
-// SubScreen Circle ///////////////////////////////////////////////////////////////////////////////
+        // SubScreen Circle ///////////////////////////////////////////////////////////////////////////////
 
         // Variables
 
@@ -179,129 +147,118 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
 
-        dc.fillCircle(
-            sub_screen_middle_x,
-            sub_screen_middle_y,
-            circleRadius
-        );
+        dc.fillCircle(sub_screen_middle_x, sub_screen_middle_y, circleRadius);
 
         // Seconds Arc
-        
+
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.setPenWidth(arcThickness);
 
-        if (integer_seconds != 0){
-        dc.drawArc(
-                sub_screen_middle_x,
-                sub_screen_middle_y,
-                sub_screen_height / 2 - arcThickness/2,
-                Graphics.ARC_CLOCKWISE,
-                90,
-                -integer_seconds * 6 + 90
-            );
+        if (integer_seconds != 0) {
+            dc.drawArc(sub_screen_middle_x, sub_screen_middle_y, sub_screen_height / 2 - arcThickness / 2,
+                       Graphics.ARC_CLOCKWISE, 90, -integer_seconds * 6 + 90);
         }
-        
+
         // Seconds Text
 
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
-    
+
         if (glance == true) {
             var seconds = clockTime.sec;
-            dc.drawText(
-                sub_screen_middle_x+1,
-                sub_screen_middle_y,
-                FONT_MEDIUM_FILLED,
-                seconds,
-                ALIGN_VCENTER
-            );
+            dc.drawText(sub_screen_middle_x + 1, sub_screen_middle_y, FONT_MEDIUM_FILLED, seconds, ALIGN_VCENTER);
         }
 
-// Battery and battery icon ///////////////////////////////////////////////////////////////////////
+        // Battery and battery icon ///////////////////////////////////////////////////////////////////////
 
-    // Variables
+        // Variables
 
-    var batteryPercentage = System.getSystemStats().battery.format("%.0f");
-    var recX = 70;
-    var recY = 9;
-    var recW = 20;
-    var recH = 9;
-    
-    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
-    dc.setPenWidth(1);
+        var batteryPercentage = System.getSystemStats().battery.format("%.0f");
+        var recX = 70;
+        var recY = 9;
+        var recW = 20;
+        var recH = 9;
 
-    // Battery Text
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
+        dc.setPenWidth(1);
 
-    dc.drawText(66,8,FONT_SMALL,Lang.format("$1$%",[batteryPercentage]),ALIGN_RIGHT);
-    
-    // Battery Icon
+        // Battery Text
 
-    dc.drawRectangle(recX,recY,recW,recH);
-    for (var i = 0; i < recH; i++){
-        dc.drawLine(recX,recY+i,recX+((recW)*batteryPercentage.toFloat()*0.01),recY+i);
+        dc.drawText(66, 8, FONT_SMALL, Lang.format("$1$%", [batteryPercentage]), ALIGN_RIGHT);
+
+        // Battery Icon
+
+        dc.drawRectangle(recX, recY, recW, recH);
+        for (var i = 0; i < recH; i++) {
+            dc.drawLine(recX, recY + i, recX + ((recW)*batteryPercentage.toFloat() * 0.01), recY + i);
         }
-    dc.drawLine(recX+recW+1,recY+2,recX+recW+1,recY+recH-2);
+        dc.drawLine(recX + recW + 1, recY + 2, recX + recW + 1, recY + recH - 2);
 
-    
-    
-// Data Fields ////////////////////////////////////////////////////////////////////////////////////
+        // Data Fields ////////////////////////////////////////////////////////////////////////////////////
 
-    // Date
+        // Date
 
-    var dateVar = Time.Gregorian.info(Time.now(),Time.FORMAT_LONG);
-    var dateString = dateVar.day_of_week+" "+dateVar.month+" "+dateVar.day;
+        var dateVar = Time.Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        var dateString = dateVar.day_of_week + " " + dateVar.month + " " + dateVar.day;
 
-    var dataField1Value = Activity.getActivityInfo().currentHeartRate;
-    var dataField2Value = (ActivityMonitor.getInfo().steps/1000.0).format("%.1f")+"k";
-    var dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
-    var dataField4Value = System.getSystemStats().solarIntensity.toFloat();
-    if (dataField4Value >100) { dataField4Value = 100; }
+        var dataField1Value = Activity.getActivityInfo().currentHeartRate;
+        var dataField2Value = (ActivityMonitor.getInfo().steps / 1000.0).format("%.1f") + "k";
+        var dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
+        var dataField4Value;
+        if (System.getSystemStats() has :solarIntensity and System.getSystemStats().solarIntensity != null) {
+            dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+        } else {
+            dataField4Value = 100;
+        }
 
-    // Bottom date text, will create custom font later
+        if (dataField4Value > 100) {
+            dataField4Value = 100;
+        }
 
-    dc.drawText(88,150, Graphics.FONT_XTINY,dateString,ALIGN_CENTER); 
+        // Bottom date text, will create custom font later
 
-    // Data Field Icons
+        dc.drawText(88, 150, Graphics.FONT_XTINY, dateString, ALIGN_CENTER);
 
-    dc.drawText(110,80,Icons,72.toChar(),ALIGN_LEFT);
-    dc.drawText(110,100,Icons,83.toChar(),ALIGN_LEFT);
-    dc.drawText(110,120,Icons,70.toChar(),ALIGN_LEFT);
+        // Data Field Icons
 
-    if(dataField1Value != null){ dc.drawText(135,81,FONT_DATA,dataField1Value,ALIGN_LEFT);  }
-    if(dataField3Value != null){ dc.drawText(135,101,FONT_DATA,dataField2Value,ALIGN_LEFT); }
-    if(dataField3Value != null){ dc.drawText(135,121,FONT_DATA,dataField3Value,ALIGN_LEFT); }
+        dc.drawText(110, 80, Icons, 72.toChar(), ALIGN_LEFT);
+        dc.drawText(110, 100, Icons, 83.toChar(), ALIGN_LEFT);
+        dc.drawText(110, 120, Icons, 70.toChar(), ALIGN_LEFT);
 
-// Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
-    
-    // Variables
+        if (dataField1Value != null) {
+            dc.drawText(135, 81, FONT_DATA, dataField1Value, ALIGN_LEFT);
+        }
+        if (dataField3Value != null) {
+            dc.drawText(135, 101, FONT_DATA, dataField2Value, ALIGN_LEFT);
+        }
+        if (dataField3Value != null) {
+            dc.drawText(135, 121, FONT_DATA, dataField3Value, ALIGN_LEFT);
+        }
 
-    var barHeight = 150;
-    var barY = 15;
-    var barX = 10;
-    
+        // Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
 
+        // Variables
 
-    // Draw progress bar
+        var barHeight = 150;
+        var barY = 15;
+        var barX = 10;
 
-    dc.setColor(COLOR_WHITE,COLOR_CLEAR);
-    dc.fillRectangle(barX,barY,10,barHeight);
+        // Draw progress bar
 
-    dc.setColor(COLOR_BLACK,COLOR_CLEAR);
-    dc.fillRectangle(barX,barY,10,(barHeight-(dataField4Value*barHeight/100)));
+        dc.setColor(COLOR_WHITE, COLOR_CLEAR);
+        dc.fillRectangle(barX, barY, 10, barHeight);
 
-    // Icon
-    // dc.setPenWidth(1);
-    dc.setColor(COLOR_WHITE,COLOR_BLACK);
-    dc.drawText(barX+5,87,Icons,85.toChar(),ALIGN_VCENTER);
+        dc.setColor(COLOR_BLACK, COLOR_CLEAR);
+        dc.fillRectangle(barX, barY, 10, (barHeight - (dataField4Value * barHeight / 100)));
 
-
-
+        // Icon
+        // dc.setPenWidth(1);
+        dc.setColor(COLOR_WHITE, COLOR_BLACK);
+        dc.drawText(barX + 5, 87, Icons, 85.toChar(), ALIGN_VCENTER);
     }
 
     // reverse peekaboo
 
-    function onHide() as Void {
-        WatchUi.requestUpdate();
-    }
+    function onHide() as Void { WatchUi.requestUpdate(); }
 
     // User looks at watch
 
@@ -312,7 +269,7 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
     // User looks away from watch
 
-    function onEnterSleep() as Void { 
+    function onEnterSleep() as Void {
 
         glance = false;
         WatchUi.requestUpdate();
@@ -321,6 +278,5 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     function onSettingsChange() as Void {
 
         WatchUi.requestUpdate();
-
     }
 }

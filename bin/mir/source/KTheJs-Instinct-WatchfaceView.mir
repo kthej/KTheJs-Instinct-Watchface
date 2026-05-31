@@ -16,50 +16,50 @@ import Toybox.ActivityMonitor;
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 9; ]
     <init> {
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 31 15 ]
-        symbol [ Graphics %tmp.1 31 29 37 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 30 15 ]
+        symbol [ Graphics %tmp.1 30 29 37 ];
         %tmp.1 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.2 31 38 49 ];
+        symbol [ COLOR_WHITE %tmp.2 30 38 49 ];
         %tmp.2 = getv %tmp.1 :COLOR_WHITE;
         putv self :COLOR_WHITE %tmp.2;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 32 15 ]
-        symbol [ Graphics %tmp.3 32 29 37 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 31 15 ]
+        symbol [ Graphics %tmp.3 31 29 37 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 32 38 49 ];
+        symbol [ COLOR_BLACK %tmp.4 31 38 49 ];
         %tmp.4 = getv %tmp.3 :COLOR_BLACK;
         putv self :COLOR_BLACK %tmp.4;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 33 15 ]
-        symbol [ Graphics %tmp.5 33 29 37 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 32 15 ]
+        symbol [ Graphics %tmp.5 32 29 37 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.6 33 38 55 ];
+        symbol [ COLOR_TRANSPARENT %tmp.6 32 38 55 ];
         %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
         putv self :COLOR_CLEAR %tmp.6;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 36 15 ]
-        symbol [ Graphics %tmp.7 36 28 36 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 35 15 ]
+        symbol [ Graphics %tmp.7 35 28 36 ];
         %tmp.7 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.8 36 37 54 ];
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.8 35 37 54 ];
         %tmp.8 = getv %tmp.7 :TEXT_JUSTIFY_LEFT;
         putv self :ALIGN_LEFT %tmp.8;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 37 15 ]
-        symbol [ Graphics %tmp.9 37 29 37 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 36 15 ]
+        symbol [ Graphics %tmp.9 36 29 37 ];
         %tmp.9 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.10 37 38 56 ];
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.10 36 38 56 ];
         %tmp.10 = getv %tmp.9 :TEXT_JUSTIFY_RIGHT;
         putv self :ALIGN_RIGHT %tmp.10;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 38 15 ]
-        symbol [ Graphics %tmp.11 38 30 38 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 37 15 ]
+        symbol [ Graphics %tmp.11 37 30 38 ];
         %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.12 38 39 58 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.12 37 39 58 ];
         %tmp.12 = getv %tmp.11 :TEXT_JUSTIFY_CENTER;
         putv self :ALIGN_CENTER %tmp.12;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 39 15 ]
-        symbol [ Graphics %tmp.13 39 31 39 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 38 15 ]
+        symbol [ Graphics %tmp.13 38 31 39 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.14 39 40 59 ];
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.14 38 40 59 ];
         %tmp.14 = getv %tmp.13 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.15 39 62 70 ];
+        symbol [ Graphics %tmp.15 38 62 70 ];
         %tmp.15 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.16 39 71 91 ];
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.16 38 71 91 ];
         %tmp.16 = getv %tmp.15 :TEXT_JUSTIFY_VCENTER;
         %tmp.17 = bitor %tmp.14 %tmp.16;
         putv self :ALIGN_VCENTER %tmp.17;
@@ -77,354 +77,354 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 17; @position = 15; @symbol_vardef = [lastHourCheckVar,17,15,31]; ]
     public
     var lastHourCheckVar = -1;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 22; @position = 15; @symbol_vardef = [FONT_BLACK,22,15,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 21; @position = 15; @symbol_vardef = [FONT_BLACK,21,15,25]; ]
     public
     var FONT_BLACK;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 23; @position = 15; @symbol_vardef = [FONT_WHITE,23,15,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 22; @position = 15; @symbol_vardef = [FONT_WHITE,22,15,25]; ]
     public
     var FONT_WHITE;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 24; @position = 15; @symbol_vardef = [FONT_SMALL,24,15,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 23; @position = 15; @symbol_vardef = [FONT_SMALL,23,15,25]; ]
     public
     var FONT_SMALL;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 25; @position = 15; @symbol_vardef = [FONT_MEDIUM_HOLLOW,25,15,33]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 24; @position = 15; @symbol_vardef = [FONT_MEDIUM_HOLLOW,24,15,33]; ]
     public
     var FONT_MEDIUM_HOLLOW;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 26; @position = 15; @symbol_vardef = [FONT_MEDIUM_FILLED,26,15,33]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 25; @position = 15; @symbol_vardef = [FONT_MEDIUM_FILLED,25,15,33]; ]
     public
     var FONT_MEDIUM_FILLED;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 27; @position = 15; @symbol_vardef = [FONT_DATA,27,15,24]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 26; @position = 15; @symbol_vardef = [FONT_DATA,26,15,24]; ]
     public
     var FONT_DATA;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 31; @position = 15; @symbol_vardef = [COLOR_WHITE,31,15,26]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 30; @position = 15; @symbol_vardef = [COLOR_WHITE,30,15,26]; ]
     public
     var COLOR_WHITE;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 32; @position = 15; @symbol_vardef = [COLOR_BLACK,32,15,26]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 31; @position = 15; @symbol_vardef = [COLOR_BLACK,31,15,26]; ]
     public
     var COLOR_BLACK;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 33; @position = 15; @symbol_vardef = [COLOR_CLEAR,33,15,26]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 32; @position = 15; @symbol_vardef = [COLOR_CLEAR,32,15,26]; ]
     public
     var COLOR_CLEAR;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 36; @position = 15; @symbol_vardef = [ALIGN_LEFT,36,15,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 35; @position = 15; @symbol_vardef = [ALIGN_LEFT,35,15,25]; ]
     public
     var ALIGN_LEFT;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 37; @position = 15; @symbol_vardef = [ALIGN_RIGHT,37,15,26]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 36; @position = 15; @symbol_vardef = [ALIGN_RIGHT,36,15,26]; ]
     public
     var ALIGN_RIGHT;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 38; @position = 15; @symbol_vardef = [ALIGN_CENTER,38,15,27]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 37; @position = 15; @symbol_vardef = [ALIGN_CENTER,37,15,27]; ]
     public
     var ALIGN_CENTER;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 39; @position = 15; @symbol_vardef = [ALIGN_VCENTER,39,15,28]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 38; @position = 15; @symbol_vardef = [ALIGN_VCENTER,38,15,28]; ]
     public
     var ALIGN_VCENTER;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 43; @position = 15; @symbol_vardef = [Icons,43,15,20]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 42; @position = 15; @symbol_vardef = [Icons,42,15,20]; ]
     public
     var Icons;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 59; @position = 15; @symbol_vardef = [hr_element,59,15,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 55; @position = 15; @symbol_vardef = [hr_element,55,15,25]; ]
     public
     var hr_element;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 60; @position = 15; @symbol_vardef = [currentHeartRate,60,15,31]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 56; @position = 15; @symbol_vardef = [currentHeartRate,56,15,31]; ]
     public
     var currentHeartRate;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 61; @position = 15; @symbol_vardef = [glance,61,15,21]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 57; @position = 15; @symbol_vardef = [glance,57,15,21]; ]
     public
     var glance = true;
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 67; @symbol_functiondef = [initialize,67,13,23]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 63; @symbol_functiondef = [initialize,63,13,23]; ]
     function initialize() as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_67_26_67_52_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 67 28 ]
-        symbol [ WatchFace %tmp.2 67 28 37 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_63_26_63_52_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 63 28 ]
+        symbol [ WatchFace %tmp.2 63 28 37 ];
         %tmp.2 = getv ? :WatchFace;
-        symbol [ initialize %tmp.3 67 38 48 ];
+        symbol [ initialize %tmp.3 63 38 48 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_67_26_67_52_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_63_26_63_52_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 71; @symbol_functiondef = [onLayout,71,13,21]; @symbol_param<0> = [dc,71,22,24]; @symbol_param<0>_type<0> = [Dc,71,28,30]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 67; @symbol_functiondef = [onLayout,67,13,21]; @symbol_param<0> = [dc,67,22,24]; @symbol_param<0>_type<0> = [Dc,67,28,30]; ]
     function onLayout(dc as Dc) as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_71_40_83_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 73 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_67_40_78_4_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 69 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 73 8 17 ];
+        symbol [ setLayout %tmp.2 69 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 73 18 21 ];
+        symbol [ Rez %tmp.4 69 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 73 22 29 ];
+        symbol [ Layouts %tmp.5 69 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ WatchFace %tmp.6 73 30 39 ];
+        symbol [ WatchFace %tmp.6 69 30 39 ];
         %tmp.6 = getv function %tmp.5 :WatchFace;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 73 40 42 ];
+        symbol [ dc %tmp.7 69 40 42 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 75 8 ]
-        symbol [ WatchUi %tmp.9 75 21 28 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 71 8 ]
+        symbol [ WatchUi %tmp.9 71 21 28 ];
         %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.10 75 29 41 ];
+        symbol [ loadResource %tmp.10 71 29 41 ];
         %tmp.10 = getv function %tmp.9 :loadResource;
-        symbol [ Rez %tmp.12 75 42 45 ];
+        symbol [ Rez %tmp.12 71 42 45 ];
         %tmp.12 = getv ? :Rez;
-        symbol [ Fonts %tmp.13 75 46 51 ];
+        symbol [ Fonts %tmp.13 71 46 51 ];
         %tmp.13 = getv %tmp.12 :Fonts;
-        symbol [ Time_Black %tmp.14 75 52 62 ];
+        symbol [ Time_Black %tmp.14 71 52 62 ];
         %tmp.14 = getv %tmp.13 :Time_Black;
         %tmp.15 = invoke %tmp.9 %tmp.10(%tmp.14);
-        symbol [ FONT_BLACK ? 75 8 18 ];
+        symbol [ FONT_BLACK ? 71 8 18 ];
         putv self :FONT_BLACK %tmp.15;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 76 8 ]
-        symbol [ WatchUi %tmp.16 76 21 28 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 72 8 ]
+        symbol [ WatchUi %tmp.16 72 21 28 ];
         %tmp.16 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.17 76 29 41 ];
+        symbol [ loadResource %tmp.17 72 29 41 ];
         %tmp.17 = getv function %tmp.16 :loadResource;
-        symbol [ Rez %tmp.19 76 42 45 ];
+        symbol [ Rez %tmp.19 72 42 45 ];
         %tmp.19 = getv ? :Rez;
-        symbol [ Fonts %tmp.20 76 46 51 ];
+        symbol [ Fonts %tmp.20 72 46 51 ];
         %tmp.20 = getv %tmp.19 :Fonts;
-        symbol [ Time_White %tmp.21 76 52 62 ];
+        symbol [ Time_White %tmp.21 72 52 62 ];
         %tmp.21 = getv %tmp.20 :Time_White;
         %tmp.22 = invoke %tmp.16 %tmp.17(%tmp.21);
-        symbol [ FONT_WHITE ? 76 8 18 ];
+        symbol [ FONT_WHITE ? 72 8 18 ];
         putv self :FONT_WHITE %tmp.22;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 77 8 ]
-        symbol [ WatchUi %tmp.23 77 21 28 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 73 8 ]
+        symbol [ WatchUi %tmp.23 73 21 28 ];
         %tmp.23 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.24 77 29 41 ];
+        symbol [ loadResource %tmp.24 73 29 41 ];
         %tmp.24 = getv function %tmp.23 :loadResource;
-        symbol [ Rez %tmp.26 77 42 45 ];
+        symbol [ Rez %tmp.26 73 42 45 ];
         %tmp.26 = getv ? :Rez;
-        symbol [ Fonts %tmp.27 77 46 51 ];
+        symbol [ Fonts %tmp.27 73 46 51 ];
         %tmp.27 = getv %tmp.26 :Fonts;
-        symbol [ SmallFont %tmp.28 77 52 61 ];
+        symbol [ SmallFont %tmp.28 73 52 61 ];
         %tmp.28 = getv %tmp.27 :SmallFont;
         %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
-        symbol [ FONT_SMALL ? 77 8 18 ];
+        symbol [ FONT_SMALL ? 73 8 18 ];
         putv self :FONT_SMALL %tmp.29;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 78 8 ]
-        symbol [ WatchUi %tmp.30 78 29 36 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 74 8 ]
+        symbol [ WatchUi %tmp.30 74 29 36 ];
         %tmp.30 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.31 78 37 49 ];
+        symbol [ loadResource %tmp.31 74 37 49 ];
         %tmp.31 = getv function %tmp.30 :loadResource;
-        symbol [ Rez %tmp.33 78 50 53 ];
+        symbol [ Rez %tmp.33 74 50 53 ];
         %tmp.33 = getv ? :Rez;
-        symbol [ Fonts %tmp.34 78 54 59 ];
+        symbol [ Fonts %tmp.34 74 54 59 ];
         %tmp.34 = getv %tmp.33 :Fonts;
-        symbol [ MediumFontFilled %tmp.35 78 60 76 ];
+        symbol [ MediumFontFilled %tmp.35 74 60 76 ];
         %tmp.35 = getv %tmp.34 :MediumFontFilled;
         %tmp.36 = invoke %tmp.30 %tmp.31(%tmp.35);
-        symbol [ FONT_MEDIUM_FILLED ? 78 8 26 ];
+        symbol [ FONT_MEDIUM_FILLED ? 74 8 26 ];
         putv self :FONT_MEDIUM_FILLED %tmp.36;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 79 8 ]
-        symbol [ WatchUi %tmp.37 79 29 36 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 75 8 ]
+        symbol [ WatchUi %tmp.37 75 29 36 ];
         %tmp.37 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.38 79 37 49 ];
+        symbol [ loadResource %tmp.38 75 37 49 ];
         %tmp.38 = getv function %tmp.37 :loadResource;
-        symbol [ Rez %tmp.40 79 50 53 ];
+        symbol [ Rez %tmp.40 75 50 53 ];
         %tmp.40 = getv ? :Rez;
-        symbol [ Fonts %tmp.41 79 54 59 ];
+        symbol [ Fonts %tmp.41 75 54 59 ];
         %tmp.41 = getv %tmp.40 :Fonts;
-        symbol [ MediumFontHollow %tmp.42 79 60 76 ];
+        symbol [ MediumFontHollow %tmp.42 75 60 76 ];
         %tmp.42 = getv %tmp.41 :MediumFontHollow;
         %tmp.43 = invoke %tmp.37 %tmp.38(%tmp.42);
-        symbol [ FONT_MEDIUM_HOLLOW ? 79 8 26 ];
+        symbol [ FONT_MEDIUM_HOLLOW ? 75 8 26 ];
         putv self :FONT_MEDIUM_HOLLOW %tmp.43;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 80 8 ]
-        symbol [ WatchUi %tmp.44 80 20 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 76 8 ]
+        symbol [ WatchUi %tmp.44 76 20 27 ];
         %tmp.44 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.45 80 28 40 ];
+        symbol [ loadResource %tmp.45 76 28 40 ];
         %tmp.45 = getv function %tmp.44 :loadResource;
-        symbol [ Rez %tmp.47 80 41 44 ];
+        symbol [ Rez %tmp.47 76 41 44 ];
         %tmp.47 = getv ? :Rez;
-        symbol [ Fonts %tmp.48 80 45 50 ];
+        symbol [ Fonts %tmp.48 76 45 50 ];
         %tmp.48 = getv %tmp.47 :Fonts;
-        symbol [ DataFont %tmp.49 80 51 59 ];
+        symbol [ DataFont %tmp.49 76 51 59 ];
         %tmp.49 = getv %tmp.48 :DataFont;
         %tmp.50 = invoke %tmp.44 %tmp.45(%tmp.49);
-        symbol [ FONT_DATA ? 80 8 17 ];
+        symbol [ FONT_DATA ? 76 8 17 ];
         putv self :FONT_DATA %tmp.50;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 81 8 ]
-        symbol [ WatchUi %tmp.51 81 16 23 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 77 8 ]
+        symbol [ WatchUi %tmp.51 77 16 23 ];
         %tmp.51 = getm $.Toybox.WatchUi;
-        symbol [ loadResource %tmp.52 81 24 36 ];
+        symbol [ loadResource %tmp.52 77 24 36 ];
         %tmp.52 = getv function %tmp.51 :loadResource;
-        symbol [ Rez %tmp.54 81 37 40 ];
+        symbol [ Rez %tmp.54 77 37 40 ];
         %tmp.54 = getv ? :Rez;
-        symbol [ Fonts %tmp.55 81 41 46 ];
+        symbol [ Fonts %tmp.55 77 41 46 ];
         %tmp.55 = getv %tmp.54 :Fonts;
-        symbol [ Icons %tmp.56 81 47 52 ];
+        symbol [ Icons %tmp.56 77 47 52 ];
         %tmp.56 = getv %tmp.55 :Icons;
         %tmp.57 = invoke %tmp.51 %tmp.52(%tmp.56);
-        symbol [ Icons ? 81 8 13 ];
+        symbol [ Icons ? 77 8 13 ];
         putv self :Icons %tmp.57;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_71_40_83_4_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_67_40_78_4_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 87; @symbol_functiondef = [onShow,87,13,19]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 82; @symbol_functiondef = [onShow,82,13,19]; ]
     function onShow() as Void {
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 91; @symbol_functiondef = [onUpdate,91,13,21]; @symbol_param<0> = [dc,91,22,24]; @symbol_param<0>_type<0> = [Dc,91,28,30]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 86; @symbol_functiondef = [onUpdate,86,13,21]; @symbol_param<0> = [dc,86,22,24]; @symbol_param<0>_type<0> = [Dc,86,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 95 8 ]
-        symbol [ View %tmp.2 95 8 12 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 90 8 ]
+        symbol [ View %tmp.2 90 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ onUpdate %tmp.3 95 13 21 ];
+        symbol [ onUpdate %tmp.3 90 13 21 ];
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 95 22 24 ];
+        symbol [ dc %tmp.4 90 22 24 ];
         invoke %tmp.2 %tmp.3(%tmp.4);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 99 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 94 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %is24Hour.1 = local;
-        symbol [ is24Hour %is24Hour.1 99 12 20 ];
-        symbol [ System %tmp.5 99 23 29 ];
+        symbol [ is24Hour %is24Hour.1 94 12 20 ];
+        symbol [ System %tmp.5 94 23 29 ];
         %tmp.5 = getm $.Toybox.System;
-        symbol [ getDeviceSettings %tmp.6 99 30 47 ];
+        symbol [ getDeviceSettings %tmp.6 94 30 47 ];
         %tmp.6 = getv function %tmp.5 :getDeviceSettings;
         %tmp.7 = invoke %tmp.5 %tmp.6();
-        symbol [ is24Hour %tmp.8 99 50 58 ];
+        symbol [ is24Hour %tmp.8 94 50 58 ];
         %tmp.8 = getv %tmp.7 :is24Hour;
         lputv %is24Hour.1 %tmp.8;
-        symbol [ is24Hour %is24Hour.1 99 12 20 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 100 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ is24Hour %is24Hour.1 94 12 20 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 95 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %clockTime.2 = local;
-        symbol [ clockTime %clockTime.2 100 12 21 ];
-        symbol [ System %tmp.9 100 24 30 ];
+        symbol [ clockTime %clockTime.2 95 12 21 ];
+        symbol [ System %tmp.9 95 24 30 ];
         %tmp.9 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.10 100 31 43 ];
+        symbol [ getClockTime %tmp.10 95 31 43 ];
         %tmp.10 = getv function %tmp.9 :getClockTime;
         %tmp.11 = invoke %tmp.9 %tmp.10();
         lputv %clockTime.2 %tmp.11;
-        symbol [ clockTime %clockTime.2 100 12 21 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 101 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ clockTime %clockTime.2 95 12 21 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 96 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %hours.3 = local;
-        symbol [ hours %hours.3 101 12 17 ];
+        symbol [ hours %hours.3 96 12 17 ];
         %tmp.12 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.12 101 20 29 ];
-        symbol [ hour %tmp.13 101 30 34 ];
+        symbol [ clockTime %tmp.12 96 20 29 ];
+        symbol [ hour %tmp.13 96 30 34 ];
         %tmp.13 = getv %tmp.12 :hour;
-        symbol [ format %tmp.14 101 35 41 ];
+        symbol [ format %tmp.14 96 35 41 ];
         %tmp.14 = getv function %tmp.13 :format;
         %tmp.15 = "%02d";
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         lputv %hours.3 %tmp.16;
-        symbol [ hours %hours.3 101 12 17 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 102 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ hours %hours.3 96 12 17 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 97 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %minutes.4 = local;
-        symbol [ minutes %minutes.4 102 12 19 ];
+        symbol [ minutes %minutes.4 97 12 19 ];
         %tmp.17 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.17 102 22 31 ];
-        symbol [ min %tmp.18 102 32 35 ];
+        symbol [ clockTime %tmp.17 97 22 31 ];
+        symbol [ min %tmp.18 97 32 35 ];
         %tmp.18 = getv %tmp.17 :min;
-        symbol [ format %tmp.19 102 36 42 ];
+        symbol [ format %tmp.19 97 36 42 ];
         %tmp.19 = getv function %tmp.18 :format;
         %tmp.20 = "%02d";
         %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
         lputv %minutes.4 %tmp.21;
-        symbol [ minutes %minutes.4 102 12 19 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 103 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ minutes %minutes.4 97 12 19 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 98 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dayPercentage.5 = local;
-        symbol [ dayPercentage %dayPercentage.5 103 12 25 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 104 8 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_8_109_8_if_stmt:
+        symbol [ dayPercentage %dayPercentage.5 98 12 25 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 99 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_8_104_8_if_stmt:
         %tmp.22 = lgetv %is24Hour.1;
-        symbol [ is24Hour %tmp.22 104 13 21 ];
+        symbol [ is24Hour %tmp.22 99 13 21 ];
         %tmp.23 = not %tmp.22;
-        bf %tmp.23 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_8_109_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_8_109_8_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_23_109_8_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 105 12 ]
+        bf %tmp.23 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_8_104_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_8_104_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_23_104_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 100 12 ]
         %tmp.24 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.24 105 21 30 ];
-        symbol [ hour %tmp.25 105 31 35 ];
+        symbol [ clockTime %tmp.24 100 21 30 ];
+        symbol [ hour %tmp.25 100 31 35 ];
         %tmp.25 = getv %tmp.24 :hour;
         %tmp.26 = 12;
         %tmp.27 = mod %tmp.25 %tmp.26;
-        symbol [ format %tmp.28 105 42 48 ];
+        symbol [ format %tmp.28 100 42 48 ];
         %tmp.28 = getv function %tmp.27 :format;
         %tmp.29 = "%02d";
         %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
         lputv %hours.3 %tmp.30;
-        symbol [ hours %hours.3 105 12 17 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 106 12 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_12_108_12_if_stmt:
+        symbol [ hours %hours.3 100 12 17 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 101 12 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_12_103_12_if_stmt:
         %tmp.31 = lgetv %hours.3;
-        symbol [ hours %tmp.31 106 16 21 ];
-        symbol [ toFloat %tmp.32 106 22 29 ];
+        symbol [ hours %tmp.31 101 16 21 ];
+        symbol [ toFloat %tmp.32 101 22 29 ];
         %tmp.32 = getv function %tmp.31 :toFloat;
         %tmp.33 = invoke %tmp.31 %tmp.32();
         %tmp.34 = 0;
         %tmp.35 = eq %tmp.33 %tmp.34;
-        bf %tmp.35 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_12_108_12_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_12_108_12_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_38_108_12_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 107 16 ]
+        bf %tmp.35 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_12_103_12_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_12_103_12_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_38_103_12_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 102 16 ]
         %tmp.36 = 12;
         lputv %hours.3 %tmp.36;
-        symbol [ hours %hours.3 107 16 21 ];
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_38_108_12_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_12_108_12_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_106_12_108_12_if_end:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_23_109_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_8_109_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_104_8_109_8_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 123 8 ]
+        symbol [ hours %hours.3 102 16 21 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_38_103_12_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_12_103_12_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_101_12_103_12_if_end:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_23_104_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_8_104_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_99_8_104_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 110 8 ]
         %tmp.37 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.37 123 25 34 ];
-        symbol [ hour %tmp.38 123 35 39 ];
+        symbol [ clockTime %tmp.37 110 25 34 ];
+        symbol [ hour %tmp.38 110 35 39 ];
         %tmp.38 = getv %tmp.37 :hour;
-        symbol [ toFloat %tmp.39 123 40 47 ];
+        symbol [ toFloat %tmp.39 110 40 47 ];
         %tmp.39 = getv function %tmp.38 :toFloat;
         %tmp.40 = invoke %tmp.38 %tmp.39();
         %tmp.41 = 60;
         %tmp.42 = mul %tmp.40 %tmp.41;
         %tmp.43 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.43 123 57 66 ];
-        symbol [ min %tmp.44 123 67 70 ];
+        symbol [ clockTime %tmp.43 110 57 66 ];
+        symbol [ min %tmp.44 110 67 70 ];
         %tmp.44 = getv %tmp.43 :min;
-        symbol [ toFloat %tmp.45 123 71 78 ];
+        symbol [ toFloat %tmp.45 110 71 78 ];
         %tmp.45 = getv function %tmp.44 :toFloat;
         %tmp.46 = invoke %tmp.44 %tmp.45();
         %tmp.47 = add %tmp.42 %tmp.46;
         %tmp.48 = 1440;
         %tmp.49 = div %tmp.47 %tmp.48;
         lputv %dayPercentage.5 %tmp.49;
-        symbol [ dayPercentage %dayPercentage.5 123 8 21 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 124 8 ]
+        symbol [ dayPercentage %dayPercentage.5 110 8 21 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 111 8 ]
         %tmp.50 = lgetv %dc;
-        symbol [ dc %tmp.50 124 8 10 ];
-        symbol [ setColor %tmp.51 124 11 19 ];
+        symbol [ dc %tmp.50 111 8 10 ];
+        symbol [ setColor %tmp.51 111 11 19 ];
         %tmp.51 = getv function %tmp.50 :setColor;
-        symbol [ COLOR_WHITE %tmp.53 124 20 31 ];
+        symbol [ COLOR_WHITE %tmp.53 111 20 31 ];
         %tmp.53 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.55 124 32 43 ];
+        symbol [ COLOR_CLEAR %tmp.55 111 33 44 ];
         %tmp.55 = getv ? :COLOR_CLEAR;
         invoke %tmp.50 %tmp.51(%tmp.53, %tmp.55);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 125 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 112 8 ]
         %tmp.56 = lgetv %dc;
-        symbol [ dc %tmp.56 125 8 10 ];
-        symbol [ fillRectangle %tmp.57 125 11 24 ];
+        symbol [ dc %tmp.56 112 8 10 ];
+        symbol [ fillRectangle %tmp.57 112 11 24 ];
         %tmp.57 = getv function %tmp.56 :fillRectangle;
         %tmp.58 = 30;
         %tmp.59 = 26;
         %tmp.60 = 65;
         %tmp.61 = 124;
         invoke %tmp.56 %tmp.57(%tmp.58, %tmp.59, %tmp.60, %tmp.61);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 131 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 113 8 ]
         %tmp.62 = lgetv %dc;
-        symbol [ dc %tmp.62 131 8 10 ];
-        symbol [ setColor %tmp.63 131 11 19 ];
+        symbol [ dc %tmp.62 113 8 10 ];
+        symbol [ setColor %tmp.63 113 11 19 ];
         %tmp.63 = getv function %tmp.62 :setColor;
-        symbol [ COLOR_BLACK %tmp.65 131 20 31 ];
+        symbol [ COLOR_BLACK %tmp.65 113 20 31 ];
         %tmp.65 = getv ? :COLOR_BLACK;
-        symbol [ COLOR_CLEAR %tmp.67 131 32 43 ];
+        symbol [ COLOR_CLEAR %tmp.67 113 33 44 ];
         %tmp.67 = getv ? :COLOR_CLEAR;
         invoke %tmp.62 %tmp.63(%tmp.65, %tmp.67);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 132 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 114 8 ]
         %tmp.68 = lgetv %dc;
-        symbol [ dc %tmp.68 132 8 10 ];
-        symbol [ fillRectangle %tmp.69 132 11 24 ];
+        symbol [ dc %tmp.68 114 8 10 ];
+        symbol [ fillRectangle %tmp.69 114 11 24 ];
         %tmp.69 = getv function %tmp.68 :fillRectangle;
         %tmp.70 = 30;
         %tmp.71 = 26;
@@ -432,508 +432,508 @@ _home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinc
         %tmp.73 = 124;
         %tmp.74 = 1;
         %tmp.75 = lgetv %dayPercentage.5;
-        symbol [ dayPercentage %tmp.75 135 19 32 ];
+        symbol [ dayPercentage %tmp.75 114 48 61 ];
         %tmp.76 = sub %tmp.74 %tmp.75;
         %tmp.77 = mul %tmp.73 %tmp.76;
         invoke %tmp.68 %tmp.69(%tmp.70, %tmp.71, %tmp.72, %tmp.77);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 137 8 ]
-        symbol [ System %tmp.78 137 8 14 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 115 8 ]
+        symbol [ System %tmp.78 115 8 14 ];
         %tmp.78 = getm $.Toybox.System;
-        symbol [ print %tmp.79 137 15 20 ];
+        symbol [ print %tmp.79 115 15 20 ];
         %tmp.79 = getv function %tmp.78 :print;
         %tmp.80 = lgetv %dayPercentage.5;
-        symbol [ dayPercentage %tmp.80 137 21 34 ];
+        symbol [ dayPercentage %tmp.80 115 21 34 ];
         %tmp.81 = 100;
         %tmp.82 = mul %tmp.80 %tmp.81;
         %tmp.83 = "\n";
         %tmp.84 = add %tmp.82 %tmp.83;
         invoke %tmp.78 %tmp.79(%tmp.84);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 139 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 117 8 ]
         %tmp.85 = lgetv %dc;
-        symbol [ dc %tmp.85 139 8 10 ];
-        symbol [ setColor %tmp.86 139 11 19 ];
+        symbol [ dc %tmp.85 117 8 10 ];
+        symbol [ setColor %tmp.86 117 11 19 ];
         %tmp.86 = getv function %tmp.85 :setColor;
-        symbol [ COLOR_BLACK %tmp.88 139 20 31 ];
+        symbol [ COLOR_BLACK %tmp.88 117 20 31 ];
         %tmp.88 = getv ? :COLOR_BLACK;
-        symbol [ COLOR_CLEAR %tmp.90 139 33 44 ];
+        symbol [ COLOR_CLEAR %tmp.90 117 33 44 ];
         %tmp.90 = getv ? :COLOR_CLEAR;
         invoke %tmp.85 %tmp.86(%tmp.88, %tmp.90);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 140 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 118 8 ]
         %tmp.91 = lgetv %dc;
-        symbol [ dc %tmp.91 140 8 10 ];
-        symbol [ drawText %tmp.92 140 11 19 ];
+        symbol [ dc %tmp.91 118 8 10 ];
+        symbol [ drawText %tmp.92 118 11 19 ];
         %tmp.92 = getv function %tmp.91 :drawText;
         %tmp.93 = 65;
         %tmp.94 = 25;
-        symbol [ FONT_BLACK %tmp.96 140 28 38 ];
+        symbol [ FONT_BLACK %tmp.96 118 28 38 ];
         %tmp.96 = getv ? :FONT_BLACK;
         %tmp.97 = lgetv %hours.3;
-        symbol [ hours %tmp.97 140 40 45 ];
-        symbol [ ALIGN_CENTER %tmp.99 140 47 59 ];
+        symbol [ hours %tmp.97 118 40 45 ];
+        symbol [ ALIGN_CENTER %tmp.99 118 47 59 ];
         %tmp.99 = getv ? :ALIGN_CENTER;
         invoke %tmp.91 %tmp.92(%tmp.93, %tmp.94, %tmp.96, %tmp.97, %tmp.99);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 141 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 119 8 ]
         %tmp.100 = lgetv %dc;
-        symbol [ dc %tmp.100 141 8 10 ];
-        symbol [ drawText %tmp.101 141 11 19 ];
+        symbol [ dc %tmp.100 119 8 10 ];
+        symbol [ drawText %tmp.101 119 11 19 ];
         %tmp.101 = getv function %tmp.100 :drawText;
         %tmp.102 = 65;
         %tmp.103 = 90;
-        symbol [ FONT_BLACK %tmp.105 141 28 38 ];
+        symbol [ FONT_BLACK %tmp.105 119 28 38 ];
         %tmp.105 = getv ? :FONT_BLACK;
         %tmp.106 = lgetv %minutes.4;
-        symbol [ minutes %tmp.106 141 40 47 ];
-        symbol [ ALIGN_CENTER %tmp.108 141 49 61 ];
+        symbol [ minutes %tmp.106 119 40 47 ];
+        symbol [ ALIGN_CENTER %tmp.108 119 49 61 ];
         %tmp.108 = getv ? :ALIGN_CENTER;
         invoke %tmp.100 %tmp.101(%tmp.102, %tmp.103, %tmp.105, %tmp.106, %tmp.108);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 143 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 121 8 ]
         %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 143 8 10 ];
-        symbol [ setColor %tmp.110 143 11 19 ];
+        symbol [ dc %tmp.109 121 8 10 ];
+        symbol [ setColor %tmp.110 121 11 19 ];
         %tmp.110 = getv function %tmp.109 :setColor;
-        symbol [ COLOR_WHITE %tmp.112 143 20 31 ];
+        symbol [ COLOR_WHITE %tmp.112 121 20 31 ];
         %tmp.112 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.114 143 33 44 ];
+        symbol [ COLOR_CLEAR %tmp.114 121 33 44 ];
         %tmp.114 = getv ? :COLOR_CLEAR;
         invoke %tmp.109 %tmp.110(%tmp.112, %tmp.114);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 144 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 122 8 ]
         %tmp.115 = lgetv %dc;
-        symbol [ dc %tmp.115 144 8 10 ];
-        symbol [ drawText %tmp.116 144 11 19 ];
+        symbol [ dc %tmp.115 122 8 10 ];
+        symbol [ drawText %tmp.116 122 11 19 ];
         %tmp.116 = getv function %tmp.115 :drawText;
         %tmp.117 = 65;
         %tmp.118 = 25;
-        symbol [ FONT_WHITE %tmp.120 144 28 38 ];
+        symbol [ FONT_WHITE %tmp.120 122 28 38 ];
         %tmp.120 = getv ? :FONT_WHITE;
         %tmp.121 = lgetv %hours.3;
-        symbol [ hours %tmp.121 144 40 45 ];
-        symbol [ ALIGN_CENTER %tmp.123 144 47 59 ];
+        symbol [ hours %tmp.121 122 40 45 ];
+        symbol [ ALIGN_CENTER %tmp.123 122 47 59 ];
         %tmp.123 = getv ? :ALIGN_CENTER;
         invoke %tmp.115 %tmp.116(%tmp.117, %tmp.118, %tmp.120, %tmp.121, %tmp.123);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 145 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 123 8 ]
         %tmp.124 = lgetv %dc;
-        symbol [ dc %tmp.124 145 8 10 ];
-        symbol [ drawText %tmp.125 145 11 19 ];
+        symbol [ dc %tmp.124 123 8 10 ];
+        symbol [ drawText %tmp.125 123 11 19 ];
         %tmp.125 = getv function %tmp.124 :drawText;
         %tmp.126 = 65;
         %tmp.127 = 90;
-        symbol [ FONT_WHITE %tmp.129 145 28 38 ];
+        symbol [ FONT_WHITE %tmp.129 123 28 38 ];
         %tmp.129 = getv ? :FONT_WHITE;
         %tmp.130 = lgetv %minutes.4;
-        symbol [ minutes %tmp.130 145 40 47 ];
-        symbol [ ALIGN_CENTER %tmp.132 145 49 61 ];
+        symbol [ minutes %tmp.130 123 40 47 ];
+        symbol [ ALIGN_CENTER %tmp.132 123 49 61 ];
         %tmp.132 = getv ? :ALIGN_CENTER;
         invoke %tmp.124 %tmp.125(%tmp.126, %tmp.127, %tmp.129, %tmp.130, %tmp.132);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 146 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 124 8 ]
         %tmp.133 = lgetv %dc;
-        symbol [ dc %tmp.133 146 8 10 ];
-        symbol [ setColor %tmp.134 146 11 19 ];
+        symbol [ dc %tmp.133 124 8 10 ];
+        symbol [ setColor %tmp.134 124 11 19 ];
         %tmp.134 = getv function %tmp.133 :setColor;
-        symbol [ COLOR_BLACK %tmp.136 146 20 31 ];
+        symbol [ COLOR_BLACK %tmp.136 124 20 31 ];
         %tmp.136 = getv ? :COLOR_BLACK;
-        symbol [ COLOR_CLEAR %tmp.138 146 32 43 ];
+        symbol [ COLOR_CLEAR %tmp.138 124 33 44 ];
         %tmp.138 = getv ? :COLOR_CLEAR;
         invoke %tmp.133 %tmp.134(%tmp.136, %tmp.138);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 148 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 126 8 ]
         %tmp.139 = lgetv %dc;
-        symbol [ dc %tmp.139 148 8 10 ];
-        symbol [ fillRectangle %tmp.140 148 11 24 ];
+        symbol [ dc %tmp.139 126 8 10 ];
+        symbol [ fillRectangle %tmp.140 126 11 24 ];
         %tmp.140 = getv function %tmp.139 :fillRectangle;
         %tmp.141 = 60;
         %tmp.142 = 26;
         %tmp.143 = 5;
         %tmp.144 = 125;
         invoke %tmp.139 %tmp.140(%tmp.141, %tmp.142, %tmp.143, %tmp.144);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 149 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 127 8 ]
         %tmp.145 = lgetv %dc;
-        symbol [ dc %tmp.145 149 8 10 ];
-        symbol [ fillRectangle %tmp.146 149 11 24 ];
+        symbol [ dc %tmp.145 127 8 10 ];
+        symbol [ fillRectangle %tmp.146 127 11 24 ];
         %tmp.146 = getv function %tmp.145 :fillRectangle;
         %tmp.147 = 30;
         %tmp.148 = 86;
         %tmp.149 = 65;
         %tmp.150 = 5;
         invoke %tmp.145 %tmp.146(%tmp.147, %tmp.148, %tmp.149, %tmp.150);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 165 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 133 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen.6 = local;
-        symbol [ sub_screen %sub_screen.6 165 12 22 ];
-        symbol [ WatchUi %tmp.151 165 25 32 ];
+        symbol [ sub_screen %sub_screen.6 133 12 22 ];
+        symbol [ WatchUi %tmp.151 133 25 32 ];
         %tmp.151 = getm $.Toybox.WatchUi;
-        symbol [ getSubscreen %tmp.152 165 33 45 ];
+        symbol [ getSubscreen %tmp.152 133 33 45 ];
         %tmp.152 = getv function %tmp.151 :getSubscreen;
         %tmp.153 = invoke %tmp.151 %tmp.152();
         lputv %sub_screen.6 %tmp.153;
-        symbol [ sub_screen %sub_screen.6 165 12 22 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 166 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen %sub_screen.6 133 12 22 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 134 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_x.7 = local;
-        symbol [ sub_screen_x %sub_screen_x.7 166 12 24 ];
+        symbol [ sub_screen_x %sub_screen_x.7 134 12 24 ];
         %tmp.154 = lgetv %sub_screen.6;
-        symbol [ sub_screen %tmp.154 166 27 37 ];
-        symbol [ x %tmp.155 166 38 39 ];
+        symbol [ sub_screen %tmp.154 134 27 37 ];
+        symbol [ x %tmp.155 134 38 39 ];
         %tmp.155 = getv %tmp.154 :x;
         lputv %sub_screen_x.7 %tmp.155;
-        symbol [ sub_screen_x %sub_screen_x.7 166 12 24 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 167 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_x %sub_screen_x.7 134 12 24 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 135 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_y.8 = local;
-        symbol [ sub_screen_y %sub_screen_y.8 167 12 24 ];
+        symbol [ sub_screen_y %sub_screen_y.8 135 12 24 ];
         %tmp.156 = lgetv %sub_screen.6;
-        symbol [ sub_screen %tmp.156 167 27 37 ];
-        symbol [ y %tmp.157 167 38 39 ];
+        symbol [ sub_screen %tmp.156 135 27 37 ];
+        symbol [ y %tmp.157 135 38 39 ];
         %tmp.157 = getv %tmp.156 :y;
         lputv %sub_screen_y.8 %tmp.157;
-        symbol [ sub_screen_y %sub_screen_y.8 167 12 24 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 168 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_y %sub_screen_y.8 135 12 24 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 136 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_width.9 = local;
-        symbol [ sub_screen_width %sub_screen_width.9 168 12 28 ];
+        symbol [ sub_screen_width %sub_screen_width.9 136 12 28 ];
         %tmp.158 = lgetv %sub_screen.6;
-        symbol [ sub_screen %tmp.158 168 31 41 ];
-        symbol [ width %tmp.159 168 42 47 ];
+        symbol [ sub_screen %tmp.158 136 31 41 ];
+        symbol [ width %tmp.159 136 42 47 ];
         %tmp.159 = getv %tmp.158 :width;
         lputv %sub_screen_width.9 %tmp.159;
-        symbol [ sub_screen_width %sub_screen_width.9 168 12 28 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 169 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_width %sub_screen_width.9 136 12 28 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 137 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_height.10 = local;
-        symbol [ sub_screen_height %sub_screen_height.10 169 12 29 ];
+        symbol [ sub_screen_height %sub_screen_height.10 137 12 29 ];
         %tmp.160 = lgetv %sub_screen.6;
-        symbol [ sub_screen %tmp.160 169 32 42 ];
-        symbol [ height %tmp.161 169 43 49 ];
+        symbol [ sub_screen %tmp.160 137 32 42 ];
+        symbol [ height %tmp.161 137 43 49 ];
         %tmp.161 = getv %tmp.160 :height;
         lputv %sub_screen_height.10 %tmp.161;
-        symbol [ sub_screen_height %sub_screen_height.10 169 12 29 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 170 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_height %sub_screen_height.10 137 12 29 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 138 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_middle_x.11 = local;
-        symbol [ sub_screen_middle_x %sub_screen_middle_x.11 170 12 31 ];
+        symbol [ sub_screen_middle_x %sub_screen_middle_x.11 138 12 31 ];
         %tmp.162 = lgetv %sub_screen_x.7;
-        symbol [ sub_screen_x %tmp.162 170 34 46 ];
+        symbol [ sub_screen_x %tmp.162 138 34 46 ];
         %tmp.163 = lgetv %sub_screen_width.9;
-        symbol [ sub_screen_width %tmp.163 170 49 65 ];
+        symbol [ sub_screen_width %tmp.163 138 49 65 ];
         %tmp.164 = 2;
         %tmp.165 = div %tmp.163 %tmp.164;
         %tmp.166 = add %tmp.162 %tmp.165;
         lputv %sub_screen_middle_x.11 %tmp.166;
-        symbol [ sub_screen_middle_x %sub_screen_middle_x.11 170 12 31 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 171 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_middle_x %sub_screen_middle_x.11 138 12 31 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 139 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %sub_screen_middle_y.12 = local;
-        symbol [ sub_screen_middle_y %sub_screen_middle_y.12 171 12 31 ];
+        symbol [ sub_screen_middle_y %sub_screen_middle_y.12 139 12 31 ];
         %tmp.167 = lgetv %sub_screen_y.8;
-        symbol [ sub_screen_y %tmp.167 171 34 46 ];
+        symbol [ sub_screen_y %tmp.167 139 34 46 ];
         %tmp.168 = lgetv %sub_screen_height.10;
-        symbol [ sub_screen_height %tmp.168 171 49 66 ];
+        symbol [ sub_screen_height %tmp.168 139 49 66 ];
         %tmp.169 = 2;
         %tmp.170 = div %tmp.168 %tmp.169;
         %tmp.171 = add %tmp.167 %tmp.170;
         lputv %sub_screen_middle_y.12 %tmp.171;
-        symbol [ sub_screen_middle_y %sub_screen_middle_y.12 171 12 31 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 173 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ sub_screen_middle_y %sub_screen_middle_y.12 139 12 31 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 141 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %integer_seconds.13 = local;
-        symbol [ integer_seconds %integer_seconds.13 173 12 27 ];
+        symbol [ integer_seconds %integer_seconds.13 141 12 27 ];
         %tmp.172 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.172 173 30 39 ];
-        symbol [ sec %tmp.173 173 40 43 ];
+        symbol [ clockTime %tmp.172 141 30 39 ];
+        symbol [ sec %tmp.173 141 40 43 ];
         %tmp.173 = getv %tmp.172 :sec;
         %tmp.174 = as %tmp.173 Integer;
-        symbol [ Integer %tmp.174 173 47 54 ];
+        symbol [ Integer %tmp.174 141 47 54 ];
         lputv %integer_seconds.13 %tmp.174;
-        symbol [ integer_seconds %integer_seconds.13 173 12 27 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 175 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ integer_seconds %integer_seconds.13 141 12 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 143 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %arcThickness.14 = local;
-        symbol [ arcThickness %arcThickness.14 175 12 24 ];
+        symbol [ arcThickness %arcThickness.14 143 12 24 ];
         %tmp.175 = 12;
         lputv %arcThickness.14 %tmp.175;
-        symbol [ arcThickness %arcThickness.14 175 12 24 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 176 8 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ arcThickness %arcThickness.14 143 12 24 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 144 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %circleRadius.15 = local;
-        symbol [ circleRadius %circleRadius.15 176 12 24 ];
+        symbol [ circleRadius %circleRadius.15 144 12 24 ];
         %tmp.176 = lgetv %sub_screen_width.9;
-        symbol [ sub_screen_width %tmp.176 176 27 43 ];
+        symbol [ sub_screen_width %tmp.176 144 27 43 ];
         %tmp.177 = 2;
         %tmp.178 = div %tmp.176 %tmp.177;
         %tmp.179 = lgetv %arcThickness.14;
-        symbol [ arcThickness %tmp.179 176 50 62 ];
+        symbol [ arcThickness %tmp.179 144 50 62 ];
         %tmp.180 = sub %tmp.178 %tmp.179;
         %tmp.181 = 2;
         %tmp.182 = sub %tmp.180 %tmp.181;
         lputv %circleRadius.15 %tmp.182;
-        symbol [ circleRadius %circleRadius.15 176 12 24 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 180 8 ]
+        symbol [ circleRadius %circleRadius.15 144 12 24 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 148 8 ]
         %tmp.183 = lgetv %dc;
-        symbol [ dc %tmp.183 180 8 10 ];
-        symbol [ setColor %tmp.184 180 11 19 ];
+        symbol [ dc %tmp.183 148 8 10 ];
+        symbol [ setColor %tmp.184 148 11 19 ];
         %tmp.184 = getv function %tmp.183 :setColor;
-        symbol [ COLOR_WHITE %tmp.186 180 20 31 ];
+        symbol [ COLOR_WHITE %tmp.186 148 20 31 ];
         %tmp.186 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.188 180 33 44 ];
+        symbol [ COLOR_CLEAR %tmp.188 148 33 44 ];
         %tmp.188 = getv ? :COLOR_CLEAR;
         invoke %tmp.183 %tmp.184(%tmp.186, %tmp.188);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 182 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 150 8 ]
         %tmp.189 = lgetv %dc;
-        symbol [ dc %tmp.189 182 8 10 ];
-        symbol [ fillCircle %tmp.190 182 11 21 ];
+        symbol [ dc %tmp.189 150 8 10 ];
+        symbol [ fillCircle %tmp.190 150 11 21 ];
         %tmp.190 = getv function %tmp.189 :fillCircle;
         %tmp.191 = lgetv %sub_screen_middle_x.11;
-        symbol [ sub_screen_middle_x %tmp.191 183 12 31 ];
+        symbol [ sub_screen_middle_x %tmp.191 150 22 41 ];
         %tmp.192 = lgetv %sub_screen_middle_y.12;
-        symbol [ sub_screen_middle_y %tmp.192 184 12 31 ];
+        symbol [ sub_screen_middle_y %tmp.192 150 43 62 ];
         %tmp.193 = lgetv %circleRadius.15;
-        symbol [ circleRadius %tmp.193 185 12 24 ];
+        symbol [ circleRadius %tmp.193 150 64 76 ];
         invoke %tmp.189 %tmp.190(%tmp.191, %tmp.192, %tmp.193);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 190 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 154 8 ]
         %tmp.194 = lgetv %dc;
-        symbol [ dc %tmp.194 190 8 10 ];
-        symbol [ setColor %tmp.195 190 11 19 ];
+        symbol [ dc %tmp.194 154 8 10 ];
+        symbol [ setColor %tmp.195 154 11 19 ];
         %tmp.195 = getv function %tmp.194 :setColor;
-        symbol [ COLOR_WHITE %tmp.197 190 20 31 ];
+        symbol [ COLOR_WHITE %tmp.197 154 20 31 ];
         %tmp.197 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.199 190 33 44 ];
+        symbol [ COLOR_CLEAR %tmp.199 154 33 44 ];
         %tmp.199 = getv ? :COLOR_CLEAR;
         invoke %tmp.194 %tmp.195(%tmp.197, %tmp.199);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 191 8 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 155 8 ]
         %tmp.200 = lgetv %dc;
-        symbol [ dc %tmp.200 191 8 10 ];
-        symbol [ setPenWidth %tmp.201 191 11 22 ];
+        symbol [ dc %tmp.200 155 8 10 ];
+        symbol [ setPenWidth %tmp.201 155 11 22 ];
         %tmp.201 = getv function %tmp.200 :setPenWidth;
         %tmp.202 = lgetv %arcThickness.14;
-        symbol [ arcThickness %tmp.202 191 23 35 ];
+        symbol [ arcThickness %tmp.202 155 23 35 ];
         invoke %tmp.200 %tmp.201(%tmp.202);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 193 8 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_8_202_8_if_stmt:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 157 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_8_160_8_if_stmt:
         %tmp.203 = lgetv %integer_seconds.13;
-        symbol [ integer_seconds %tmp.203 193 12 27 ];
+        symbol [ integer_seconds %tmp.203 157 12 27 ];
         %tmp.204 = 0;
         %tmp.205 = ne %tmp.203 %tmp.204;
-        bf %tmp.205 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_8_202_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_8_202_8_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_33_202_8_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 194 8 ]
+        bf %tmp.205 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_8_160_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_8_160_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_34_160_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 158 12 ]
         %tmp.206 = lgetv %dc;
-        symbol [ dc %tmp.206 194 8 10 ];
-        symbol [ drawArc %tmp.207 194 11 18 ];
+        symbol [ dc %tmp.206 158 12 14 ];
+        symbol [ drawArc %tmp.207 158 15 22 ];
         %tmp.207 = getv function %tmp.206 :drawArc;
         %tmp.208 = lgetv %sub_screen_middle_x.11;
-        symbol [ sub_screen_middle_x %tmp.208 195 16 35 ];
+        symbol [ sub_screen_middle_x %tmp.208 158 23 42 ];
         %tmp.209 = lgetv %sub_screen_middle_y.12;
-        symbol [ sub_screen_middle_y %tmp.209 196 16 35 ];
+        symbol [ sub_screen_middle_y %tmp.209 158 44 63 ];
         %tmp.210 = lgetv %sub_screen_height.10;
-        symbol [ sub_screen_height %tmp.210 197 16 33 ];
+        symbol [ sub_screen_height %tmp.210 158 65 82 ];
         %tmp.211 = 2;
         %tmp.212 = div %tmp.210 %tmp.211;
         %tmp.213 = lgetv %arcThickness.14;
-        symbol [ arcThickness %tmp.213 197 40 52 ];
+        symbol [ arcThickness %tmp.213 158 89 101 ];
         %tmp.214 = 2;
         %tmp.215 = div %tmp.213 %tmp.214;
         %tmp.216 = sub %tmp.212 %tmp.215;
-        symbol [ Graphics %tmp.217 198 16 24 ];
+        symbol [ Graphics %tmp.217 159 23 31 ];
         %tmp.217 = getm $.Toybox.Graphics;
-        symbol [ ARC_CLOCKWISE %tmp.218 198 25 38 ];
+        symbol [ ARC_CLOCKWISE %tmp.218 159 32 45 ];
         %tmp.218 = getv %tmp.217 :ARC_CLOCKWISE;
         %tmp.219 = 90;
         %tmp.220 = lgetv %integer_seconds.13;
-        symbol [ integer_seconds %tmp.220 200 17 32 ];
+        symbol [ integer_seconds %tmp.220 159 52 67 ];
         %tmp.221 = sub 0 %tmp.220;
         %tmp.222 = 6;
         %tmp.223 = mul %tmp.221 %tmp.222;
         %tmp.224 = 90;
         %tmp.225 = add %tmp.223 %tmp.224;
         invoke %tmp.206 %tmp.207(%tmp.208, %tmp.209, %tmp.216, %tmp.218, %tmp.219, %tmp.225);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_33_202_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_8_202_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_193_8_202_8_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 206 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_34_160_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_8_160_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_157_8_160_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 164 8 ]
         %tmp.226 = lgetv %dc;
-        symbol [ dc %tmp.226 206 8 10 ];
-        symbol [ setColor %tmp.227 206 11 19 ];
+        symbol [ dc %tmp.226 164 8 10 ];
+        symbol [ setColor %tmp.227 164 11 19 ];
         %tmp.227 = getv function %tmp.226 :setColor;
-        symbol [ COLOR_BLACK %tmp.229 206 20 31 ];
+        symbol [ COLOR_BLACK %tmp.229 164 20 31 ];
         %tmp.229 = getv ? :COLOR_BLACK;
-        symbol [ COLOR_CLEAR %tmp.231 206 33 44 ];
+        symbol [ COLOR_CLEAR %tmp.231 164 33 44 ];
         %tmp.231 = getv ? :COLOR_CLEAR;
         invoke %tmp.226 %tmp.227(%tmp.229, %tmp.231);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 208 8 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_8_217_8_if_stmt:
-        symbol [ glance %tmp.233 208 12 18 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 166 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_8_169_8_if_stmt:
+        symbol [ glance %tmp.233 166 12 18 ];
         %tmp.233 = getv ? :glance;
         %tmp.234 = true;
         %tmp.235 = eq %tmp.233 %tmp.234;
-        bf %tmp.235 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_8_217_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_8_217_8_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_28_217_8_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 209 12 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_28_217_8_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_28_217_8_stop" ]
+        bf %tmp.235 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_8_169_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_8_169_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_28_169_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 167 12 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_28_169_8_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_28_169_8_stop" ]
         %seconds.16 = local;
-        symbol [ seconds %seconds.16 209 16 23 ];
+        symbol [ seconds %seconds.16 167 16 23 ];
         %tmp.236 = lgetv %clockTime.2;
-        symbol [ clockTime %tmp.236 209 26 35 ];
-        symbol [ sec %tmp.237 209 36 39 ];
+        symbol [ clockTime %tmp.236 167 26 35 ];
+        symbol [ sec %tmp.237 167 36 39 ];
         %tmp.237 = getv %tmp.236 :sec;
         lputv %seconds.16 %tmp.237;
-        symbol [ seconds %seconds.16 209 16 23 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 210 12 ]
+        symbol [ seconds %seconds.16 167 16 23 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 168 12 ]
         %tmp.238 = lgetv %dc;
-        symbol [ dc %tmp.238 210 12 14 ];
-        symbol [ drawText %tmp.239 210 15 23 ];
+        symbol [ dc %tmp.238 168 12 14 ];
+        symbol [ drawText %tmp.239 168 15 23 ];
         %tmp.239 = getv function %tmp.238 :drawText;
         %tmp.240 = lgetv %sub_screen_middle_x.11;
-        symbol [ sub_screen_middle_x %tmp.240 211 16 35 ];
+        symbol [ sub_screen_middle_x %tmp.240 168 24 43 ];
         %tmp.241 = 1;
         %tmp.242 = add %tmp.240 %tmp.241;
         %tmp.243 = lgetv %sub_screen_middle_y.12;
-        symbol [ sub_screen_middle_y %tmp.243 212 16 35 ];
-        symbol [ FONT_MEDIUM_FILLED %tmp.245 213 16 34 ];
+        symbol [ sub_screen_middle_y %tmp.243 168 49 68 ];
+        symbol [ FONT_MEDIUM_FILLED %tmp.245 168 70 88 ];
         %tmp.245 = getv ? :FONT_MEDIUM_FILLED;
         %tmp.246 = lgetv %seconds.16;
-        symbol [ seconds %tmp.246 214 16 23 ];
-        symbol [ ALIGN_VCENTER %tmp.248 215 16 29 ];
+        symbol [ seconds %tmp.246 168 90 97 ];
+        symbol [ ALIGN_VCENTER %tmp.248 168 99 112 ];
         %tmp.248 = getv ? :ALIGN_VCENTER;
         invoke %tmp.238 %tmp.239(%tmp.242, %tmp.243, %tmp.245, %tmp.246, %tmp.248);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_28_217_8_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_8_217_8_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_208_8_217_8_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 223 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_28_169_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_8_169_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_166_8_169_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 175 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %batteryPercentage.17 = local;
-        symbol [ batteryPercentage %batteryPercentage.17 223 8 25 ];
-        symbol [ System %tmp.249 223 28 34 ];
+        symbol [ batteryPercentage %batteryPercentage.17 175 12 29 ];
+        symbol [ System %tmp.249 175 32 38 ];
         %tmp.249 = getm $.Toybox.System;
-        symbol [ getSystemStats %tmp.250 223 35 49 ];
+        symbol [ getSystemStats %tmp.250 175 39 53 ];
         %tmp.250 = getv function %tmp.249 :getSystemStats;
         %tmp.251 = invoke %tmp.249 %tmp.250();
-        symbol [ battery %tmp.252 223 52 59 ];
+        symbol [ battery %tmp.252 175 56 63 ];
         %tmp.252 = getv %tmp.251 :battery;
-        symbol [ format %tmp.253 223 60 66 ];
+        symbol [ format %tmp.253 175 64 70 ];
         %tmp.253 = getv function %tmp.252 :format;
         %tmp.254 = "%.0f";
         %tmp.255 = invoke %tmp.252 %tmp.253(%tmp.254);
         lputv %batteryPercentage.17 %tmp.255;
-        symbol [ batteryPercentage %batteryPercentage.17 223 8 25 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 224 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ batteryPercentage %batteryPercentage.17 175 12 29 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 176 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %recX.18 = local;
-        symbol [ recX %recX.18 224 8 12 ];
+        symbol [ recX %recX.18 176 12 16 ];
         %tmp.256 = 70;
         lputv %recX.18 %tmp.256;
-        symbol [ recX %recX.18 224 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 225 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ recX %recX.18 176 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 177 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %recY.19 = local;
-        symbol [ recY %recY.19 225 8 12 ];
+        symbol [ recY %recY.19 177 12 16 ];
         %tmp.257 = 9;
         lputv %recY.19 %tmp.257;
-        symbol [ recY %recY.19 225 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 226 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ recY %recY.19 177 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 178 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %recW.20 = local;
-        symbol [ recW %recW.20 226 8 12 ];
+        symbol [ recW %recW.20 178 12 16 ];
         %tmp.258 = 20;
         lputv %recW.20 %tmp.258;
-        symbol [ recW %recW.20 226 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 227 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ recW %recW.20 178 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 179 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %recH.21 = local;
-        symbol [ recH %recH.21 227 8 12 ];
+        symbol [ recH %recH.21 179 12 16 ];
         %tmp.259 = 9;
         lputv %recH.21 %tmp.259;
-        symbol [ recH %recH.21 227 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 229 4 ]
+        symbol [ recH %recH.21 179 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 181 8 ]
         %tmp.260 = lgetv %dc;
-        symbol [ dc %tmp.260 229 4 6 ];
-        symbol [ setColor %tmp.261 229 7 15 ];
+        symbol [ dc %tmp.260 181 8 10 ];
+        symbol [ setColor %tmp.261 181 11 19 ];
         %tmp.261 = getv function %tmp.260 :setColor;
-        symbol [ COLOR_WHITE %tmp.263 229 16 27 ];
+        symbol [ COLOR_WHITE %tmp.263 181 20 31 ];
         %tmp.263 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.265 229 28 39 ];
+        symbol [ COLOR_CLEAR %tmp.265 181 33 44 ];
         %tmp.265 = getv ? :COLOR_CLEAR;
         invoke %tmp.260 %tmp.261(%tmp.263, %tmp.265);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 230 4 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 182 8 ]
         %tmp.266 = lgetv %dc;
-        symbol [ dc %tmp.266 230 4 6 ];
-        symbol [ setPenWidth %tmp.267 230 7 18 ];
+        symbol [ dc %tmp.266 182 8 10 ];
+        symbol [ setPenWidth %tmp.267 182 11 22 ];
         %tmp.267 = getv function %tmp.266 :setPenWidth;
         %tmp.268 = 1;
         invoke %tmp.266 %tmp.267(%tmp.268);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 234 4 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 186 8 ]
         %tmp.269 = lgetv %dc;
-        symbol [ dc %tmp.269 234 4 6 ];
-        symbol [ drawText %tmp.270 234 7 15 ];
+        symbol [ dc %tmp.269 186 8 10 ];
+        symbol [ drawText %tmp.270 186 11 19 ];
         %tmp.270 = getv function %tmp.269 :drawText;
         %tmp.271 = 66;
         %tmp.272 = 8;
-        symbol [ FONT_SMALL %tmp.274 234 21 31 ];
+        symbol [ FONT_SMALL %tmp.274 186 27 37 ];
         %tmp.274 = getv ? :FONT_SMALL;
-        symbol [ Lang %tmp.275 234 32 36 ];
+        symbol [ Lang %tmp.275 186 39 43 ];
         %tmp.275 = getm $.Toybox.Lang;
-        symbol [ format %tmp.276 234 37 43 ];
+        symbol [ format %tmp.276 186 44 50 ];
         %tmp.276 = getv function %tmp.275 :format;
         %tmp.277 = "$1$%";
         %tmp.278 = newa 1;
         %tmp.279 = lgetv %batteryPercentage.17;
-        symbol [ batteryPercentage %tmp.279 234 52 69 ];
+        symbol [ batteryPercentage %tmp.279 186 60 77 ];
         %tmp.280 = dup %tmp.278;
         %tmp.281 = aputv %tmp.280 0 %tmp.279;
         %tmp.282 = invoke %tmp.275 %tmp.276(%tmp.277, %tmp.281);
-        symbol [ ALIGN_RIGHT %tmp.284 234 72 83 ];
+        symbol [ ALIGN_RIGHT %tmp.284 186 81 92 ];
         %tmp.284 = getv ? :ALIGN_RIGHT;
         invoke %tmp.269 %tmp.270(%tmp.271, %tmp.272, %tmp.274, %tmp.282, %tmp.284);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 238 4 ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 190 8 ]
         %tmp.285 = lgetv %dc;
-        symbol [ dc %tmp.285 238 4 6 ];
-        symbol [ drawRectangle %tmp.286 238 7 20 ];
+        symbol [ dc %tmp.285 190 8 10 ];
+        symbol [ drawRectangle %tmp.286 190 11 24 ];
         %tmp.286 = getv function %tmp.285 :drawRectangle;
         %tmp.287 = lgetv %recX.18;
-        symbol [ recX %tmp.287 238 21 25 ];
+        symbol [ recX %tmp.287 190 25 29 ];
         %tmp.288 = lgetv %recY.19;
-        symbol [ recY %tmp.288 238 26 30 ];
+        symbol [ recY %tmp.288 190 31 35 ];
         %tmp.289 = lgetv %recW.20;
-        symbol [ recW %tmp.289 238 31 35 ];
+        symbol [ recW %tmp.289 190 37 41 ];
         %tmp.290 = lgetv %recH.21;
-        symbol [ recH %tmp.290 238 36 40 ];
+        symbol [ recH %tmp.290 190 43 47 ];
         invoke %tmp.285 %tmp.286(%tmp.287, %tmp.288, %tmp.289, %tmp.290);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 239 4 ]
-        for @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_test @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_incr @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_init:
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_begin" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_end" ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 191 8 ]
+        for @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_test @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_incr @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_init:
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_begin" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_end" ]
         %i.22 = local;
-        symbol [ i %i.22 239 13 14 ];
+        symbol [ i %i.22 191 17 18 ];
         %tmp.291 = 0;
         lputv %i.22 %tmp.291;
-        symbol [ i %i.22 239 13 14 ];
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_test:
+        symbol [ i %i.22 191 17 18 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_test:
         %tmp.292 = lgetv %i.22;
-        symbol [ i %tmp.292 239 20 21 ];
+        symbol [ i %tmp.292 191 24 25 ];
         %tmp.293 = lgetv %recH.21;
-        symbol [ recH %tmp.293 239 24 28 ];
+        symbol [ recH %tmp.293 191 28 32 ];
         %tmp.294 = lt %tmp.292 %tmp.293;
-        bf %tmp.294 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_begin:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_34_241_8_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 240 8 ]
+        bf %tmp.294 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_begin:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_39_193_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 192 12 ]
         %tmp.295 = lgetv %dc;
-        symbol [ dc %tmp.295 240 8 10 ];
-        symbol [ drawLine %tmp.296 240 11 19 ];
+        symbol [ dc %tmp.295 192 12 14 ];
+        symbol [ drawLine %tmp.296 192 15 23 ];
         %tmp.296 = getv function %tmp.295 :drawLine;
         %tmp.297 = lgetv %recX.18;
-        symbol [ recX %tmp.297 240 20 24 ];
+        symbol [ recX %tmp.297 192 24 28 ];
         %tmp.298 = lgetv %recY.19;
-        symbol [ recY %tmp.298 240 25 29 ];
+        symbol [ recY %tmp.298 192 30 34 ];
         %tmp.299 = lgetv %i.22;
-        symbol [ i %tmp.299 240 30 31 ];
+        symbol [ i %tmp.299 192 37 38 ];
         %tmp.300 = add %tmp.298 %tmp.299;
         %tmp.301 = lgetv %recX.18;
-        symbol [ recX %tmp.301 240 32 36 ];
+        symbol [ recX %tmp.301 192 40 44 ];
         %tmp.302 = lgetv %recW.20;
-        symbol [ recW %tmp.302 240 39 43 ];
+        symbol [ recW %tmp.302 192 49 53 ];
         %tmp.303 = lgetv %batteryPercentage.17;
-        symbol [ batteryPercentage %tmp.303 240 45 62 ];
-        symbol [ toFloat %tmp.304 240 63 70 ];
+        symbol [ batteryPercentage %tmp.303 192 55 72 ];
+        symbol [ toFloat %tmp.304 192 73 80 ];
         %tmp.304 = getv function %tmp.303 :toFloat;
         %tmp.305 = invoke %tmp.303 %tmp.304();
         %tmp.306 = mul %tmp.302 %tmp.305;
@@ -941,478 +941,517 @@ _home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinc
         %tmp.308 = mul %tmp.306 %tmp.307;
         %tmp.309 = add %tmp.301 %tmp.308;
         %tmp.310 = lgetv %recY.19;
-        symbol [ recY %tmp.310 240 79 83 ];
+        symbol [ recY %tmp.310 192 92 96 ];
         %tmp.311 = lgetv %i.22;
-        symbol [ i %tmp.311 240 84 85 ];
+        symbol [ i %tmp.311 192 99 100 ];
         %tmp.312 = add %tmp.310 %tmp.311;
         invoke %tmp.295 %tmp.296(%tmp.297, %tmp.300, %tmp.309, %tmp.312);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_34_241_8_stop:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_incr:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 239 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_39_193_8_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_incr:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 191 ]
         %tmp.315 = lgetv %i.22;
-        symbol [ i %tmp.315 239 30 31 ];
+        symbol [ i %tmp.315 191 34 35 ];
         %tmp.316 = add %tmp.315 1;
         lputv %i.22 %tmp.316;
-        symbol [ i %i.22 239 30 31 ];
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_test;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_239_4_241_8_for_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 242 4 ]
+        symbol [ i %i.22 191 34 35 ];
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_test;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_191_8_193_8_for_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 194 8 ]
         %tmp.317 = lgetv %dc;
-        symbol [ dc %tmp.317 242 4 6 ];
-        symbol [ drawLine %tmp.318 242 7 15 ];
+        symbol [ dc %tmp.317 194 8 10 ];
+        symbol [ drawLine %tmp.318 194 11 19 ];
         %tmp.318 = getv function %tmp.317 :drawLine;
         %tmp.319 = lgetv %recX.18;
-        symbol [ recX %tmp.319 242 16 20 ];
+        symbol [ recX %tmp.319 194 20 24 ];
         %tmp.320 = lgetv %recW.20;
-        symbol [ recW %tmp.320 242 21 25 ];
+        symbol [ recW %tmp.320 194 27 31 ];
         %tmp.321 = add %tmp.319 %tmp.320;
         %tmp.322 = 1;
         %tmp.323 = add %tmp.321 %tmp.322;
         %tmp.324 = lgetv %recY.19;
-        symbol [ recY %tmp.324 242 28 32 ];
+        symbol [ recY %tmp.324 194 37 41 ];
         %tmp.325 = 2;
         %tmp.326 = add %tmp.324 %tmp.325;
         %tmp.327 = lgetv %recX.18;
-        symbol [ recX %tmp.327 242 35 39 ];
+        symbol [ recX %tmp.327 194 47 51 ];
         %tmp.328 = lgetv %recW.20;
-        symbol [ recW %tmp.328 242 40 44 ];
+        symbol [ recW %tmp.328 194 54 58 ];
         %tmp.329 = add %tmp.327 %tmp.328;
         %tmp.330 = 1;
         %tmp.331 = add %tmp.329 %tmp.330;
         %tmp.332 = lgetv %recY.19;
-        symbol [ recY %tmp.332 242 47 51 ];
+        symbol [ recY %tmp.332 194 64 68 ];
         %tmp.333 = lgetv %recH.21;
-        symbol [ recH %tmp.333 242 52 56 ];
+        symbol [ recH %tmp.333 194 71 75 ];
         %tmp.334 = add %tmp.332 %tmp.333;
         %tmp.335 = 2;
         %tmp.336 = sub %tmp.334 %tmp.335;
         invoke %tmp.317 %tmp.318(%tmp.323, %tmp.326, %tmp.331, %tmp.336);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 250 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 200 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dateVar.23 = local;
-        symbol [ dateVar %dateVar.23 250 8 15 ];
-        symbol [ Time %tmp.337 250 18 22 ];
+        symbol [ dateVar %dateVar.23 200 12 19 ];
+        symbol [ Time %tmp.337 200 22 26 ];
         %tmp.337 = getm $.Toybox.Time;
-        symbol [ Gregorian %tmp.338 250 23 32 ];
+        symbol [ Gregorian %tmp.338 200 27 36 ];
         %tmp.338 = getv %tmp.337 :Gregorian;
-        symbol [ info %tmp.339 250 33 37 ];
+        symbol [ info %tmp.339 200 37 41 ];
         %tmp.339 = getv function %tmp.338 :info;
-        symbol [ Time %tmp.340 250 38 42 ];
+        symbol [ Time %tmp.340 200 42 46 ];
         %tmp.340 = getm $.Toybox.Time;
-        symbol [ now %tmp.341 250 43 46 ];
+        symbol [ now %tmp.341 200 47 50 ];
         %tmp.341 = getv function %tmp.340 :now;
         %tmp.342 = invoke %tmp.340 %tmp.341();
-        symbol [ Time %tmp.343 250 49 53 ];
+        symbol [ Time %tmp.343 200 54 58 ];
         %tmp.343 = getm $.Toybox.Time;
-        symbol [ FORMAT_LONG %tmp.344 250 54 65 ];
+        symbol [ FORMAT_LONG %tmp.344 200 59 70 ];
         %tmp.344 = getv %tmp.343 :FORMAT_LONG;
         %tmp.345 = invoke %tmp.338 %tmp.339(%tmp.342, %tmp.344);
         lputv %dateVar.23 %tmp.345;
-        symbol [ dateVar %dateVar.23 250 8 15 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 251 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ dateVar %dateVar.23 200 12 19 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 201 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dateString.24 = local;
-        symbol [ dateString %dateString.24 251 8 18 ];
+        symbol [ dateString %dateString.24 201 12 22 ];
         %tmp.346 = lgetv %dateVar.23;
-        symbol [ dateVar %tmp.346 251 21 28 ];
-        symbol [ day_of_week %tmp.347 251 29 40 ];
+        symbol [ dateVar %tmp.346 201 25 32 ];
+        symbol [ day_of_week %tmp.347 201 33 44 ];
         %tmp.347 = getv %tmp.346 :day_of_week;
         %tmp.348 = " ";
         %tmp.349 = add %tmp.347 %tmp.348;
         %tmp.350 = lgetv %dateVar.23;
-        symbol [ dateVar %tmp.350 251 45 52 ];
-        symbol [ month %tmp.351 251 53 58 ];
+        symbol [ dateVar %tmp.350 201 53 60 ];
+        symbol [ month %tmp.351 201 61 66 ];
         %tmp.351 = getv %tmp.350 :month;
         %tmp.352 = add %tmp.349 %tmp.351;
         %tmp.353 = " ";
         %tmp.354 = add %tmp.352 %tmp.353;
         %tmp.355 = lgetv %dateVar.23;
-        symbol [ dateVar %tmp.355 251 63 70 ];
-        symbol [ day %tmp.356 251 71 74 ];
+        symbol [ dateVar %tmp.355 201 75 82 ];
+        symbol [ day %tmp.356 201 83 86 ];
         %tmp.356 = getv %tmp.355 :day;
         %tmp.357 = add %tmp.354 %tmp.356;
         lputv %dateString.24 %tmp.357;
-        symbol [ dateString %dateString.24 251 8 18 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 253 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ dateString %dateString.24 201 12 22 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 203 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dataField1Value.25 = local;
-        symbol [ dataField1Value %dataField1Value.25 253 8 23 ];
-        symbol [ Activity %tmp.358 253 26 34 ];
+        symbol [ dataField1Value %dataField1Value.25 203 12 27 ];
+        symbol [ Activity %tmp.358 203 30 38 ];
         %tmp.358 = getm $.Toybox.Activity;
-        symbol [ getActivityInfo %tmp.359 253 35 50 ];
+        symbol [ getActivityInfo %tmp.359 203 39 54 ];
         %tmp.359 = getv function %tmp.358 :getActivityInfo;
         %tmp.360 = invoke %tmp.358 %tmp.359();
-        symbol [ currentHeartRate %tmp.361 253 53 69 ];
+        symbol [ currentHeartRate %tmp.361 203 57 73 ];
         %tmp.361 = getv %tmp.360 :currentHeartRate;
         lputv %dataField1Value.25 %tmp.361;
-        symbol [ dataField1Value %dataField1Value.25 253 8 23 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 254 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ dataField1Value %dataField1Value.25 203 12 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 204 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dataField2Value.26 = local;
-        symbol [ dataField2Value %dataField2Value.26 254 8 23 ];
-        symbol [ ActivityMonitor %tmp.362 254 27 42 ];
+        symbol [ dataField2Value %dataField2Value.26 204 12 27 ];
+        symbol [ ActivityMonitor %tmp.362 204 31 46 ];
         %tmp.362 = getm $.Toybox.ActivityMonitor;
-        symbol [ getInfo %tmp.363 254 43 50 ];
+        symbol [ getInfo %tmp.363 204 47 54 ];
         %tmp.363 = getv function %tmp.362 :getInfo;
         %tmp.364 = invoke %tmp.362 %tmp.363();
-        symbol [ steps %tmp.365 254 53 58 ];
+        symbol [ steps %tmp.365 204 57 62 ];
         %tmp.365 = getv %tmp.364 :steps;
         %tmp.366 = 1000.0;
         %tmp.367 = div %tmp.365 %tmp.366;
-        symbol [ format %tmp.368 254 67 73 ];
+        symbol [ format %tmp.368 204 73 79 ];
         %tmp.368 = getv function %tmp.367 :format;
         %tmp.369 = "%.1f";
         %tmp.370 = invoke %tmp.367 %tmp.368(%tmp.369);
         %tmp.371 = "k";
         %tmp.372 = add %tmp.370 %tmp.371;
         lputv %dataField2Value.26 %tmp.372;
-        symbol [ dataField2Value %dataField2Value.26 254 8 23 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 255 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ dataField2Value %dataField2Value.26 204 12 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 205 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dataField3Value.27 = local;
-        symbol [ dataField3Value %dataField3Value.27 255 8 23 ];
-        symbol [ ActivityMonitor %tmp.373 255 26 41 ];
+        symbol [ dataField3Value %dataField3Value.27 205 12 27 ];
+        symbol [ ActivityMonitor %tmp.373 205 30 45 ];
         %tmp.373 = getm $.Toybox.ActivityMonitor;
-        symbol [ getInfo %tmp.374 255 42 49 ];
+        symbol [ getInfo %tmp.374 205 46 53 ];
         %tmp.374 = getv function %tmp.373 :getInfo;
         %tmp.375 = invoke %tmp.373 %tmp.374();
-        symbol [ floorsClimbed %tmp.376 255 52 65 ];
+        symbol [ floorsClimbed %tmp.376 205 56 69 ];
         %tmp.376 = getv %tmp.375 :floorsClimbed;
         lputv %dataField3Value.27 %tmp.376;
-        symbol [ dataField3Value %dataField3Value.27 255 8 23 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 256 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ dataField3Value %dataField3Value.27 205 12 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 206 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %dataField4Value.28 = local;
-        symbol [ dataField4Value %dataField4Value.28 256 8 23 ];
-        symbol [ System %tmp.377 256 26 32 ];
+        symbol [ dataField4Value %dataField4Value.28 206 12 27 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 207 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_stmt:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_12_207_102_begin:
+        symbol [ System %tmp.377 207 12 18 ];
         %tmp.377 = getm $.Toybox.System;
-        symbol [ getSystemStats %tmp.378 256 33 47 ];
+        symbol [ getSystemStats %tmp.378 207 19 33 ];
         %tmp.378 = getv function %tmp.377 :getSystemStats;
         %tmp.379 = invoke %tmp.377 %tmp.378();
-        symbol [ solarIntensity %tmp.380 256 50 64 ];
-        %tmp.380 = getv %tmp.379 :solarIntensity;
-        symbol [ toFloat %tmp.381 256 65 72 ];
-        %tmp.381 = getv function %tmp.380 :toFloat;
-        %tmp.382 = invoke %tmp.380 %tmp.381();
-        lputv %dataField4Value.28 %tmp.382;
-        symbol [ dataField4Value %dataField4Value.28 256 8 23 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 257 4 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_4_257_55_if_stmt:
-        %tmp.383 = lgetv %dataField4Value.28;
-        symbol [ dataField4Value %tmp.383 257 8 23 ];
-        %tmp.384 = 100;
-        %tmp.385 = gt %tmp.383 %tmp.384;
-        bf %tmp.385 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_4_257_55_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_4_257_55_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_30_257_55_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 257 32 ]
-        %tmp.386 = 100;
-        lputv %dataField4Value.28 %tmp.386;
-        symbol [ dataField4Value %dataField4Value.28 257 32 47 ];
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_30_257_55_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_4_257_55_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_257_4_257_55_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 261 4 ]
-        %tmp.387 = lgetv %dc;
-        symbol [ dc %tmp.387 261 4 6 ];
-        symbol [ drawText %tmp.388 261 7 15 ];
-        %tmp.388 = getv function %tmp.387 :drawText;
-        %tmp.389 = 88;
-        %tmp.390 = 150;
-        symbol [ Graphics %tmp.391 261 24 32 ];
-        %tmp.391 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.392 261 33 43 ];
-        %tmp.392 = getv %tmp.391 :FONT_XTINY;
-        %tmp.393 = lgetv %dateString.24;
-        symbol [ dateString %tmp.393 261 44 54 ];
-        symbol [ ALIGN_CENTER %tmp.395 261 55 67 ];
-        %tmp.395 = getv ? :ALIGN_CENTER;
-        invoke %tmp.387 %tmp.388(%tmp.389, %tmp.390, %tmp.392, %tmp.393, %tmp.395);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 265 4 ]
-        %tmp.396 = lgetv %dc;
-        symbol [ dc %tmp.396 265 4 6 ];
-        symbol [ drawText %tmp.397 265 7 15 ];
-        %tmp.397 = getv function %tmp.396 :drawText;
-        %tmp.398 = 110;
-        %tmp.399 = 80;
-        symbol [ Icons %tmp.401 265 23 28 ];
-        %tmp.401 = getv ? :Icons;
-        %tmp.402 = 72;
-        symbol [ toChar %tmp.403 265 32 38 ];
-        %tmp.403 = getv function %tmp.402 :toChar;
-        %tmp.404 = invoke %tmp.402 %tmp.403();
-        symbol [ ALIGN_LEFT %tmp.406 265 41 51 ];
-        %tmp.406 = getv ? :ALIGN_LEFT;
-        invoke %tmp.396 %tmp.397(%tmp.398, %tmp.399, %tmp.401, %tmp.404, %tmp.406);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 266 4 ]
-        %tmp.407 = lgetv %dc;
-        symbol [ dc %tmp.407 266 4 6 ];
-        symbol [ drawText %tmp.408 266 7 15 ];
-        %tmp.408 = getv function %tmp.407 :drawText;
-        %tmp.409 = 110;
-        %tmp.410 = 100;
-        symbol [ Icons %tmp.412 266 24 29 ];
-        %tmp.412 = getv ? :Icons;
-        %tmp.413 = 83;
-        symbol [ toChar %tmp.414 266 33 39 ];
-        %tmp.414 = getv function %tmp.413 :toChar;
-        %tmp.415 = invoke %tmp.413 %tmp.414();
-        symbol [ ALIGN_LEFT %tmp.417 266 42 52 ];
-        %tmp.417 = getv ? :ALIGN_LEFT;
-        invoke %tmp.407 %tmp.408(%tmp.409, %tmp.410, %tmp.412, %tmp.415, %tmp.417);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 267 4 ]
-        %tmp.418 = lgetv %dc;
-        symbol [ dc %tmp.418 267 4 6 ];
-        symbol [ drawText %tmp.419 267 7 15 ];
-        %tmp.419 = getv function %tmp.418 :drawText;
-        %tmp.420 = 110;
-        %tmp.421 = 120;
-        symbol [ Icons %tmp.423 267 24 29 ];
-        %tmp.423 = getv ? :Icons;
-        %tmp.424 = 70;
-        symbol [ toChar %tmp.425 267 33 39 ];
-        %tmp.425 = getv function %tmp.424 :toChar;
-        %tmp.426 = invoke %tmp.424 %tmp.425();
-        symbol [ ALIGN_LEFT %tmp.428 267 42 52 ];
-        %tmp.428 = getv ? :ALIGN_LEFT;
-        invoke %tmp.418 %tmp.419(%tmp.420, %tmp.421, %tmp.423, %tmp.426, %tmp.428);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 269 4 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_4_269_92_if_stmt:
-        %tmp.429 = lgetv %dataField1Value.25;
-        symbol [ dataField1Value %tmp.429 269 7 22 ];
-        %tmp.430 = null;
-        %tmp.431 = ne %tmp.429 %tmp.430;
-        bf %tmp.431 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_4_269_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_4_269_92_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_31_269_92_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 269 33 ]
+        %tmp.381 = const :solarIntensity;
+        symbol [ solarIntensity %tmp.381 207 41 55 const ];
+        %tmp.382 = canhazplz %tmp.379 %tmp.381;
+        bf %tmp.382 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_else_false;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_60_207_102_true:
+        symbol [ System %tmp.383 207 60 66 ];
+        %tmp.383 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.384 207 67 81 ];
+        %tmp.384 = getv function %tmp.383 :getSystemStats;
+        %tmp.385 = invoke %tmp.383 %tmp.384();
+        symbol [ solarIntensity %tmp.386 207 84 98 ];
+        %tmp.386 = getv %tmp.385 :solarIntensity;
+        %tmp.387 = null;
+        %tmp.388 = ne %tmp.386 %tmp.387;
+        push %tmp.388;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_60_207_102_end:
+        %tmp.389 = phi [%tmp.382 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_12_207_102_begin] [%tmp.388 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_60_207_102_true] [%tmp.389 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_60_207_102_end];
+        bf %tmp.389 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_else_false;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_108_209_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 208 12 ]
+        symbol [ System %tmp.390 208 30 36 ];
+        %tmp.390 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.391 208 37 51 ];
+        %tmp.391 = getv function %tmp.390 :getSystemStats;
+        %tmp.392 = invoke %tmp.390 %tmp.391();
+        symbol [ solarIntensity %tmp.393 208 54 68 ];
+        %tmp.393 = getv %tmp.392 :solarIntensity;
+        symbol [ toFloat %tmp.394 208 69 76 ];
+        %tmp.394 = getv function %tmp.393 :toFloat;
+        %tmp.395 = invoke %tmp.393 %tmp.394();
+        lputv %dataField4Value.28 %tmp.395;
+        symbol [ dataField4Value %dataField4Value.28 208 12 27 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_108_209_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_else_false:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_209_15_211_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 210 12 ]
+        %tmp.396 = 100;
+        lputv %dataField4Value.28 %tmp.396;
+        symbol [ dataField4Value %dataField4Value.28 210 12 27 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_209_15_211_8_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_207_8_211_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 213 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_8_215_8_if_stmt:
+        %tmp.397 = lgetv %dataField4Value.28;
+        symbol [ dataField4Value %tmp.397 213 12 27 ];
+        %tmp.398 = 100;
+        %tmp.399 = gt %tmp.397 %tmp.398;
+        bf %tmp.399 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_8_215_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_8_215_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_35_215_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 214 12 ]
+        %tmp.400 = 100;
+        lputv %dataField4Value.28 %tmp.400;
+        symbol [ dataField4Value %dataField4Value.28 214 12 27 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_35_215_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_8_215_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_213_8_215_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 219 8 ]
+        %tmp.401 = lgetv %dc;
+        symbol [ dc %tmp.401 219 8 10 ];
+        symbol [ drawText %tmp.402 219 11 19 ];
+        %tmp.402 = getv function %tmp.401 :drawText;
+        %tmp.403 = 88;
+        %tmp.404 = 150;
+        symbol [ Graphics %tmp.405 219 29 37 ];
+        %tmp.405 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.406 219 38 48 ];
+        %tmp.406 = getv %tmp.405 :FONT_XTINY;
+        %tmp.407 = lgetv %dateString.24;
+        symbol [ dateString %tmp.407 219 50 60 ];
+        symbol [ ALIGN_CENTER %tmp.409 219 62 74 ];
+        %tmp.409 = getv ? :ALIGN_CENTER;
+        invoke %tmp.401 %tmp.402(%tmp.403, %tmp.404, %tmp.406, %tmp.407, %tmp.409);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 223 8 ]
+        %tmp.410 = lgetv %dc;
+        symbol [ dc %tmp.410 223 8 10 ];
+        symbol [ drawText %tmp.411 223 11 19 ];
+        %tmp.411 = getv function %tmp.410 :drawText;
+        %tmp.412 = 110;
+        %tmp.413 = 80;
+        symbol [ Icons %tmp.415 223 29 34 ];
+        %tmp.415 = getv ? :Icons;
+        %tmp.416 = 72;
+        symbol [ toChar %tmp.417 223 39 45 ];
+        %tmp.417 = getv function %tmp.416 :toChar;
+        %tmp.418 = invoke %tmp.416 %tmp.417();
+        symbol [ ALIGN_LEFT %tmp.420 223 49 59 ];
+        %tmp.420 = getv ? :ALIGN_LEFT;
+        invoke %tmp.410 %tmp.411(%tmp.412, %tmp.413, %tmp.415, %tmp.418, %tmp.420);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 224 8 ]
+        %tmp.421 = lgetv %dc;
+        symbol [ dc %tmp.421 224 8 10 ];
+        symbol [ drawText %tmp.422 224 11 19 ];
+        %tmp.422 = getv function %tmp.421 :drawText;
+        %tmp.423 = 110;
+        %tmp.424 = 100;
+        symbol [ Icons %tmp.426 224 30 35 ];
+        %tmp.426 = getv ? :Icons;
+        %tmp.427 = 83;
+        symbol [ toChar %tmp.428 224 40 46 ];
+        %tmp.428 = getv function %tmp.427 :toChar;
+        %tmp.429 = invoke %tmp.427 %tmp.428();
+        symbol [ ALIGN_LEFT %tmp.431 224 50 60 ];
+        %tmp.431 = getv ? :ALIGN_LEFT;
+        invoke %tmp.421 %tmp.422(%tmp.423, %tmp.424, %tmp.426, %tmp.429, %tmp.431);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 225 8 ]
         %tmp.432 = lgetv %dc;
-        symbol [ dc %tmp.432 269 33 35 ];
-        symbol [ drawText %tmp.433 269 36 44 ];
+        symbol [ dc %tmp.432 225 8 10 ];
+        symbol [ drawText %tmp.433 225 11 19 ];
         %tmp.433 = getv function %tmp.432 :drawText;
-        %tmp.434 = 135;
-        %tmp.435 = 81;
-        symbol [ FONT_DATA %tmp.437 269 52 61 ];
-        %tmp.437 = getv ? :FONT_DATA;
-        %tmp.438 = lgetv %dataField1Value.25;
-        symbol [ dataField1Value %tmp.438 269 62 77 ];
-        %tmp.439 = as %tmp.438 { (!Null) };
-        symbol [ ALIGN_LEFT %tmp.441 269 78 88 ];
-        %tmp.441 = getv ? :ALIGN_LEFT;
-        invoke %tmp.432 %tmp.433(%tmp.434, %tmp.435, %tmp.437, %tmp.439, %tmp.441);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_31_269_92_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_4_269_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_269_4_269_92_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 270 4 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_4_270_92_if_stmt:
-        %tmp.442 = lgetv %dataField3Value.27;
-        symbol [ dataField3Value %tmp.442 270 7 22 ];
-        %tmp.443 = null;
-        %tmp.444 = ne %tmp.442 %tmp.443;
-        bf %tmp.444 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_4_270_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_4_270_92_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_31_270_92_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 270 33 ]
-        %tmp.445 = lgetv %dc;
-        symbol [ dc %tmp.445 270 33 35 ];
-        symbol [ drawText %tmp.446 270 36 44 ];
-        %tmp.446 = getv function %tmp.445 :drawText;
-        %tmp.447 = 135;
-        %tmp.448 = 101;
-        symbol [ FONT_DATA %tmp.450 270 53 62 ];
-        %tmp.450 = getv ? :FONT_DATA;
-        %tmp.451 = lgetv %dataField2Value.26;
-        symbol [ dataField2Value %tmp.451 270 63 78 ];
-        symbol [ ALIGN_LEFT %tmp.453 270 79 89 ];
-        %tmp.453 = getv ? :ALIGN_LEFT;
-        invoke %tmp.445 %tmp.446(%tmp.447, %tmp.448, %tmp.450, %tmp.451, %tmp.453);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_31_270_92_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_4_270_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_270_4_270_92_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 271 4 ]
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_4_271_92_if_stmt:
-        %tmp.454 = lgetv %dataField3Value.27;
-        symbol [ dataField3Value %tmp.454 271 7 22 ];
-        %tmp.455 = null;
-        %tmp.456 = ne %tmp.454 %tmp.455;
-        bf %tmp.456 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_4_271_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_4_271_92_if_true:
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_31_271_92_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 271 33 ]
-        %tmp.457 = lgetv %dc;
-        symbol [ dc %tmp.457 271 33 35 ];
-        symbol [ drawText %tmp.458 271 36 44 ];
-        %tmp.458 = getv function %tmp.457 :drawText;
-        %tmp.459 = 135;
-        %tmp.460 = 121;
-        symbol [ FONT_DATA %tmp.462 271 53 62 ];
-        %tmp.462 = getv ? :FONT_DATA;
-        %tmp.463 = lgetv %dataField3Value.27;
-        symbol [ dataField3Value %tmp.463 271 63 78 ];
-        %tmp.464 = as %tmp.463 { (!Null) };
-        symbol [ ALIGN_LEFT %tmp.466 271 79 89 ];
-        %tmp.466 = getv ? :ALIGN_LEFT;
-        invoke %tmp.457 %tmp.458(%tmp.459, %tmp.460, %tmp.462, %tmp.464, %tmp.466);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_31_271_92_stop:
-        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_4_271_92_if_end;
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_271_4_271_92_if_end:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 277 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        %tmp.434 = 110;
+        %tmp.435 = 120;
+        symbol [ Icons %tmp.437 225 30 35 ];
+        %tmp.437 = getv ? :Icons;
+        %tmp.438 = 70;
+        symbol [ toChar %tmp.439 225 40 46 ];
+        %tmp.439 = getv function %tmp.438 :toChar;
+        %tmp.440 = invoke %tmp.438 %tmp.439();
+        symbol [ ALIGN_LEFT %tmp.442 225 50 60 ];
+        %tmp.442 = getv ? :ALIGN_LEFT;
+        invoke %tmp.432 %tmp.433(%tmp.434, %tmp.435, %tmp.437, %tmp.440, %tmp.442);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 227 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_8_229_8_if_stmt:
+        %tmp.443 = lgetv %dataField1Value.25;
+        symbol [ dataField1Value %tmp.443 227 12 27 ];
+        %tmp.444 = null;
+        %tmp.445 = ne %tmp.443 %tmp.444;
+        bf %tmp.445 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_8_229_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_8_229_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_37_229_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 228 12 ]
+        %tmp.446 = lgetv %dc;
+        symbol [ dc %tmp.446 228 12 14 ];
+        symbol [ drawText %tmp.447 228 15 23 ];
+        %tmp.447 = getv function %tmp.446 :drawText;
+        %tmp.448 = 135;
+        %tmp.449 = 81;
+        symbol [ FONT_DATA %tmp.451 228 33 42 ];
+        %tmp.451 = getv ? :FONT_DATA;
+        %tmp.452 = lgetv %dataField1Value.25;
+        symbol [ dataField1Value %tmp.452 228 44 59 ];
+        %tmp.453 = as %tmp.452 { (!Null) };
+        symbol [ ALIGN_LEFT %tmp.455 228 61 71 ];
+        %tmp.455 = getv ? :ALIGN_LEFT;
+        invoke %tmp.446 %tmp.447(%tmp.448, %tmp.449, %tmp.451, %tmp.453, %tmp.455);
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_37_229_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_8_229_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_227_8_229_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 230 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_8_232_8_if_stmt:
+        %tmp.456 = lgetv %dataField3Value.27;
+        symbol [ dataField3Value %tmp.456 230 12 27 ];
+        %tmp.457 = null;
+        %tmp.458 = ne %tmp.456 %tmp.457;
+        bf %tmp.458 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_8_232_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_8_232_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_37_232_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 231 12 ]
+        %tmp.459 = lgetv %dc;
+        symbol [ dc %tmp.459 231 12 14 ];
+        symbol [ drawText %tmp.460 231 15 23 ];
+        %tmp.460 = getv function %tmp.459 :drawText;
+        %tmp.461 = 135;
+        %tmp.462 = 101;
+        symbol [ FONT_DATA %tmp.464 231 34 43 ];
+        %tmp.464 = getv ? :FONT_DATA;
+        %tmp.465 = lgetv %dataField2Value.26;
+        symbol [ dataField2Value %tmp.465 231 45 60 ];
+        symbol [ ALIGN_LEFT %tmp.467 231 62 72 ];
+        %tmp.467 = getv ? :ALIGN_LEFT;
+        invoke %tmp.459 %tmp.460(%tmp.461, %tmp.462, %tmp.464, %tmp.465, %tmp.467);
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_37_232_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_8_232_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_230_8_232_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 233 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_8_235_8_if_stmt:
+        %tmp.468 = lgetv %dataField3Value.27;
+        symbol [ dataField3Value %tmp.468 233 12 27 ];
+        %tmp.469 = null;
+        %tmp.470 = ne %tmp.468 %tmp.469;
+        bf %tmp.470 @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_8_235_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_8_235_8_if_true:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_37_235_8_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 234 12 ]
+        %tmp.471 = lgetv %dc;
+        symbol [ dc %tmp.471 234 12 14 ];
+        symbol [ drawText %tmp.472 234 15 23 ];
+        %tmp.472 = getv function %tmp.471 :drawText;
+        %tmp.473 = 135;
+        %tmp.474 = 121;
+        symbol [ FONT_DATA %tmp.476 234 34 43 ];
+        %tmp.476 = getv ? :FONT_DATA;
+        %tmp.477 = lgetv %dataField3Value.27;
+        symbol [ dataField3Value %tmp.477 234 45 60 ];
+        %tmp.478 = as %tmp.477 { (!Null) };
+        symbol [ ALIGN_LEFT %tmp.480 234 62 72 ];
+        %tmp.480 = getv ? :ALIGN_LEFT;
+        invoke %tmp.471 %tmp.472(%tmp.473, %tmp.474, %tmp.476, %tmp.478, %tmp.480);
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_37_235_8_stop:
+        goto @_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_8_235_8_if_end;
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_233_8_235_8_if_end:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 241 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %barHeight.29 = local;
-        symbol [ barHeight %barHeight.29 277 8 17 ];
-        %tmp.467 = 150;
-        lputv %barHeight.29 %tmp.467;
-        symbol [ barHeight %barHeight.29 277 8 17 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 278 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ barHeight %barHeight.29 241 12 21 ];
+        %tmp.481 = 150;
+        lputv %barHeight.29 %tmp.481;
+        symbol [ barHeight %barHeight.29 241 12 21 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 242 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %barY.30 = local;
-        symbol [ barY %barY.30 278 8 12 ];
-        %tmp.468 = 15;
-        lputv %barY.30 %tmp.468;
-        symbol [ barY %barY.30 278 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 279 4 ]
-        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop" ]
+        symbol [ barY %barY.30 242 12 16 ];
+        %tmp.482 = 15;
+        lputv %barY.30 %tmp.482;
+        symbol [ barY %barY.30 242 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 243 8 ]
+        [ "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_start" "_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop" ]
         %barX.31 = local;
-        symbol [ barX %barX.31 279 8 12 ];
-        %tmp.469 = 10;
-        lputv %barX.31 %tmp.469;
-        symbol [ barX %barX.31 279 8 12 ];
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 285 4 ]
-        %tmp.470 = lgetv %dc;
-        symbol [ dc %tmp.470 285 4 6 ];
-        symbol [ setColor %tmp.471 285 7 15 ];
-        %tmp.471 = getv function %tmp.470 :setColor;
-        symbol [ COLOR_WHITE %tmp.473 285 16 27 ];
-        %tmp.473 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_CLEAR %tmp.475 285 28 39 ];
-        %tmp.475 = getv ? :COLOR_CLEAR;
-        invoke %tmp.470 %tmp.471(%tmp.473, %tmp.475);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 286 4 ]
-        %tmp.476 = lgetv %dc;
-        symbol [ dc %tmp.476 286 4 6 ];
-        symbol [ fillRectangle %tmp.477 286 7 20 ];
-        %tmp.477 = getv function %tmp.476 :fillRectangle;
-        %tmp.478 = lgetv %barX.31;
-        symbol [ barX %tmp.478 286 21 25 ];
-        %tmp.479 = lgetv %barY.30;
-        symbol [ barY %tmp.479 286 26 30 ];
-        %tmp.480 = 10;
-        %tmp.481 = lgetv %barHeight.29;
-        symbol [ barHeight %tmp.481 286 34 43 ];
-        invoke %tmp.476 %tmp.477(%tmp.478, %tmp.479, %tmp.480, %tmp.481);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 288 4 ]
-        %tmp.482 = lgetv %dc;
-        symbol [ dc %tmp.482 288 4 6 ];
-        symbol [ setColor %tmp.483 288 7 15 ];
-        %tmp.483 = getv function %tmp.482 :setColor;
-        symbol [ COLOR_BLACK %tmp.485 288 16 27 ];
-        %tmp.485 = getv ? :COLOR_BLACK;
-        symbol [ COLOR_CLEAR %tmp.487 288 28 39 ];
-        %tmp.487 = getv ? :COLOR_CLEAR;
-        invoke %tmp.482 %tmp.483(%tmp.485, %tmp.487);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 289 4 ]
-        %tmp.488 = lgetv %dc;
-        symbol [ dc %tmp.488 289 4 6 ];
-        symbol [ fillRectangle %tmp.489 289 7 20 ];
-        %tmp.489 = getv function %tmp.488 :fillRectangle;
-        %tmp.490 = lgetv %barX.31;
-        symbol [ barX %tmp.490 289 21 25 ];
-        %tmp.491 = lgetv %barY.30;
-        symbol [ barY %tmp.491 289 26 30 ];
-        %tmp.492 = 10;
-        %tmp.493 = lgetv %barHeight.29;
-        symbol [ barHeight %tmp.493 289 35 44 ];
-        %tmp.494 = lgetv %dataField4Value.28;
-        symbol [ dataField4Value %tmp.494 289 46 61 ];
+        symbol [ barX %barX.31 243 12 16 ];
+        %tmp.483 = 10;
+        lputv %barX.31 %tmp.483;
+        symbol [ barX %barX.31 243 12 16 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 247 8 ]
+        %tmp.484 = lgetv %dc;
+        symbol [ dc %tmp.484 247 8 10 ];
+        symbol [ setColor %tmp.485 247 11 19 ];
+        %tmp.485 = getv function %tmp.484 :setColor;
+        symbol [ COLOR_WHITE %tmp.487 247 20 31 ];
+        %tmp.487 = getv ? :COLOR_WHITE;
+        symbol [ COLOR_CLEAR %tmp.489 247 33 44 ];
+        %tmp.489 = getv ? :COLOR_CLEAR;
+        invoke %tmp.484 %tmp.485(%tmp.487, %tmp.489);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 248 8 ]
+        %tmp.490 = lgetv %dc;
+        symbol [ dc %tmp.490 248 8 10 ];
+        symbol [ fillRectangle %tmp.491 248 11 24 ];
+        %tmp.491 = getv function %tmp.490 :fillRectangle;
+        %tmp.492 = lgetv %barX.31;
+        symbol [ barX %tmp.492 248 25 29 ];
+        %tmp.493 = lgetv %barY.30;
+        symbol [ barY %tmp.493 248 31 35 ];
+        %tmp.494 = 10;
         %tmp.495 = lgetv %barHeight.29;
-        symbol [ barHeight %tmp.495 289 62 71 ];
-        %tmp.496 = mul %tmp.494 %tmp.495;
-        %tmp.497 = 100;
-        %tmp.498 = div %tmp.496 %tmp.497;
-        %tmp.499 = sub %tmp.493 %tmp.498;
-        invoke %tmp.488 %tmp.489(%tmp.490, %tmp.491, %tmp.492, %tmp.499);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 293 4 ]
-        %tmp.500 = lgetv %dc;
-        symbol [ dc %tmp.500 293 4 6 ];
-        symbol [ setColor %tmp.501 293 7 15 ];
-        %tmp.501 = getv function %tmp.500 :setColor;
-        symbol [ COLOR_WHITE %tmp.503 293 16 27 ];
-        %tmp.503 = getv ? :COLOR_WHITE;
-        symbol [ COLOR_BLACK %tmp.505 293 28 39 ];
-        %tmp.505 = getv ? :COLOR_BLACK;
-        invoke %tmp.500 %tmp.501(%tmp.503, %tmp.505);
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 294 4 ]
-        %tmp.506 = lgetv %dc;
-        symbol [ dc %tmp.506 294 4 6 ];
-        symbol [ drawText %tmp.507 294 7 15 ];
-        %tmp.507 = getv function %tmp.506 :drawText;
-        %tmp.508 = lgetv %barX.31;
-        symbol [ barX %tmp.508 294 16 20 ];
-        %tmp.509 = 5;
-        %tmp.510 = add %tmp.508 %tmp.509;
-        %tmp.511 = 87;
-        symbol [ Icons %tmp.513 294 26 31 ];
-        %tmp.513 = getv ? :Icons;
-        %tmp.514 = 85;
-        symbol [ toChar %tmp.515 294 35 41 ];
-        %tmp.515 = getv function %tmp.514 :toChar;
-        %tmp.516 = invoke %tmp.514 %tmp.515();
-        symbol [ ALIGN_VCENTER %tmp.518 294 44 57 ];
-        %tmp.518 = getv ? :ALIGN_VCENTER;
-        invoke %tmp.506 %tmp.507(%tmp.510, %tmp.511, %tmp.513, %tmp.516, %tmp.518);
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_91_40_298_4_stop:
+        symbol [ barHeight %tmp.495 248 41 50 ];
+        invoke %tmp.490 %tmp.491(%tmp.492, %tmp.493, %tmp.494, %tmp.495);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 250 8 ]
+        %tmp.496 = lgetv %dc;
+        symbol [ dc %tmp.496 250 8 10 ];
+        symbol [ setColor %tmp.497 250 11 19 ];
+        %tmp.497 = getv function %tmp.496 :setColor;
+        symbol [ COLOR_BLACK %tmp.499 250 20 31 ];
+        %tmp.499 = getv ? :COLOR_BLACK;
+        symbol [ COLOR_CLEAR %tmp.501 250 33 44 ];
+        %tmp.501 = getv ? :COLOR_CLEAR;
+        invoke %tmp.496 %tmp.497(%tmp.499, %tmp.501);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 251 8 ]
+        %tmp.502 = lgetv %dc;
+        symbol [ dc %tmp.502 251 8 10 ];
+        symbol [ fillRectangle %tmp.503 251 11 24 ];
+        %tmp.503 = getv function %tmp.502 :fillRectangle;
+        %tmp.504 = lgetv %barX.31;
+        symbol [ barX %tmp.504 251 25 29 ];
+        %tmp.505 = lgetv %barY.30;
+        symbol [ barY %tmp.505 251 31 35 ];
+        %tmp.506 = 10;
+        %tmp.507 = lgetv %barHeight.29;
+        symbol [ barHeight %tmp.507 251 42 51 ];
+        %tmp.508 = lgetv %dataField4Value.28;
+        symbol [ dataField4Value %tmp.508 251 55 70 ];
+        %tmp.509 = lgetv %barHeight.29;
+        symbol [ barHeight %tmp.509 251 73 82 ];
+        %tmp.510 = mul %tmp.508 %tmp.509;
+        %tmp.511 = 100;
+        %tmp.512 = div %tmp.510 %tmp.511;
+        %tmp.513 = sub %tmp.507 %tmp.512;
+        invoke %tmp.502 %tmp.503(%tmp.504, %tmp.505, %tmp.506, %tmp.513);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 255 8 ]
+        %tmp.514 = lgetv %dc;
+        symbol [ dc %tmp.514 255 8 10 ];
+        symbol [ setColor %tmp.515 255 11 19 ];
+        %tmp.515 = getv function %tmp.514 :setColor;
+        symbol [ COLOR_WHITE %tmp.517 255 20 31 ];
+        %tmp.517 = getv ? :COLOR_WHITE;
+        symbol [ COLOR_BLACK %tmp.519 255 33 44 ];
+        %tmp.519 = getv ? :COLOR_BLACK;
+        invoke %tmp.514 %tmp.515(%tmp.517, %tmp.519);
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 256 8 ]
+        %tmp.520 = lgetv %dc;
+        symbol [ dc %tmp.520 256 8 10 ];
+        symbol [ drawText %tmp.521 256 11 19 ];
+        %tmp.521 = getv function %tmp.520 :drawText;
+        %tmp.522 = lgetv %barX.31;
+        symbol [ barX %tmp.522 256 20 24 ];
+        %tmp.523 = 5;
+        %tmp.524 = add %tmp.522 %tmp.523;
+        %tmp.525 = 87;
+        symbol [ Icons %tmp.527 256 34 39 ];
+        %tmp.527 = getv ? :Icons;
+        %tmp.528 = 85;
+        symbol [ toChar %tmp.529 256 44 50 ];
+        %tmp.529 = getv function %tmp.528 :toChar;
+        %tmp.530 = invoke %tmp.528 %tmp.529();
+        symbol [ ALIGN_VCENTER %tmp.532 256 54 67 ];
+        %tmp.532 = getv ? :ALIGN_VCENTER;
+        invoke %tmp.520 %tmp.521(%tmp.524, %tmp.525, %tmp.527, %tmp.530, %tmp.532);
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_86_40_257_4_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 302; @symbol_functiondef = [onHide,302,13,19]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 261; @symbol_functiondef = [onHide,261,13,19]; ]
     function onHide() as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_302_30_304_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 303 8 ]
-        symbol [ WatchUi %tmp.1 303 8 15 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_261_30_261_57_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 261 32 ]
+        symbol [ WatchUi %tmp.1 261 32 39 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.2 303 16 29 ];
+        symbol [ requestUpdate %tmp.2 261 40 53 ];
         %tmp.2 = getv function %tmp.1 :requestUpdate;
         invoke %tmp.1 %tmp.2();
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_302_30_304_4_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_261_30_261_57_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 308; @symbol_functiondef = [onExitSleep,308,13,24]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 265; @symbol_functiondef = [onExitSleep,265,13,24]; ]
     function onExitSleep() as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_308_35_311_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 309 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_265_35_268_4_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 266 8 ]
         %tmp.1 = true;
-        symbol [ glance ? 309 8 14 ];
+        symbol [ glance ? 266 8 14 ];
         putv self :glance %tmp.1;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 310 8 ]
-        symbol [ WatchUi %tmp.2 310 8 15 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 267 8 ]
+        symbol [ WatchUi %tmp.2 267 8 15 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 310 16 29 ];
+        symbol [ requestUpdate %tmp.3 267 16 29 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_308_35_311_4_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_265_35_268_4_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 315; @symbol_functiondef = [onEnterSleep,315,13,25]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 272; @symbol_functiondef = [onEnterSleep,272,13,25]; ]
     function onEnterSleep() as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_315_36_319_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 317 8 ]
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_272_36_276_4_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 274 8 ]
         %tmp.1 = false;
-        symbol [ glance ? 317 8 14 ];
+        symbol [ glance ? 274 8 14 ];
         putv self :glance %tmp.1;
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 318 8 ]
-        symbol [ WatchUi %tmp.2 318 8 15 ];
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 275 8 ]
+        symbol [ WatchUi %tmp.2 275 8 15 ];
         %tmp.2 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.3 318 16 29 ];
+        symbol [ requestUpdate %tmp.3 275 16 29 ];
         %tmp.3 = getv function %tmp.2 :requestUpdate;
         invoke %tmp.2 %tmp.3();
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_315_36_319_4_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_272_36_276_4_stop:
     }
-    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 321; @symbol_functiondef = [onSettingsChange,321,13,29]; ]
+    [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 278; @symbol_functiondef = [onSettingsChange,278,13,29]; ]
     function onSettingsChange() as Void {
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_321_40_325_4_start:
-[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 323 8 ]
-        symbol [ WatchUi %tmp.1 323 8 15 ];
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_278_40_281_4_start:
+[ "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" 280 8 ]
+        symbol [ WatchUi %tmp.1 280 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.2 323 16 29 ];
+        symbol [ requestUpdate %tmp.2 280 16 29 ];
         %tmp.2 = getv function %tmp.1 :requestUpdate;
         invoke %tmp.1 %tmp.2();
-_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_321_40_325_4_stop:
+_home_kaden_Code_Garmin_Projects_KTheJs_Instinct_Watchface_source_KTheJs_Instinct_WatchfaceView_mc_278_40_281_4_stop:
     }
 }
 [ @file = "/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc"; @line = 1; ]

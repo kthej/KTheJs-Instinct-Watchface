@@ -1,29 +1,47 @@
 <settings>
     <setting propertyKey="@Properties.DataField1" title="Data Field 1">
         <settingConfig type="list">
-            <listEntry value="72">Heart Rate</listEntry>
-            <listEntry value="67">Calories</listEntry>
-            <listEntry value="83">Steps</listEntry>
-            <listEntry value="70">Floors Climbed</listEntry>
-            <listEntry value="85">Solar Intensity</listEntry>
+            <listEntry value="1">Heart Rate</listEntry>
+            <listEntry value="2">Calories</listEntry>
+            <listEntry value="3">Steps</listEntry>
+            <listEntry value="4">Floors Climbed</listEntry>
+            <listEntry value="5">Solar Intensity</listEntry>
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.DataField2" title="Data Field 2">
         <settingConfig type="list">
-            <listEntry value="72">Heart Rate</listEntry>
-            <listEntry value="67">Calories</listEntry>
-            <listEntry value="83">Steps</listEntry>
-            <listEntry value="70">Floors Climbed</listEntry>
-            <listEntry value="85">Solar Intensity</listEntry>
+            <listEntry value="1">Heart Rate</listEntry>
+            <listEntry value="2">Calories</listEntry>
+            <listEntry value="3">Steps</listEntry>
+            <listEntry value="4">Floors Climbed</listEntry>
+            <listEntry value="5">Solar Intensity</listEntry>
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.DataField3" title="Data Field 3">
         <settingConfig type="list">
-            <listEntry value="72">Heart Rate</listEntry>
-            <listEntry value="67">Calories</listEntry>
-            <listEntry value="83">Steps</listEntry>
-            <listEntry value="70">Floors Climbed</listEntry>
-            <listEntry value="85">Solar Intensity</listEntry>
+            <listEntry value="1">Heart Rate</listEntry>
+            <listEntry value="2">Calories</listEntry>
+            <listEntry value="3">Steps</listEntry>
+            <listEntry value="4">Floors Climbed</listEntry>
+            <listEntry value="5">Solar Intensity</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.TimeFill" title="Time Fill Data">
+        <settingConfig type="list">
+
+            <listEntry value="3">Steps Goal</listEntry>
+            <listEntry value="4">Floors Goal</listEntry>
+            <listEntry value="5">Solar Intensity</listEntry>
+            <listEntry value="6">Day Progress</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.SideBar" title="Sidebar Data">
+        <settingConfig type="list">
+
+            <listEntry value="3">Steps Goal</listEntry>
+            <listEntry value="4">Floors Goal</listEntry>
+            <listEntry value="5">Solar Intensity</listEntry>
+            <listEntry value="6">Day Progress</listEntry>
         </settingConfig>
     </setting>
 </settings>

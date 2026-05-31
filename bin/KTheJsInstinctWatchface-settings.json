@@ -2,7 +2,7 @@
   "settings" : [ {
     "key" : "DataField1",
     "valueType" : "number",
-    "defaultValue" : 72,
+    "defaultValue" : 1,
     "configTitle" : "$literal0$",
     "configPrompt" : null,
     "configType" : "list",
@@ -12,19 +12,19 @@
     "configRequired" : false,
     "configOptions" : [ {
       "display" : "$literal1$",
-      "value" : 72
+      "value" : 1
     }, {
       "display" : "$literal2$",
-      "value" : 67
+      "value" : 2
     }, {
       "display" : "$literal3$",
-      "value" : 83
+      "value" : 3
     }, {
       "display" : "$literal4$",
-      "value" : 70
+      "value" : 4
     }, {
       "display" : "$literal5$",
-      "value" : 85
+      "value" : 5
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -32,7 +32,7 @@
   }, {
     "key" : "DataField2",
     "valueType" : "number",
-    "defaultValue" : 83,
+    "defaultValue" : 2,
     "configTitle" : "$literal6$",
     "configPrompt" : null,
     "configType" : "list",
@@ -42,19 +42,19 @@
     "configRequired" : false,
     "configOptions" : [ {
       "display" : "$literal1$",
-      "value" : 72
+      "value" : 1
     }, {
       "display" : "$literal2$",
-      "value" : 67
+      "value" : 2
     }, {
       "display" : "$literal3$",
-      "value" : 83
+      "value" : 3
     }, {
       "display" : "$literal4$",
-      "value" : 70
+      "value" : 4
     }, {
       "display" : "$literal5$",
-      "value" : 85
+      "value" : 5
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -62,7 +62,7 @@
   }, {
     "key" : "DataField3",
     "valueType" : "number",
-    "defaultValue" : 85,
+    "defaultValue" : 3,
     "configTitle" : "$literal7$",
     "configPrompt" : null,
     "configType" : "list",
@@ -72,19 +72,73 @@
     "configRequired" : false,
     "configOptions" : [ {
       "display" : "$literal1$",
-      "value" : 72
+      "value" : 1
     }, {
       "display" : "$literal2$",
-      "value" : 67
+      "value" : 2
     }, {
       "display" : "$literal3$",
-      "value" : 83
+      "value" : 3
     }, {
       "display" : "$literal4$",
-      "value" : 70
+      "value" : 4
     }, {
       "display" : "$literal5$",
-      "value" : 85
+      "value" : 5
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "TimeFill",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "$literal8$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal9$",
+      "value" : 3
+    }, {
+      "display" : "$literal10$",
+      "value" : 4
+    }, {
+      "display" : "$literal5$",
+      "value" : 5
+    }, {
+      "display" : "$literal11$",
+      "value" : 6
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "SideBar",
+    "valueType" : "number",
+    "defaultValue" : 3,
+    "configTitle" : "$literal12$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal9$",
+      "value" : 3
+    }, {
+      "display" : "$literal10$",
+      "value" : 4
+    }, {
+      "display" : "$literal5$",
+      "value" : 5
+    }, {
+      "display" : "$literal11$",
+      "value" : 6
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -93,6 +147,7 @@
   "supportsLiveValidation" : false,
   "languages" : {
     "valyrian" : {
+      "AppName" : "KTheJs-Instinct-Watchface",
       "$literal1$" : "Heart Rate",
       "$literal0$" : "Data Field 1",
       "$literal3$" : "Steps",
@@ -101,7 +156,11 @@
       "$literal4$" : "Floors Climbed",
       "$literal7$" : "Data Field 3",
       "$literal6$" : "Data Field 2",
-      "AppName" : "KTheJs-Instinct-Watchface"
+      "$literal9$" : "Steps Goal",
+      "$literal8$" : "Time Fill Data",
+      "$literal11$" : "Day Progress",
+      "$literal12$" : "Sidebar Data",
+      "$literal10$" : "Floors Goal"
     }
   }
 }

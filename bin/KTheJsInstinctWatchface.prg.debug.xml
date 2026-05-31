@@ -3,127 +3,129 @@
     <manifest filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/manifest.xml"/>
     <pcToLineNum>
         <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="1" lineNum="5" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="26" parent="globals" pc="268435472" symbol="getApp"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="27" parent="globals" pc="268435482" symbol="getApp"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="3" lineNum="9" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435493" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="5" lineNum="12" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435525" symbol="onStart"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="6" lineNum="20" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435528" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="6" lineNum="21" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435530" symbol="getInitialView"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="7" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435556" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="8" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435558" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="16" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435571" symbol="onStop"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="9" lineNum="302" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435574" symbol="onHide"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="9" lineNum="303" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435576" symbol="onHide"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="308" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435588" symbol="onExitSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="309" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435590" symbol="onExitSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="310" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435598" symbol="onExitSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="71" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435610" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="73" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435612" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="75" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435645" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="76" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435683" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="77" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435721" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="78" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435759" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="79" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435797" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="80" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435835" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="81" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435873" symbol="onLayout"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="315" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435912" symbol="onEnterSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="317" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435914" symbol="onEnterSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="318" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435922" symbol="onEnterSleep"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="14" lineNum="67" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435934" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="14" lineNum="67" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435936" symbol="initialize"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="321" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435949" symbol="onSettingsChange"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="323" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435951" symbol="onSettingsChange"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="91" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435963" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="95" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435966" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="99" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435986" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="100" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436003" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="101" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436015" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="102" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436036" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="104" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436057" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="105" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436063" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="106" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436087" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="107" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436099" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="123" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436109" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="124" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436143" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="125" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436163" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="131" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436181" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="132" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436201" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="137" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436225" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="139" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436249" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="140" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436269" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="141" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436295" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="143" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436321" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="144" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436341" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="145" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436367" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="146" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436393" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="148" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436413" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="149" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436431" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="165" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436449" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="166" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436461" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="167" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436469" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="168" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436477" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="169" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436485" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="170" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436493" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="171" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436503" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="173" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436513" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="175" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436521" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="176" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436525" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="180" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436538" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="182" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436558" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="190" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436574" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="191" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436594" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="193" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436606" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="194" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436613" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="206" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436655" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="208" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436675" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="209" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436685" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="210" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436693" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="223" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436725" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="224" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436755" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="225" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436759" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="226" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436763" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="227" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436767" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="229" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436771" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="230" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436791" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="234" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436803" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="238" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436853" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="239" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436871" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="240" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436882" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="242" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436933" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="250" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436972" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="251" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436998" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="253" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437032" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="254" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437049" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="255" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437091" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="256" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437108" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="257" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437131" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="257" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437139" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="261" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437146" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="265" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437169" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="266" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437201" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="267" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437233" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="269" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437265" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="269" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437271" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="270" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437301" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="270" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437307" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="271" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437337" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="271" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437343" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="277" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437373" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="278" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437378" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="279" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437382" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="285" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437386" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="286" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437406" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="288" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437424" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="289" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437444" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="293" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437471" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="294" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437491" symbol="onUpdate"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="24" parent="globals/Rez/Layouts" pc="268437527" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="25" parent="globals/Rez/Layouts" pc="268437538" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="27" parent="globals/Rez/Layouts" pc="268437621" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="29" parent="globals/Rez/Layouts" pc="268437704" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="31" parent="globals/Rez/Layouts" pc="268437784" symbol="WatchFace"/>
-        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B4585-00/source/Rez.mcgen" id="17" lineNum="33" parent="globals/Rez/Layouts" pc="268437878" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="26" parent="globals" pc="268435479" symbol="getApp"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="2" lineNum="27" parent="globals" pc="268435489" symbol="getApp"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="3" lineNum="9" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435524" symbol="&lt;init&gt;"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="5" lineNum="12" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435548" symbol="onStart"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="6" lineNum="20" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435551" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="6" lineNum="21" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435553" symbol="getInitialView"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="7" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435590" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="7" lineNum="8" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435592" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceApp.mc" id="8" lineNum="16" parent="globals/KTheJs_Instinct_WatchfaceApp" pc="268435611" symbol="onStop"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="9" lineNum="261" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435614" symbol="onHide"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="9" lineNum="261" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435616" symbol="onHide"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="265" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435633" symbol="onExitSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="266" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435635" symbol="onExitSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="10" lineNum="267" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435645" symbol="onExitSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="67" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435662" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="69" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435664" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="71" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435705" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="72" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435752" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="73" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435799" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="74" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435846" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="75" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435893" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="76" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435940" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="12" lineNum="77" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268435987" symbol="onLayout"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="272" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436035" symbol="onEnterSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="274" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436037" symbol="onEnterSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="13" lineNum="275" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436047" symbol="onEnterSleep"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="14" lineNum="63" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436064" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="14" lineNum="63" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436066" symbol="initialize"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="278" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436085" symbol="onSettingsChange"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="15" lineNum="280" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436087" symbol="onSettingsChange"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="86" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436104" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="90" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436108" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="94" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436132" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="95" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436155" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="96" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436172" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="97" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436196" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="99" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436220" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="100" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436226" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="101" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436256" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="102" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436276" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="110" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436289" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="111" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436338" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="112" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436366" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="113" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436398" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="114" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436426" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="115" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436467" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="117" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436497" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="118" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436525" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="119" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436565" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="121" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436605" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="122" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436633" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="123" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436673" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="124" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436713" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="126" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436741" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="127" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436773" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="133" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436805" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="134" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436822" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="135" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436832" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="136" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436842" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="137" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436852" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="138" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436862" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="139" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436875" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="141" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436888" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="143" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436898" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="144" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436905" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="148" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436924" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="150" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436952" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="154" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436970" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="155" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268436998" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="157" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437012" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="158" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437023" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="164" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437089" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="166" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437117" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="167" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437131" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="168" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437141" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="175" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437184" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="176" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437221" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="177" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437228" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="178" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437235" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="179" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437242" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="181" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437249" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="182" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437277" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="186" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437294" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="190" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437368" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="191" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437388" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="192" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437403" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="194" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437463" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="200" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437516" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="201" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437553" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="203" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437593" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="204" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437616" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="205" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437665" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="207" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437688" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="208" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437738" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="210" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437773" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="213" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437780" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="214" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437791" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="219" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437801" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="223" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437838" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="224" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437890" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="225" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437942" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="227" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268437994" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="228" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438001" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="230" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438044" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="231" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438051" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="233" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438094" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="234" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438101" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="241" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438144" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="242" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438151" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="243" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438158" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="247" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438165" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="248" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438193" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="250" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438216" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="251" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438244" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="255" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438279" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/source/KTheJs-Instinct-WatchfaceView.mc" id="16" lineNum="256" parent="globals/KTheJs_Instinct_WatchfaceView" pc="268438307" symbol="onUpdate"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="24" parent="globals/Rez/Layouts" pc="268438363" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="25" parent="globals/Rez/Layouts" pc="268438375" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="27" parent="globals/Rez/Layouts" pc="268438487" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="29" parent="globals/Rez/Layouts" pc="268438599" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="31" parent="globals/Rez/Layouts" pc="268438711" symbol="WatchFace"/>
+        <entry filename="/home/kaden/Code/Garmin Projects/KTheJs-Instinct-Watchface/bin/gen/006-B3888-00/source/Rez.mcgen" id="17" lineNum="33" parent="globals/Rez/Layouts" pc="268438835" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry field="true" id="14" symbol="FONT_BLACK"/>
@@ -132,6 +134,7 @@
         <entry field="true" id="10" symbol="ALIGN_LEFT"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry field="true" id="21" symbol="hours_element"/>
+        <entry field="true" id="8391500" symbol="solarIntensity"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="20" symbol="glance"/>
         <entry field="true" id="35" symbol="AppName"/>
@@ -200,46 +203,46 @@
         <entry field="true" id="18" symbol="FONT_WHITE"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435911" name="dc" stackId="1" startPc="268435610"/>
-        <entry arg="true" endPc="268437526" name="dc" stackId="1" startPc="268435963"/>
-        <entry endPc="268437525" name="is24Hour" stackId="2" startPc="268435966"/>
-        <entry endPc="268437525" name="clockTime" stackId="3" startPc="268435966"/>
-        <entry endPc="268437525" name="hours" stackId="4" startPc="268435966"/>
-        <entry endPc="268437525" name="minutes" stackId="5" startPc="268435966"/>
-        <entry endPc="268437525" name="dayPercentage" stackId="6" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen" stackId="7" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_x" stackId="8" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_y" stackId="9" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_width" stackId="10" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_height" stackId="11" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_middle_x" stackId="12" startPc="268435966"/>
-        <entry endPc="268437525" name="sub_screen_middle_y" stackId="13" startPc="268435966"/>
-        <entry endPc="268437525" name="integer_seconds" stackId="14" startPc="268435966"/>
-        <entry endPc="268437525" name="arcThickness" stackId="15" startPc="268435966"/>
-        <entry endPc="268437525" name="circleRadius" stackId="16" startPc="268435966"/>
-        <entry endPc="268436721" name="seconds" stackId="17" startPc="268436685"/>
-        <entry endPc="268437525" name="batteryPercentage" stackId="18" startPc="268435966"/>
-        <entry endPc="268437525" name="recX" stackId="19" startPc="268435966"/>
-        <entry endPc="268437525" name="recY" stackId="20" startPc="268435966"/>
-        <entry endPc="268437525" name="recW" stackId="21" startPc="268435966"/>
-        <entry endPc="268437525" name="recH" stackId="22" startPc="268435966"/>
-        <entry endPc="268436932" name="i" stackId="23" startPc="268436882"/>
-        <entry endPc="268437525" name="dateVar" stackId="24" startPc="268435966"/>
-        <entry endPc="268437525" name="dateString" stackId="25" startPc="268435966"/>
-        <entry endPc="268437525" name="dataField1Value" stackId="26" startPc="268435966"/>
-        <entry endPc="268437525" name="dataField2Value" stackId="27" startPc="268435966"/>
-        <entry endPc="268437525" name="dataField3Value" stackId="28" startPc="268435966"/>
-        <entry endPc="268437525" name="dataField4Value" stackId="29" startPc="268435966"/>
-        <entry endPc="268437525" name="barHeight" stackId="30" startPc="268435966"/>
-        <entry endPc="268437525" name="barY" stackId="31" startPc="268435966"/>
-        <entry endPc="268437525" name="barX" stackId="32" startPc="268435966"/>
-        <entry arg="true" endPc="268437902" name="dc" stackId="1" startPc="268437527"/>
-        <entry endPc="268437902" name="rez_cmp_local_text_HoursLabel" stackId="2" startPc="268437538"/>
-        <entry endPc="268437902" name="rez_cmp_local_text_MinutesLabel" stackId="3" startPc="268437538"/>
-        <entry endPc="268437902" name="rez_cmp_local_text_SecondsLabel" stackId="4" startPc="268437538"/>
-        <entry endPc="268437902" name="rez_cmp_local_text_HeartRateLabel" stackId="5" startPc="268437538"/>
+        <entry arg="true" endPc="268436034" name="dc" stackId="1" startPc="268435662"/>
+        <entry arg="true" endPc="268438362" name="dc" stackId="1" startPc="268436104"/>
+        <entry endPc="268438361" name="is24Hour" stackId="2" startPc="268436108"/>
+        <entry endPc="268438361" name="clockTime" stackId="3" startPc="268436108"/>
+        <entry endPc="268438361" name="hours" stackId="4" startPc="268436108"/>
+        <entry endPc="268438361" name="minutes" stackId="5" startPc="268436108"/>
+        <entry endPc="268438361" name="dayPercentage" stackId="6" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen" stackId="7" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_x" stackId="8" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_y" stackId="9" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_width" stackId="10" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_height" stackId="11" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_middle_x" stackId="12" startPc="268436108"/>
+        <entry endPc="268438361" name="sub_screen_middle_y" stackId="13" startPc="268436108"/>
+        <entry endPc="268438361" name="integer_seconds" stackId="14" startPc="268436108"/>
+        <entry endPc="268438361" name="arcThickness" stackId="15" startPc="268436108"/>
+        <entry endPc="268438361" name="circleRadius" stackId="16" startPc="268436108"/>
+        <entry endPc="268437180" name="seconds" stackId="17" startPc="268437131"/>
+        <entry endPc="268438361" name="batteryPercentage" stackId="18" startPc="268436108"/>
+        <entry endPc="268438361" name="recX" stackId="19" startPc="268436108"/>
+        <entry endPc="268438361" name="recY" stackId="20" startPc="268436108"/>
+        <entry endPc="268438361" name="recW" stackId="21" startPc="268436108"/>
+        <entry endPc="268438361" name="recH" stackId="22" startPc="268436108"/>
+        <entry endPc="268437462" name="i" stackId="23" startPc="268437403"/>
+        <entry endPc="268438361" name="dateVar" stackId="24" startPc="268436108"/>
+        <entry endPc="268438361" name="dateString" stackId="25" startPc="268436108"/>
+        <entry endPc="268438361" name="dataField1Value" stackId="26" startPc="268436108"/>
+        <entry endPc="268438361" name="dataField2Value" stackId="27" startPc="268436108"/>
+        <entry endPc="268438361" name="dataField3Value" stackId="28" startPc="268436108"/>
+        <entry endPc="268438361" name="dataField4Value" stackId="29" startPc="268436108"/>
+        <entry endPc="268438361" name="barHeight" stackId="30" startPc="268436108"/>
+        <entry endPc="268438361" name="barY" stackId="31" startPc="268436108"/>
+        <entry endPc="268438361" name="barX" stackId="32" startPc="268436108"/>
+        <entry arg="true" endPc="268438881" name="dc" stackId="1" startPc="268438363"/>
+        <entry endPc="268438881" name="rez_cmp_local_text_HoursLabel" stackId="2" startPc="268438375"/>
+        <entry endPc="268438881" name="rez_cmp_local_text_MinutesLabel" stackId="3" startPc="268438375"/>
+        <entry endPc="268438881" name="rez_cmp_local_text_SecondsLabel" stackId="4" startPc="268438375"/>
+        <entry endPc="268438881" name="rez_cmp_local_text_HeartRateLabel" stackId="5" startPc="268438375"/>
     </localVars>
-    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B4585-00"/>
+    <deviceInfo deviceVersion="45fe3cbb0de8ea0a70e12628d2697915f1272301" partNumber="006-B3888-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="Icons"/>
@@ -253,65 +256,65 @@
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="Font0"/>
     </annotations>
     <dataEntryOffsetMappings>
-        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/KTheJs_Instinct_WatchfaceApp" offset="134" parentId="globals" symbolId="KTheJs_Instinct_WatchfaceApp" type="class"/>
-        <dataEntry label="globals/KTheJs_Instinct_WatchfaceView" offset="205" parentId="globals" symbolId="KTheJs_Instinct_WatchfaceView" type="class"/>
-        <dataEntry label="globals/Rez" offset="492" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Rez/Drawables" offset="554" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="589" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="624" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="722" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/KTheJs_Instinct_WatchfaceApp" offset="142" parentId="globals" symbolId="KTheJs_Instinct_WatchfaceApp" type="class"/>
+        <dataEntry label="globals/KTheJs_Instinct_WatchfaceView" offset="213" parentId="globals" symbolId="KTheJs_Instinct_WatchfaceView" type="class"/>
+        <dataEntry label="globals/Rez" offset="476" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="539" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="578" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="617" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="712" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+        <functionEntry accessMode="public" endPc="268435504" name="getApp" startPc="268435479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="KTheJs_Instinct_WatchfaceView" startPc="268435493">
+        <functionEntry accessMode="public" endPc="268435523" name="&lt;init&gt;" parent="KTheJs_Instinct_WatchfaceView" startPc="268435505">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="Rez" startPc="268435524">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435527" name="onStart" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435525">
+        <functionEntry accessMode="public" endPc="268435550" name="onStart" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435548">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435555" name="getInitialView" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435528">
+        <functionEntry accessMode="public" endPc="268435589" name="getInitialView" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435551">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435570" name="initialize" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435556">
+        <functionEntry accessMode="public" endPc="268435610" name="initialize" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435590">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435573" name="onStop" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435571">
+        <functionEntry accessMode="public" endPc="268435613" name="onStop" parent="KTheJs_Instinct_WatchfaceApp" startPc="268435611">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435587" name="onHide" parent="KTheJs_Instinct_WatchfaceView" startPc="268435574">
+        <functionEntry accessMode="public" endPc="268435632" name="onHide" parent="KTheJs_Instinct_WatchfaceView" startPc="268435614">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435609" name="onExitSleep" parent="KTheJs_Instinct_WatchfaceView" startPc="268435588">
+        <functionEntry accessMode="public" endPc="268435661" name="onExitSleep" parent="KTheJs_Instinct_WatchfaceView" startPc="268435633">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onShow" parent="KTheJs_Instinct_WatchfaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435911" name="onLayout" parent="KTheJs_Instinct_WatchfaceView" startPc="268435610">
+        <functionEntry accessMode="public" endPc="268436034" name="onLayout" parent="KTheJs_Instinct_WatchfaceView" startPc="268435662">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435933" name="onEnterSleep" parent="KTheJs_Instinct_WatchfaceView" startPc="268435912">
+        <functionEntry accessMode="public" endPc="268436063" name="onEnterSleep" parent="KTheJs_Instinct_WatchfaceView" startPc="268436035">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435948" name="initialize" parent="KTheJs_Instinct_WatchfaceView" startPc="268435934">
+        <functionEntry accessMode="public" endPc="268436084" name="initialize" parent="KTheJs_Instinct_WatchfaceView" startPc="268436064">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435962" name="onSettingsChange" parent="KTheJs_Instinct_WatchfaceView" startPc="268435949">
+        <functionEntry accessMode="public" endPc="268436103" name="onSettingsChange" parent="KTheJs_Instinct_WatchfaceView" startPc="268436085">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437526" name="onUpdate" parent="KTheJs_Instinct_WatchfaceView" startPc="268435963">
+        <functionEntry accessMode="public" endPc="268438362" name="onUpdate" parent="KTheJs_Instinct_WatchfaceView" startPc="268436104">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
@@ -327,7 +330,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437902" name="WatchFace" parent="Layouts" startPc="268437527">
+        <functionEntry accessMode="public" endPc="268438881" name="WatchFace" parent="Layouts" startPc="268438363">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
