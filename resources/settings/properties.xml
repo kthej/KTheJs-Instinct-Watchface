@@ -1,8 +1,10 @@
 <properties>
-    <property id="DataField1" type="number">1</property>
-    <property id="DataField2" type="number">2</property>
-    <property id="DataField3" type="number">3</property>
-    <property id="TimeFill" type="number">3</property>
-    <property id="SideBar" type="number">3</property>
+    <property id="DataField1" type="number">72</property>
+    <property id="DataField2" type="number">83</property>
+    <property id="DataField3" type="number">67</property>
+    <property id="TimeFill" type="number">1</property>
+    <property id="SideBar" type="number">85</property>
+    <property id="ShowBattery" type="number">1</property>
+    <property id="DateFormat" type="number">1</property>
     
 </properties>

@@ -10,7 +10,6 @@ module Rez {
     } // Drawables
 
     module Fonts {
-        (:initialized) var Font0 as ResourceId;
         (:initialized) var Time_Black as ResourceId;
         (:initialized) var Time_White as ResourceId;
         (:initialized) var SmallFont as ResourceId;

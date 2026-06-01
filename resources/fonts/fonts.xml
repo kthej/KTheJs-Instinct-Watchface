@@ -1,6 +1,6 @@
 <resources>
     <fonts>
-    <font id="Font0" filename="f0.fnt"/>
+
     <font id="Time_Black" filename="time_black.fnt"/>
     <font id="Time_White" filename="time_white.fnt"/>
     <font id="SmallFont" filename="SmallFont.fnt"/>

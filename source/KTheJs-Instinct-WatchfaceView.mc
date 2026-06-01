@@ -5,6 +5,8 @@ import Toybox.WatchUi;
 import Toybox.Time;
 import Toybox.Activity;
 import Toybox.ActivityMonitor;
+import Toybox.Application;
+using Toybox.Application.Properties as Store;
 
 class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
@@ -40,15 +42,12 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
     // Icons
 
     public var Icons;
+    // Settings Options
 
-    /*
-    Data Field char assignments for future reference
-    72  H  Heart Rate
-    67  C  Calories
-    83  S  Steps
-    70  F  Floors Climbed
-    85  U  Solar Intensity
-    */
+    public var dataField1Value;
+    public var dataField2Value;
+    public var dataField3Value;
+    public var dataField4Value;
 
     // Other
 
@@ -95,7 +94,8 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         var clockTime = System.getClockTime();
         var hours = clockTime.hour.format("%02d");
         var minutes = clockTime.min.format("%02d");
-        var dayPercentage;
+        var timeFillPercentage = null;
+
         if (!is24Hour) { // Check for 12/24hr time.
             hours = (clockTime.hour % 12).format("%02d");
             if (hours.toFloat() == 0) {
@@ -107,12 +107,30 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
 
         // Draw Clock
 
-        dayPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat()) / 1440;
+        if (Store.getValue("TimeFill") == 1) {
+            timeFillPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat()) / 1440;
+        } else if (Store.getValue("TimeFill") == 2) {
+            timeFillPercentage = ActivityMonitor.getInfo().steps.toFloat() /
+                                 ActivityMonitor.getInfo().stepGoal.toFloat();
+        } else if (Store.getValue("TimeFill") == 3) {
+            timeFillPercentage = ActivityMonitor.getInfo().floorsClimbed.toFloat() /
+                                 ActivityMonitor.getInfo().floorsClimbedGoal.toFloat();
+        } else if (Store.getValue("TimeFill") == 4) {
+            if (System.getSystemStats().solarIntensity != null) {
+                timeFillPercentage = System.getSystemStats().solarIntensity.toFloat() / 100.0;
+            } else {
+                timeFillPercentage = 0;
+            }
+        } else {
+            timeFillPercentage = (clockTime.hour.toFloat() * 60 + clockTime.min.toFloat()) / 1440;
+        }
+        if (timeFillPercentage > 1.0) {
+            timeFillPercentage = 1.0;
+        }
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.fillRectangle(30, 26, 65, 124);
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
-        dc.fillRectangle(30, 26, 65, 124 * (1 - dayPercentage));
-        System.print(dayPercentage * 100 + "\n");
+        dc.fillRectangle(30, 26, 65, 124 * (1 - timeFillPercentage));
 
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
         dc.drawText(65, 25, FONT_BLACK, hours, ALIGN_CENTER);
@@ -181,49 +199,91 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.setPenWidth(1);
 
-        // Battery Text
+        if (Store.getValue("ShowBattery") == 1) {
+            // Battery Text
 
-        dc.drawText(66, 8, FONT_SMALL, Lang.format("$1$%", [batteryPercentage]), ALIGN_RIGHT);
+            dc.drawText(66, 8, FONT_SMALL, Lang.format("$1$%", [batteryPercentage]), ALIGN_RIGHT);
 
-        // Battery Icon
+            // Battery Icon
 
-        dc.drawRectangle(recX, recY, recW, recH);
-        for (var i = 0; i < recH; i++) {
-            dc.drawLine(recX, recY + i, recX + ((recW)*batteryPercentage.toFloat() * 0.01), recY + i);
+            dc.drawRectangle(recX, recY, recW, recH);
+            for (var i = 0; i < recH; i++) {
+                dc.drawLine(recX, recY + i, recX + ((recW)*batteryPercentage.toFloat() * 0.01), recY + i);
+            }
+            dc.drawLine(recX + recW + 1, recY + 2, recX + recW + 1, recY + recH - 2);
         }
-        dc.drawLine(recX + recW + 1, recY + 2, recX + recW + 1, recY + recH - 2);
+
+        // Date
+        var dateVar = Time.Gregorian.info(Time.now(), Time.FORMAT_LONG);
+        var dateString = null;
+        if (Store.getValue("DateFormat") == 1) {
+            dateString = dateVar.day_of_week + " " + dateVar.month + " " + dateVar.day;
+        } else if (Store.getValue("DateFormat") == 2) {
+            dateString = dateVar.day_of_week + " " + dateVar.day + " " + dateVar.month;
+        } else if (Store.getValue("DateFormat") == 0) {
+            dateString = null;
+        }
 
         // Data Fields ////////////////////////////////////////////////////////////////////////////////////
 
-        // Date
+        /*
+        Data Field char assignments for future reference
+        72  H  Heart Rate
+        67  C  Calories
+        83  S  Steps
+        70  F  Floors Climbed
+        85  U  Solar Intensity
+        */
 
-        var dateVar = Time.Gregorian.info(Time.now(), Time.FORMAT_LONG);
-        var dateString = dateVar.day_of_week + " " + dateVar.month + " " + dateVar.day;
-
-        var dataField1Value = Activity.getActivityInfo().currentHeartRate;
-        var dataField2Value = (ActivityMonitor.getInfo().steps / 1000.0).format("%.1f") + "k";
-        var dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
-        var dataField4Value;
-        if (System.getSystemStats() has :solarIntensity and System.getSystemStats().solarIntensity != null) {
-            dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+        if (Store.getValue("DataField1") == 72) {
+            dataField1Value = Activity.getActivityInfo().currentHeartRate;
+            dc.drawText(110, 80, Icons, 72.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField1") == 67) {
+            dataField1Value = (ActivityMonitor.getInfo().calories / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 80, Icons, 67.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField1") == 83) {
+            dataField1Value = (ActivityMonitor.getInfo().steps / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 80, Icons, 83.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField1") == 70) {
+            dataField1Value = ActivityMonitor.getInfo().floorsClimbed;
+            dc.drawText(110, 80, Icons, 70.toChar(), ALIGN_LEFT);
         } else {
-            dataField4Value = 100;
+            System.print("Error: No valid numbers returned");
         }
 
-        if (dataField4Value > 100) {
-            dataField4Value = 100;
+        if (Store.getValue("DataField2") == 72) {
+            dataField2Value = Activity.getActivityInfo().currentHeartRate;
+            dc.drawText(110, 100, Icons, 72.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField2") == 67) {
+            dataField2Value = (ActivityMonitor.getInfo().calories / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 100, Icons, 67.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField2") == 83) {
+            dataField2Value = (ActivityMonitor.getInfo().steps / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 100, Icons, 83.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField2") == 70) {
+            dataField2Value = ActivityMonitor.getInfo().floorsClimbed;
+            dc.drawText(110, 100, Icons, 70.toChar(), ALIGN_LEFT);
+        } else {
+            System.print("Error: No valid numbers returned");
         }
 
-        // Bottom date text, will create custom font later
+        if (Store.getValue("DataField3") == 72) {
+            dataField3Value = Activity.getActivityInfo().currentHeartRate;
+            dc.drawText(110, 120, Icons, 72.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField3") == 67) {
+            dataField3Value = (ActivityMonitor.getInfo().calories / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 120, Icons, 67.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField3") == 83) {
+            dataField3Value = (ActivityMonitor.getInfo().steps / 1000.0).format("%.1f") + "k";
+            dc.drawText(110, 120, Icons, 83.toChar(), ALIGN_LEFT);
+        } else if (Store.getValue("DataField3") == 70) {
+            dataField3Value = ActivityMonitor.getInfo().floorsClimbed;
+            dc.drawText(110, 120, Icons, 70.toChar(), ALIGN_LEFT);
+        } else {
+            System.print("Error: No valid numbers returned");
+        }
 
-        dc.drawText(88, 150, Graphics.FONT_XTINY, dateString, ALIGN_CENTER);
-
-        // Data Field Icons
-
-        dc.drawText(110, 80, Icons, 72.toChar(), ALIGN_LEFT);
-        dc.drawText(110, 100, Icons, 83.toChar(), ALIGN_LEFT);
-        dc.drawText(110, 120, Icons, 70.toChar(), ALIGN_LEFT);
-
+        // Draw text after
         if (dataField1Value != null) {
             dc.drawText(135, 81, FONT_DATA, dataField1Value, ALIGN_LEFT);
         }
@@ -234,26 +294,52 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             dc.drawText(135, 121, FONT_DATA, dataField3Value, ALIGN_LEFT);
         }
 
+        if (Store.getValue("SideBar") == 85) {
+
+            if (System.getSystemStats().solarIntensity != null) {
+                dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+            } else {
+                dataField4Value = 1.0;
+            }
+        } else if(Store.getValue("SideBar") == 83){
+            dataField4Value = ActivityMonitor.getInfo().steps.toFloat() / ActivityMonitor.getInfo().stepGoal.toFloat();
+        } else if(Store.getValue("SideBar") == 70){
+            dataField4Value = ActivityMonitor.getInfo().floorsClimbed.toFloat() / ActivityMonitor.getInfo().floorsClimbedGoal.toFloat();
+        } else if(Store.getValue("SideBar") == 0){
+            dataField4Value = 0;
+        }
+
+        if (dataField4Value > 1.0) {
+            dataField4Value = 1.0;
+        }
+
+        if (dateString != null) {
+            dc.drawText(88, 150, Graphics.FONT_XTINY, dateString, ALIGN_CENTER);
+        }
+
         // Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
 
         // Variables
 
         var barHeight = 150;
+        var barWidth = 10;
         var barY = 15;
         var barX = 10;
 
         // Draw progress bar
 
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
-        dc.fillRectangle(barX, barY, 10, barHeight);
+        dc.fillRectangle(barX, barY, barWidth, barHeight);
 
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
-        dc.fillRectangle(barX, barY, 10, (barHeight - (dataField4Value * barHeight / 100)));
+        dc.fillRectangle(barX, barY, barWidth, (barHeight - (dataField4Value * barHeight)));
 
         // Icon
         // dc.setPenWidth(1);
         dc.setColor(COLOR_WHITE, COLOR_BLACK);
-        dc.drawText(barX + 5, 87, Icons, 85.toChar(), ALIGN_VCENTER);
+        if(Store.getValue("SideBar") != 0){
+        dc.drawText(barX + 5, 87, Icons, Store.getValue("SideBar").toChar(), ALIGN_VCENTER);
+        }
     }
 
     // reverse peekaboo
@@ -275,8 +361,5 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
         WatchUi.requestUpdate();
     }
 
-    function onSettingsChange() as Void {
-
-        WatchUi.requestUpdate();
-    }
+    function onSettingsChange() as Void { WatchUi.requestUpdate(); }
 }

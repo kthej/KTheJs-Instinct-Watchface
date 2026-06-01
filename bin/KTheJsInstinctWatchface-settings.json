@@ -2,7 +2,7 @@
   "settings" : [ {
     "key" : "DataField1",
     "valueType" : "number",
-    "defaultValue" : 1,
+    "defaultValue" : 72,
     "configTitle" : "$literal0$",
     "configPrompt" : null,
     "configType" : "list",
@@ -12,19 +12,16 @@
     "configRequired" : false,
     "configOptions" : [ {
       "display" : "$literal1$",
-      "value" : 1
+      "value" : 72
     }, {
       "display" : "$literal2$",
-      "value" : 2
+      "value" : 67
     }, {
       "display" : "$literal3$",
-      "value" : 3
+      "value" : 83
     }, {
       "display" : "$literal4$",
-      "value" : 4
-    }, {
-      "display" : "$literal5$",
-      "value" : 5
+      "value" : 70
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -32,7 +29,34 @@
   }, {
     "key" : "DataField2",
     "valueType" : "number",
-    "defaultValue" : 2,
+    "defaultValue" : 83,
+    "configTitle" : "$literal5$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal1$",
+      "value" : 72
+    }, {
+      "display" : "$literal2$",
+      "value" : 67
+    }, {
+      "display" : "$literal3$",
+      "value" : 83
+    }, {
+      "display" : "$literal4$",
+      "value" : 70
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DataField3",
+    "valueType" : "number",
+    "defaultValue" : 67,
     "configTitle" : "$literal6$",
     "configPrompt" : null,
     "configType" : "list",
@@ -42,27 +66,24 @@
     "configRequired" : false,
     "configOptions" : [ {
       "display" : "$literal1$",
-      "value" : 1
+      "value" : 72
     }, {
       "display" : "$literal2$",
-      "value" : 2
+      "value" : 67
     }, {
       "display" : "$literal3$",
-      "value" : 3
+      "value" : 83
     }, {
       "display" : "$literal4$",
-      "value" : 4
-    }, {
-      "display" : "$literal5$",
-      "value" : 5
+      "value" : 70
     } ],
     "configMin" : null,
     "configMax" : null,
     "configMaxLength" : null
   }, {
-    "key" : "DataField3",
+    "key" : "TimeFill",
     "valueType" : "number",
-    "defaultValue" : 3,
+    "defaultValue" : 1,
     "configTitle" : "$literal7$",
     "configPrompt" : null,
     "configType" : "list",
@@ -71,47 +92,17 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal1$",
+      "display" : "$literal8$",
       "value" : 1
     }, {
-      "display" : "$literal2$",
+      "display" : "$literal9$",
       "value" : 2
     }, {
-      "display" : "$literal3$",
-      "value" : 3
-    }, {
-      "display" : "$literal4$",
-      "value" : 4
-    }, {
-      "display" : "$literal5$",
-      "value" : 5
-    } ],
-    "configMin" : null,
-    "configMax" : null,
-    "configMaxLength" : null
-  }, {
-    "key" : "TimeFill",
-    "valueType" : "number",
-    "defaultValue" : 3,
-    "configTitle" : "$literal8$",
-    "configPrompt" : null,
-    "configType" : "list",
-    "configError" : null,
-    "configHelpUrl" : null,
-    "configReadonly" : false,
-    "configRequired" : false,
-    "configOptions" : [ {
-      "display" : "$literal9$",
-      "value" : 3
-    }, {
       "display" : "$literal10$",
-      "value" : 4
-    }, {
-      "display" : "$literal5$",
-      "value" : 5
+      "value" : 3
     }, {
       "display" : "$literal11$",
-      "value" : 6
+      "value" : 4
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -119,7 +110,7 @@
   }, {
     "key" : "SideBar",
     "valueType" : "number",
-    "defaultValue" : 3,
+    "defaultValue" : 85,
     "configTitle" : "$literal12$",
     "configPrompt" : null,
     "configType" : "list",
@@ -128,17 +119,62 @@
     "configReadonly" : false,
     "configRequired" : false,
     "configOptions" : [ {
-      "display" : "$literal9$",
-      "value" : 3
-    }, {
-      "display" : "$literal10$",
-      "value" : 4
-    }, {
-      "display" : "$literal5$",
-      "value" : 5
+      "display" : "$literal13$",
+      "value" : 0
     }, {
       "display" : "$literal11$",
-      "value" : 6
+      "value" : 85
+    }, {
+      "display" : "$literal9$",
+      "value" : 83
+    }, {
+      "display" : "$literal10$",
+      "value" : 70
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "ShowBattery",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal14$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal15$",
+      "value" : 1
+    }, {
+      "display" : "$literal16$",
+      "value" : 0
+    } ],
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : null
+  }, {
+    "key" : "DateFormat",
+    "valueType" : "number",
+    "defaultValue" : 1,
+    "configTitle" : "$literal17$",
+    "configPrompt" : null,
+    "configType" : "list",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : [ {
+      "display" : "$literal18$",
+      "value" : 0
+    }, {
+      "display" : "$literal19$",
+      "value" : 1
+    }, {
+      "display" : "$literal20$",
+      "value" : 2
     } ],
     "configMin" : null,
     "configMax" : null,
@@ -149,17 +185,25 @@
     "valyrian" : {
       "AppName" : "KTheJs-Instinct-Watchface",
       "$literal1$" : "Heart Rate",
+      "$literal15$" : "True",
       "$literal0$" : "Data Field 1",
+      "$literal16$" : "False",
       "$literal3$" : "Steps",
+      "$literal13$" : "Don't Show",
       "$literal2$" : "Calories",
-      "$literal5$" : "Solar Intensity",
+      "$literal14$" : "Show Battery",
+      "$literal5$" : "Data Field 2",
+      "$literal19$" : "WWW MMM DD",
       "$literal4$" : "Floors Climbed",
-      "$literal7$" : "Data Field 3",
-      "$literal6$" : "Data Field 2",
+      "$literal7$" : "Time Fill Data",
+      "$literal17$" : "Date Format",
+      "$literal6$" : "Data Field 3",
+      "$literal18$" : "Don't Show Date",
       "$literal9$" : "Steps Goal",
-      "$literal8$" : "Time Fill Data",
-      "$literal11$" : "Day Progress",
+      "$literal8$" : "Day Progress",
+      "$literal11$" : "Solar Intensity",
       "$literal12$" : "Sidebar Data",
+      "$literal20$" : "WWW DD MMM",
       "$literal10$" : "Floors Goal"
     }
   }

@@ -1,47 +1,61 @@
 <settings>
     <setting propertyKey="@Properties.DataField1" title="Data Field 1">
         <settingConfig type="list">
-            <listEntry value="1">Heart Rate</listEntry>
-            <listEntry value="2">Calories</listEntry>
-            <listEntry value="3">Steps</listEntry>
-            <listEntry value="4">Floors Climbed</listEntry>
-            <listEntry value="5">Solar Intensity</listEntry>
+            <listEntry value="72">Heart Rate</listEntry>
+            <listEntry value="67">Calories</listEntry>
+            <listEntry value="83">Steps</listEntry>
+            <listEntry value="70">Floors Climbed</listEntry>
+            <!-- <listEntry value="85">Solar Intensity</listEntry> -->
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.DataField2" title="Data Field 2">
         <settingConfig type="list">
-            <listEntry value="1">Heart Rate</listEntry>
-            <listEntry value="2">Calories</listEntry>
-            <listEntry value="3">Steps</listEntry>
-            <listEntry value="4">Floors Climbed</listEntry>
-            <listEntry value="5">Solar Intensity</listEntry>
+            <listEntry value="72">Heart Rate</listEntry>
+            <listEntry value="67">Calories</listEntry>
+            <listEntry value="83">Steps</listEntry>
+            <listEntry value="70">Floors Climbed</listEntry>
+            <!-- <listEntry value="85">Solar Intensity</listEntry> -->
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.DataField3" title="Data Field 3">
         <settingConfig type="list">
-            <listEntry value="1">Heart Rate</listEntry>
-            <listEntry value="2">Calories</listEntry>
-            <listEntry value="3">Steps</listEntry>
-            <listEntry value="4">Floors Climbed</listEntry>
-            <listEntry value="5">Solar Intensity</listEntry>
+            <listEntry value="72">Heart Rate</listEntry>
+            <listEntry value="67">Calories</listEntry>
+            <listEntry value="83">Steps</listEntry>
+            <listEntry value="70">Floors Climbed</listEntry>
+            <!-- <listEntry value="85">Solar Intensity</listEntry> -->
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.TimeFill" title="Time Fill Data">
         <settingConfig type="list">
-
-            <listEntry value="3">Steps Goal</listEntry>
-            <listEntry value="4">Floors Goal</listEntry>
-            <listEntry value="5">Solar Intensity</listEntry>
-            <listEntry value="6">Day Progress</listEntry>
+            <listEntry value="1">Day Progress</listEntry>
+            <listEntry value="2">Steps Goal</listEntry>
+            <listEntry value="3">Floors Goal</listEntry>
+            <listEntry value="4">Solar Intensity</listEntry>
+            
         </settingConfig>
     </setting>
     <setting propertyKey="@Properties.SideBar" title="Sidebar Data">
         <settingConfig type="list">
-
-            <listEntry value="3">Steps Goal</listEntry>
-            <listEntry value="4">Floors Goal</listEntry>
-            <listEntry value="5">Solar Intensity</listEntry>
-            <listEntry value="6">Day Progress</listEntry>
+            
+            <listEntry value="0">Don't Show</listEntry>
+            <listEntry value="85">Solar Intensity</listEntry>
+            <listEntry value="83">Steps Goal</listEntry>
+            <listEntry value="70">Floors Goal</listEntry>
+    
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.ShowBattery" title="Show Battery">
+        <settingConfig type="list">
+            <listEntry value="1">True</listEntry>
+            <listEntry value="0">False</listEntry>
+        </settingConfig>
+    </setting>
+    <setting propertyKey="@Properties.DateFormat" title="Date Format">
+        <settingConfig type="list">
+            <listEntry value="0">Don't Show Date</listEntry>
+            <listEntry value="1">WWW MMM DD</listEntry>
+            <listEntry value="2">WWW DD MMM</listEntry>
         </settingConfig>
     </setting>
 </settings>
