@@ -294,18 +294,21 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             dc.drawText(135, 121, FONT_DATA, dataField3Value, ALIGN_LEFT);
         }
 
+        // Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
+
         if (Store.getValue("SideBar") == 85) {
 
             if (System.getSystemStats().solarIntensity != null) {
-                dataField4Value = System.getSystemStats().solarIntensity.toFloat();
+                dataField4Value = System.getSystemStats().solarIntensity.toFloat() / 100.0;
             } else {
-                dataField4Value = 1.0;
+                dataField4Value = 0;
             }
-        } else if(Store.getValue("SideBar") == 83){
+        } else if (Store.getValue("SideBar") == 83) {
             dataField4Value = ActivityMonitor.getInfo().steps.toFloat() / ActivityMonitor.getInfo().stepGoal.toFloat();
-        } else if(Store.getValue("SideBar") == 70){
-            dataField4Value = ActivityMonitor.getInfo().floorsClimbed.toFloat() / ActivityMonitor.getInfo().floorsClimbedGoal.toFloat();
-        } else if(Store.getValue("SideBar") == 0){
+        } else if (Store.getValue("SideBar") == 70) {
+            dataField4Value = ActivityMonitor.getInfo().floorsClimbed.toFloat() /
+                              ActivityMonitor.getInfo().floorsClimbedGoal.toFloat();
+        } else if (Store.getValue("SideBar") == 0) {
             dataField4Value = 0;
         }
 
@@ -317,29 +320,49 @@ class KTheJs_Instinct_WatchfaceView extends WatchUi.WatchFace {
             dc.drawText(88, 150, Graphics.FONT_XTINY, dateString, ALIGN_CENTER);
         }
 
-        // Progress Bar drawing ///////////////////////////////////////////////////////////////////////////
-
         // Variables
 
-        var barHeight = 150;
-        var barWidth = 10;
-        var barY = 15;
-        var barX = 10;
+        var barHeight = 100;
+        var barWidth = 8;
+        var barY = 38;
+        var barX = 12;
 
         // Draw progress bar
+        if(Store.getValue("SideBar") != 0){
 
+        
         dc.setColor(COLOR_WHITE, COLOR_CLEAR);
         dc.fillRectangle(barX, barY, barWidth, barHeight);
 
         dc.setColor(COLOR_BLACK, COLOR_CLEAR);
         dc.fillRectangle(barX, barY, barWidth, (barHeight - (dataField4Value * barHeight)));
+        // Draw increment lines
+        dc.setColor(COLOR_WHITE, COLOR_BLACK);
+        if(dataField4Value > 0.25){
+            dc.setColor(COLOR_BLACK, COLOR_BLACK);
+        }
+        dc.fillRectangle(barX,barY+barHeight*0.75,barWidth,2);
+        dc.setColor(COLOR_WHITE, COLOR_BLACK);
 
+        if(dataField4Value > 0.5){
+            dc.setColor(COLOR_BLACK, COLOR_BLACK);
+        }
+        dc.fillRectangle(barX,barY+barHeight*0.5,barWidth,2);
+        dc.setColor(COLOR_WHITE, COLOR_BLACK);
+        if(dataField4Value > 0.75){
+            dc.setColor(COLOR_BLACK, COLOR_BLACK);
+        }
+        dc.fillRectangle(barX,barY+barHeight*0.25,barWidth,2);
+        dc.setColor(COLOR_WHITE,COLOR_BLACK);
+        dc.drawRectangle(barX,barY - 25,barWidth,25);
+        dc.drawRectangle(barX,barY + barHeight ,barWidth,25);
+        }
         // Icon
         // dc.setPenWidth(1);
-        dc.setColor(COLOR_WHITE, COLOR_BLACK);
-        if(Store.getValue("SideBar") != 0){
-        dc.drawText(barX + 5, 87, Icons, Store.getValue("SideBar").toChar(), ALIGN_VCENTER);
-        }
+        // dc.setColor(COLOR_WHITE, COLOR_BLACK);
+        // if (Store.getValue("SideBar") != 0) {
+        //     dc.drawText(barX + 5, 87, Icons, Store.getValue("SideBar").toChar(), ALIGN_VCENTER);
+        // }
     }
 
     // reverse peekaboo
